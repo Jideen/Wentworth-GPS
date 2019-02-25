@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<building name="Tudbury">-->
+    <!--<floor id="0">-->
+    <!--<rooms>20</rooms> //TODO: Get actual vals-->
+    <!--</floor>-->
+    <!--<floor id="1">-->
+    <!--<rooms>20</rooms>-->
+    <!--</floor>-->
+    <!--<floor id="2">-->
+    <!--<rooms>20</rooms>-->
+    <!--</floor>-->
+    <!--<floor id="3">-->
+    <!--<rooms>20</rooms>-->
+    <!--</floor>-->
+    <!--<floor id="4">-->
+    <!--<rooms>20</rooms>-->
+    <!--</floor>-->
+    <!--</building>-->
+
+    <!--<building name="EvansWay">EvansWay</building>-->
+    <!--<building name="AnnexCentral">Annex</building>-->
+    <!--<building name="AnnexNorth">Annex</building>-->
+    <!--<building name="AnnexSouth">Annex</building>-->
+    <!--<building name="IraAllen">IraAllen</building>-->
+    <!--<building name="BakerHall">Baker</building>-->
+    <!--<building name="Beatty">Beatty</building>-->
+    <!--<building name="Wentworth">Main</building>-->
+    <!--<building name="Watson">Main</building>-->
+    <!--<building name="Willson">Main</building>-->
+    <!--<building name="Williston">Main</building>-->
+    <!--<building name="Dobbs">Main</building>-->
+    <!--<building name="Rubenstein">Main</building>-->
+    <!--<building name="Kingman">Main</building>-->
+</resources>
