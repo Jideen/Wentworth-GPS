@@ -14,4 +14,21 @@
     <string name="go_to_class">Go to Class</string>
     <string name="leopardnav">LeopardNav</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="test">test</string>
+    <string-array name="building_names">
+        <item>Annex</item>
+        <item>Beatty</item>
+        <item>Main Building</item>
+        <item>Evans Way</item>
+        <item>Ira Allen</item>
+        <item>Tudbury</item>
+        <item>Building</item>
+    </string-array>
+    <!--Add arrays for each floor of each building-->
+    <!-- Format: {Building_name}_{FloorNum}_Rooms -->
+    <string-array name="Tudbury_0_Rooms">
+        <item></item>
+    </string-array>
 </resources>
+
