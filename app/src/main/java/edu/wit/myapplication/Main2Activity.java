@@ -26,7 +26,7 @@ public class Main2Activity extends AppCompatActivity {
 
     public void wrongButton(View v) {
         Intent toNav = new Intent(this, Navigation.class);
-        toNav.putExtra("Location", 6);
+        toNav.putExtra("Location", 7);
         startActivity(toNav);
     }
 
@@ -51,6 +51,18 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         textElement = (TextView) findViewById(R.id.textView4);
+        final Button right = findViewById(R.id.button6);
+        right.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                rightButton(v);
+            }
+        });
+        final Button wrong = findViewById(R.id.button5);
+        wrong.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                wrongButton(v);
+            }
+        });
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         try {
             fusedLocationClient.getLastLocation()
@@ -71,18 +83,7 @@ public class Main2Activity extends AppCompatActivity {
         } catch (SecurityException e) {
             System.exit(0);
         }
-        final Button right = findViewById(R.id.button6);
-        right.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                rightButton(v);
-            }
-        });
-        final Button wrong = findViewById(R.id.button5);
-        wrong.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                wrongButton(v);
-            }
-        });
+
     }
 
 }
