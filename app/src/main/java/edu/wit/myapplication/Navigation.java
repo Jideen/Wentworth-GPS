@@ -81,6 +81,192 @@ public class Navigation extends AppCompatActivity {
 
             }
         });
+        building2.setAdapter(SpinnerPopulate.Populate(this, R.array.building_names));
+        building2.setOnItemSelectedListener(new OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                floors2 = new ArrayList<>();
+                switch (buildingArray[i]) {
+                    case "anx":
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.anx_Floors)));
+                        break;
+                    case "bty":
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_Floors)));
+                        break;
+
+                    case "main":
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.main_Floors)));
+                        break;
+                    case "evw":
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_Floors)));
+                        break;
+                    case "iral":
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.iral_Floors)));
+                        break;
+                    case "tdby":
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_Floors)));
+                        break;
+                    case "empty":
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_Floors)));
+                        break;
+                }
+                floor2.setAdapter(SpinnerPopulate.updateData(c, floors2));
+                Log.i("2nd Array", buildingArray[i]);
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+        floor2.setOnItemSelectedListener(new OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                switch (buildingArray[bldgGlobal]) {
+                    case "anx":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.anx_Floors);
+                        switch (floorArray[i]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.anx_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.anx_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.anx_2_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.anx_3_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "bty":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.bty_Floors);
+                        switch (floorArray[i]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_2_Rooms)));
+                                break;
+                            case "M":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_M_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_3_Rooms)));
+                                break;
+                            case "4":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_4_Rooms)));
+                                break;
+                        }
+                        break;
+
+                    case "main":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.main_Floors);
+                        switch (floorArray[i]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.main_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.main_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.main_2_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.main_3_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "evw":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.evw_Floors);
+                        switch (floorArray[i]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_2_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_3_Rooms)));
+                                break;
+                            case "4":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_4_Rooms)));
+                                break;
+                            case "5":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_5_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "iral":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.iral_Floors);
+                        switch (floorArray[i]) {
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.iral_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.iral_2_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.iral_3_Rooms)));
+                                break;
+                        }
+                        break;
+
+                    case "tdby":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.tdby_Floors);
+                        switch (floorArray[i]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_2_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_3_Rooms)));
+                                break;
+                            case "4":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_4_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "empty":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.empty_Floors);
+                        switch (floorArray[i]) {
+                            case "Select a Building":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_0_Rooms)));
+                                break;
+                        }
+                        break;
+                }
+                room2.setAdapter(SpinnerPopulate.updateData(c, rooms2));
+                Log.i("2nd Array", buildingArray[i]);
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
         floor.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
@@ -228,45 +414,8 @@ public class Navigation extends AppCompatActivity {
 
             }
         });
-        building2.setAdapter(SpinnerPopulate.Populate(this, R.array.building_names));
-        building2.setOnItemSelectedListener(new OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                floors2 = new ArrayList<>();
-                switch (buildingArray[i]) {
-                    case "anx":
-                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.anx_Floors)));
-                        break;
-                    case "bty":
-                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_Floors)));
-                        break;
 
-                    case "main":
-                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.main_Floors)));
-                        break;
-                    case "evw":
-                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_Floors)));
-                        break;
-                    case "iral":
-                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.iral_Floors)));
-                        break;
-                    case "tdby":
-                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_Floors)));
-                        break;
-                    case "empty":
-                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_Floors)));
-                        break;
-                }
-                floor2.setAdapter(SpinnerPopulate.updateData(c, floors2));
-                Log.i("2nd Array", buildingArray[i]);
 
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
 
         int startPos = 0;
         if (!getIntent().getExtras().isEmpty()) {
