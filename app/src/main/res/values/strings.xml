@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">LeapordNav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="button">Button</string>
+    <string name="button1">Button</string>
+    <string name="button2">Button</string>
+    <string name="button3">Button</string>
+    <string name="textview">TextView</string>
+    <string name="grab_lunch">Grab Lunch</string>
+    <string name="faculty_offices">Faculty Offices</string>
+    <string name="wentworth_services">Wentworth Services</string>
+    <string name="go_to_class">Go to Class</string>
+    <string name="leopardnav">LeopardNav</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="test">test</string>
+    <string-array name="building_names">
+        <item>Annex</item>
+        <item>Beatty</item>
+        <item>Main Building</item>
+        <item>Evans Way</item>
+        <item>Ira Allen</item>
+        <item>Tudbury</item>
+        <item>Building</item>
+    </string-array>
+    <string-array name="building_ids">
+        <item>anx</item>
+        <item>bty</item>
+        <item>main</item>
+        <item>evw</item>
+        <item>iral</item>
+        <item>tdby</item>
+        <item>empty</item>
+    </string-array>
+    <!-- Add arrays for floor counts per building -->
+    <!--      Format: {Building_name}_Floors      -->
+    <string-array name="tdby_Floors">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="evw_Floors">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="main_Floors">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="iral_Floors">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="bty_Floors">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>M</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="anx_Floors">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="empty_Floors">
+        <item>Select a building</item>
+    </string-array>
+
+    <!--Add arrays for each floor of each building-->
+    <!--  Format: {Building_id}_{FloorNum}_Rooms  -->
+    <string-array name="tdby_0_Rooms">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+</resources>
+
