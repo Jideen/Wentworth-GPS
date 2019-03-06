@@ -88,5 +88,10 @@
         <item>1</item>
         <item>1</item>
     </string-array>
+    <!--Add arrays for each floor of each building-->
+    <!-- Format: {Building_name}_{FloorNum}_Rooms -->
+    <string-array name="Tudbury_0_Rooms">
+        <item></item>
+    </string-array>
 </resources>
 

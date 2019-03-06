@@ -22,7 +22,6 @@ public class Point2D {
     public void setY(double y) {
         this.yval = y;
     }
-
     public void setX(double x) {
         this.xval = x;
     }
