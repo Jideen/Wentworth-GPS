@@ -2,9 +2,9 @@ package edu.wit.myapplication;
 
 public class Constants {
 
-    public class Mapper{
-    public static final double X_THRESH = 1;
-    public static final double Y_THRESH = 1;
+    public class Mapper {
+        public static final double X_THRESH = 1;
+        public static final double Y_THRESH = 1;
     }
 
     public static class Buildings {
@@ -14,6 +14,6 @@ public class Constants {
         public static final Building Beatty = new Building(-71.095534, 42.335615, "Beatty");
         public static final Building Annex = new Building(-71.094217, 42.335399, "Annex");
         public static final Building Irall = new Building(-71.093813, 42.336102, "Irall");
-        public static final Building[] BUILDINGS = new Building[]{Annex,EvansWay,Main, Beatty,Irall,Tudbury};
+        public static final Building[] BUILDINGS = new Building[]{Annex, EvansWay, Main, Beatty, Irall, Tudbury};
     }
 }

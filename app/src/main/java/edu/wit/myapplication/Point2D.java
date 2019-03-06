@@ -1,8 +1,7 @@
 package edu.wit.myapplication;
+
 /**
- *
  * @author buttsj
- *
  */
 public class Point2D {
     double xval, yval;
