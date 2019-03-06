@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LeapordNav</string>
+    <string name="app_name">LeopardNav</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -18,18 +18,18 @@
     <string name="test">test</string>
     <string-array name="building_names">
         <item>Annex</item>
-        <item>Beatty</item>
-        <item>Main Building</item>
         <item>Evans Way</item>
+        <item>Main Building</item>
+        <item>Beatty</item>
         <item>Ira Allen</item>
         <item>Tudbury</item>
         <item>Building</item>
     </string-array>
     <string-array name="building_ids">
         <item>anx</item>
-        <item>bty</item>
-        <item>main</item>
         <item>evw</item>
+        <item>main</item>
+        <item>bty</item>
         <item>iral</item>
         <item>tdby</item>
         <item>empty</item>

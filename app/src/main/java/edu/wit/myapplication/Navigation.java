@@ -14,15 +14,10 @@ import java.util.Arrays;
 
 
 public class Navigation extends AppCompatActivity {
-    Spinner building;
-    Spinner floor;
-    Spinner room;
-    Spinner building2;
-    Spinner floor2;
-    Spinner room2;
+    Spinner building, floor, room, building2, floor2, room2;
     String[] buildingArray;
     Context c;
-    ArrayList<String> floors;
+    ArrayList<String> floors, floors2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +26,7 @@ public class Navigation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         c = this;
+        buildingArray = getResources().getStringArray(R.array.building_ids);
         building = (Spinner) findViewById(R.id.buildings_spinner);
         floor = (Spinner) findViewById(R.id.floor_spinner);
         room = (Spinner) findViewById(R.id.room_spinner);
@@ -41,8 +37,8 @@ public class Navigation extends AppCompatActivity {
         building.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                buildingArray = getResources().getStringArray(R.array.building_ids);
                 floors = new ArrayList<>();
+                Log.i("2nd Array", String.format("%d", i));
                 switch (buildingArray[i]) {
                     case "anx":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.anx_Floors)));
@@ -50,7 +46,6 @@ public class Navigation extends AppCompatActivity {
                     case "bty":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_Floors)));
                         break;
-
                     case "main":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.main_Floors)));
                         break;
@@ -77,36 +72,76 @@ public class Navigation extends AppCompatActivity {
 
             }
         });
-        floor.setOnItemSelectedListener(new OnItemSelectedListener() {
+//        floor.setOnItemSelectedListener(new OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+//                buildingArray = getResources().getStringArray(R.array.building_ids);
+//                floors = new ArrayList<>();
+//                switch (buildingArray[i]) {
+//                    case "anx":
+//                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.anx_Floors)));
+//                        break;
+//                    case "bty":
+//                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_Floors)));
+//                        break;
+//
+//                    case "main":
+//                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.main_Floors)));
+//                        break;
+//                    case "evw":
+//                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_Floors)));
+//                        break;
+//                    case "iral":
+//                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.iral_Floors)));
+//                        break;
+//                    case "tdby":
+//                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_Floors)));
+//                        break;
+//                    case "empty":
+//                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_Floors)));
+//                        break;
+//                }
+//                floor.setAdapter(SpinnerPopulate.updateData(c, floors));
+//                Log.i("2nd Array", buildingArray[i]);
+//
+//            }
+//
+//            @Override
+//            public void onNothingSelected(AdapterView<?> adapterView) {
+//
+//            }
+//        });
+        building2.setAdapter(SpinnerPopulate.Populate(this, R.array.building_names));
+        building2.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 buildingArray = getResources().getStringArray(R.array.building_ids);
-                floors = new ArrayList<>();
+                floors2 = new ArrayList<>();
                 switch (buildingArray[i]) {
                     case "anx":
-                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.anx_Floors)));
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.anx_Floors)));
                         break;
                     case "bty":
-                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_Floors)));
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_Floors)));
                         break;
 
                     case "main":
-                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.main_Floors)));
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.main_Floors)));
                         break;
                     case "evw":
-                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_Floors)));
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_Floors)));
                         break;
                     case "iral":
-                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.iral_Floors)));
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.iral_Floors)));
                         break;
                     case "tdby":
-                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_Floors)));
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_Floors)));
                         break;
                     case "empty":
-                        floors.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_Floors)));
+                        floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_Floors)));
                         break;
                 }
-                floor.setAdapter(SpinnerPopulate.updateData(c, floors));
+                floor2.setAdapter(SpinnerPopulate.updateData(c, floors2));
                 Log.i("2nd Array", buildingArray[i]);
 
             }
@@ -116,7 +151,7 @@ public class Navigation extends AppCompatActivity {
 
             }
         });
-        building2.setAdapter(SpinnerPopulate.Populate(this, R.array.building_names));
+
         int startPos = 0;
         if (!getIntent().getExtras().isEmpty()) {
             startPos = getIntent().getExtras().getInt("Location");
