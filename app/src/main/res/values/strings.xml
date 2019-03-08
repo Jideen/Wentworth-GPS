@@ -108,22 +108,28 @@
         <item>4</item>
     </string-array>
     <string-array name="evw_0_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>Suite 002</item>
+        <item>Suite 007</item>
+        <item>Suite 011</item>
+        <item>Suite 017</item>
+        <item>Housing Office</item>
+        <item>Laundry</item>
     </string-array>
     <string-array name="evw_1_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>Suite 102</item>
+        <item>Suite 104</item>
+        <item>Suite 107</item>
+        <item>Suite 108</item>
+        <item>Suite 111</item>
+        <item>Suite 117</item>
     </string-array>
     <string-array name="evw_2_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>Suite 202</item>
+        <item>Suite 204</item>
+        <item>Suite 207</item>
+        <item>Suite 208</item>
+        <item>Suite 211</item>
+        <item>Suite 217</item>
     </string-array>
     <string-array name="evw_3_Rooms">
         <item>1</item>
