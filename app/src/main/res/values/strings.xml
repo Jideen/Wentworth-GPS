@@ -192,22 +192,65 @@
         <item>4</item>
     </string-array>
     <string-array name="bty_M_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>Officce M207</item>
+        <item>Officce M208</item>
+        <item>Officce M0209</item>
+        <item>Officce M210</item>
+        <item>Officce M211A</item>
+        <item>Officce M211</item>
+        <item>Officce M212A</item>
+        <item>Officce M212AB</item>
+        <item>Study Room M212</item>
+        <item>Reading Room M212B</item>
+        <item>Service Room M212AA</item>
     </string-array>
     <string-array name="bty_3_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>Officce 304</item>
+        <item>Officce 305</item>
+        <item>Officce 306</item>
+        <item>Officce 308</item>
+        <item>Officce 309</item>
+        <item>Officce 310</item>
+        <item>Officce 311</item>
+        <item>Officce 312</item>
+        <item>Officce 313</item>
+        <item>Officce 314</item>
+        <item>Officce 320</item>
+        <item>Officce 320B</item>
+        <item>Officce 320C</item>
+        <item>Officce 320D</item>
+        <item>Officce 322</item>
+        <item>Officce 327</item>
+        <item>Officce 327B</item>
+        <item>Officce 328</item>
+        <item>Officce 328A</item>
+        <item>Officce 329</item>
+        <item>MAC Laboratory 301</item>
+        <item>PC Laboratory 302</item>
+        <item>PC Laboratory 303</item>
+        <item>Open Laboratory 318</item>
     </string-array>
     <string-array name="bty_4_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>Classroom 401</item>
+        <item>Classroom 418</item>
+        <item>Classroom 419</item>
+        <item>Classroom 420</item>
+        <item>Classroom 421</item>
+        <item>Officce 403</item>
+        <item>Officce 404</item>
+        <item>Officce 405</item>
+        <item>Officce 406</item>
+        <item>Officce 407</item>
+        <item>Officce 408</item>
+        <item>Officce 409</item>
+        <item>Officce 410</item>
+        <item>Officce 413</item>
+        <item>Officce 414</item>
+        <item>Officce 433</item>
+        <item>Officce 433A</item>
+        <item>Study Room</item>
+        <item>Lecture Hall 426</item>
+        <item>Board Room</item>
     </string-array>
     <string-array name="iral_1_Rooms">
         <item>1</item>
