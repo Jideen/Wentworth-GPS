@@ -20,7 +20,7 @@
     <string-array name="building_names">
         <item>Annex</item>
         <item>Evans Way</item>
-        <item>Main Building</item>
+        <item>Watson Hall</item>
         <item>Beatty</item>
         <item>Ira Allen</item>
         <item>Tudbury</item>
@@ -29,7 +29,7 @@
     <string-array name="building_ids">
         <item>anx</item>
         <item>evw</item>
-        <item>main</item>
+        <item>wat</item>
         <item>bty</item>
         <item>iral</item>
         <item>tdby</item>
@@ -52,7 +52,7 @@
         <item>4</item>
         <item>5</item>
     </string-array>
-    <string-array name="main_Floors">
+    <string-array name="wat_Floors">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -83,6 +83,36 @@
 
     <!--Add arrays for each floor of each building-->
     <!--  Format: {Building_id}_{FloorNum}_Rooms  -->
+    <string-array name="wat_0_Rooms">
+        <item>Classroom 001</item>
+        <item>Classroom 002</item>
+        <item>Classroom 004</item>
+        <item>Classroom 006</item>
+        <item>Office 003A</item>
+        <item>Office 003B</item>
+        <item>Office 003C</item>
+        <item>Office 003D</item>
+        <item>Office 005</item>
+        <item>Office 006P</item>
+        <item>Office 006R</item>
+        <item>Office 006KA</item>
+        <item>Office 006KB</item>
+    </string-array>
+    <string-array name="wat_1_Rooms">
+        <item>Auditorium 101</item>
+    </string-array>
+    <string-array name="wat_2_Rooms">
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>014</item>
+    </string-array>
+    <string-array name="wat_3_Rooms">
+        <item>011</item>
+        <item>012</item>
+        <item>013</item>
+        <item>014</item>
+    </string-array>
     <string-array name="anx_0_Rooms">
         <item>011</item>
         <item>012</item>
@@ -248,9 +278,9 @@
         <item>Officce 414</item>
         <item>Officce 433</item>
         <item>Officce 433A</item>
-        <item>Study Room</item>
+        <item>Study Room 402</item>
         <item>Lecture Hall 426</item>
-        <item>Board Room</item>
+        <item>Board Room 432</item>
     </string-array>
     <string-array name="iral_1_Rooms">
         <item>1</item>
@@ -274,9 +304,9 @@
         <item>Suite 002</item>
         <item>Suite 003</item>
         <item>Suite 005</item>
-        <item>Recreation Room</item>
-        <item>Common Room</item>
-        <item>Exercise Room</item>
+        <item>Recreation Room 001</item>
+        <item>Auditorium 012</item>
+        <item>Exercise Room 020</item>
     </string-array>
     <string-array name="tdby_1_Rooms">
         <item>Suite 101</item>
@@ -284,10 +314,9 @@
         <item>Suite 103</item>
         <item>Suite 104</item>
         <item>Suite 105</item>
-        <item>RD Office</item>
-        <item>RA Office</item>
-        <item>Game Room</item>
-        <item>Auditorium</item>
+        <item>RD Office 113</item>
+        <item>RA Office 115</item>
+        <item>Game Room 106</item>
     </string-array>
     <string-array name="tdby_2_Rooms">
         <item>Suite 201</item>
