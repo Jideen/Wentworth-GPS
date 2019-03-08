@@ -222,22 +222,32 @@
         <item>oof4</item>
     </string-array>
     <string-array name="tdby_0_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>Suite 002</item>
+        <item>Suite 003</item>
+        <item>Suite 005</item>
+        <item>Recreation Room</item>
+        <item>Common Room</item>
+        <item>Exercise Room</item>
     </string-array>
     <string-array name="tdby_1_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>Suite 101</item>
+        <item>Suite 102</item>
+        <item>Suite 103</item>
+        <item>Suite 104</item>
+        <item>Suite 105</item>
+        <item>RD Office</item>
+        <item>RA Office</item>
+        <item>Game Room</item>
+        <item>Auditorium</item>
     </string-array>
     <string-array name="tdby_2_Rooms">
-        <item>209</item>
-        <item>207</item>
-        <item>test</item>
-        <item>yeet</item>
+        <item>Suite 201</item>
+        <item>Suite 202</item>
+        <item>Suite 203</item>
+        <item>Suite 204</item>
+        <item>Suite 205</item>
+        <item>Suite 207</item>
+        <item>Suite 209</item>
     </string-array>
     <string-array name="tdby_3_Rooms">
         <item>1</item>
