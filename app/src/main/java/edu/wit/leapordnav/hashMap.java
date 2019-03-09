@@ -6,7 +6,7 @@ public class launcher {
 	
 	//Tudbury(Int floors, String rooms[#])
 	static HashMap<Integer, String> tudbury = new HashMap<>();
-		//floors(Int rooms[#], Coordinate (x, y) )
+		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> tuds0 = new HashMap<>();
 		static HashMap<Integer, Integer> tuds1 = new HashMap<>();
 		static HashMap<Integer, Integer> tuds2 = new HashMap<>();
