@@ -22,6 +22,11 @@
         <item>Evans Way</item>
         <item>Watson Hall</item>
         <item>Beatty</item>
+        <item>Rubenstein</item>
+        <item>Kingman</item>
+        <item>Dobbs Hall</item>
+        <item>Williston Hall</item>
+        <item>Wentworth Hall</item>
         <item>Ira Allen</item>
         <item>Tudbury</item>
         <item>Building</item>
@@ -31,6 +36,11 @@
         <item>evw</item>
         <item>wat</item>
         <item>bty</item>
+        <item>rub</item>
+        <item>king</item>
+        <item>dobb</item>
+        <item>will</item>
+        <item>went</item>
         <item>iral</item>
         <item>tdby</item>
         <item>empty</item>
@@ -179,30 +189,6 @@
         <item>3</item>
         <item>4</item>
     </string-array>
-    <string-array name="main_0_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="main_1_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="main_2_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="main_3_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
     <string-array name="bty_0_Rooms">
         <item>1</item>
         <item>2</item>
@@ -325,7 +311,7 @@
         <item>Suite 204</item>
         <item>Suite 205</item>
         <item>Suite 207</item>
-        <item>Suite 209</item>
+        <item>Suite Biggus Dickus 209</item>
     </string-array>
     <string-array name="tdby_3_Rooms">
         <item>1</item>
