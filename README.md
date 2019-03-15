@@ -23,5 +23,7 @@ The app is written in Java with an assistant application being Android Studio. U
 - Data points mapped into an XML file that is accessible from the Application
 ## Team Members
 **Jayden Butts** - Backend Development, General Functionality Planning
+
 **Parker Dowdy** - Front End/GUI Building and Backend Integration
+
 **Yuan Gao** - Data and Statistics, Backend Calculations
