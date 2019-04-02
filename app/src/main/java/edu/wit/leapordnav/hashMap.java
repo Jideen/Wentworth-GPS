@@ -255,12 +255,17 @@ public class launcher {
 		//***********************************************Watson Hall**************************************************
 		//Watson Hall floor 0
 		watsonHall.put(0, "Dobbs Entrance[0], Bathroom(M)[1], Bathroom(W)[2], Exit[3], Bathroom[4], "
-			       + "Classroom 002[5], Classroom 001[6], Classroom 004[7], Stairs[8], Classroom 006[9], ");
-		wats0.put(0, 0);
+			       + "Classroom 002[5], Classroom 001[6], Classroom 004[7], Stairs[8], Classroom 006[9], "
+			       + "Office 006KA[10], Office 006KB[11], Office 006R[12], Office 006P[13], Office 005[14] "
+			       + "Office 003C[15], Office 003D[16], Office 003B[17], Office 003A[18]");
+		wats0.put(0, 0); wats0.put(1, 79); wats0.put(2, 90); wats0.put(3, 102); wats0.put(4, 102);
+		wats0.put(5, 115); wats0.put(6, 139); wats0.put(7, 179); wats0.put(8, 187); wats0.put(9, 194);
+		wats0.put(10, 207); wats0.put(11, 207); wats0.put(12, 207); wats0.put(13, 207); wats0.put(14, 207);
+		wats0.put(15, 207); wats0.put(16, 207); wats0.put(17, 207); wats0.put(18, 207);
 		
 		//Watson Hall floor 1
-		watsonHall.put(1, "");
-		wats1.put(0, 0);
+		watsonHall.put(1, "Dobbs Entrance[0], Bathroom(W)[1], Stairs[2], Watson Auditorium[3], Bathroom(M)[4]");
+		wats1.put(0, 0); wats1.put(1, 67); wats1.put(2, 90); wats1.put(3, 115); wats1.put(4, 115);
 		
 		//Watson Hall floor 2
 		watsonHall.put(2, "");
