@@ -24,7 +24,7 @@ public class launcher {
 	
 	//Evans Way(Int floors, String rooms[#])
 	static HashMap<String, String> evansWay = new HashMap<>();
-	//floors(Int rooms[#], Int [Distance x in ft] )
+		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> evans0 = new HashMap<>();
 		static HashMap<Integer, Integer> evans1 = new HashMap<>();
 		static HashMap<Integer, Integer> evans2 = new HashMap<>();
@@ -32,6 +32,20 @@ public class launcher {
 		static HashMap<Integer, Integer> evans4 = new HashMap<>();
 		static HashMap<Integer, Integer> evans5 = new HashMap<>();
 
+	//Rubenstein Hall(Int floors, String rooms[#])
+	static HashMap<String, String> rubensteinHall = new HashMap<>();
+		//floors(Int rooms[#], Int [Distance x in ft] )
+		static HashMap<Integer, Integer> rubens0 = new HashMap<>();
+		static HashMap<Integer, Integer> rubens1 = new HashMap<>();
+		static HashMap<Integer, Integer> rubens2 = new HashMap<>();
+	
+	//Kingman Hall(Int floors, String rooms[#])
+	static HashMap<String, String> kingmanHall = new HashMap<>();
+		//floors(Int rooms[#], Int [Distance x in ft] )
+		static HashMap<Integer, Integer> kings0 = new HashMap<>();
+		static HashMap<Integer, Integer> kings1 = new HashMap<>();
+		static HashMap<Integer, Integer> kings2 = new HashMap<>();
+	
 	//Beatty(Int floors, String rooms[#])
 	static HashMap<String, String> beatty = new HashMap<>();
 	
@@ -68,6 +82,7 @@ public class launcher {
 		//Tudbury floor 4
 		tudbury.put(4, "");
 		tuds4.put(0, 0);
+		
 		//***********************************************Wentworth Hall**********************************************
 		//Wentworth Hall floor 0
 		wentworthHall.put(0, "Williston Entrance[0], Lab 004[1], Lab 003[2], Elevator[3], Classroom 010[4], "
@@ -84,7 +99,7 @@ public class launcher {
 		//Wentworth Hall floor 2
 		wentworthHall.put(2, "Williston Entrance[0], Stair/Bathroom(M)[1], Classroom 206[2], Classroom 205[3], Classroom 208[4], "
 				  + "Classroom 207[5], Classroom 210[6], Elevator[7], Classroom 209[8], Classroom 212[9], "
-				  + "Stairs[10], Classroom 214[11], Dobbs Entrance[12]");
+				  + "Stair/Bathroom(W)[10], Classroom 214[11], Dobbs Entrance[12]");
 		wents2.put(0, 0); wents2.put(1, 8); wents2.put(2, 19); wents2.put(3, 37); wents2.put(4, 37);
 		wents2.put(5, 45); wents2.put(6, 45); wents2.put(7, 72); wents2.put(8, 81); wents2.put(9, 86);
 		wents2.put(10, 110); wents2.put(11, 110); wents2.put(12, 123);
@@ -98,37 +113,90 @@ public class launcher {
 		wents4.put(0, 0);
 		
 		//***********************************************Evans Way**************************************************
-		//Evans Way Hall floor 0
+		//Evans Way floor 0
 		evansWay.put(0, "Tudsbury Entrance[0], Laundry[1], Suite 017[2], Stairs[3], Suite 011[4], "
 			     + "Housing Office[5], Exit[6], Suite 007[7], Suite 002[8]");
 		evans0.put(0, 0); evans0.put(1, 35); evans0.put(2, 38); evans0.put(3, 43); evans0.put(4, 59);
 		evans0.put(5, 89); evans0.put(6, 133); evans0.put(7, 161); evans0.put(8, 171);
 		
-		//Evans Way Hall floor 1
+		//Evans Way floor 1
 		evansWay.put(1, "Suite 108[0], Suite 117[1], Stairs[2], Suite 111[3], Suite 104[4], "
 			     + "Elevator[5], Suite 107[6], Stairs[7], Suite 102[8]");
 		evans1.put(0, 0); evans1.put(1, 5); evans1.put(2, 11); evans1.put(3, 27); evans1.put(4, 33);
 		evans1.put(5, 94); evans1.put(6, 122); evans1.put(7, 125); evans1.put(8, 128);
 		
-		//Evans Way Hall floor 2
+		//Evans Way floor 2
 		evansWay.put(1, "Suite 208[0], Suite 217[1], Stairs[2], Suite 211[3], Suite 204[4], "
 			     + "Elevator[5], Suite 207[6], Stairs[7], Suite 202[8]");
 		evans2.put(0, 0); evans2.put(1, 5); evans2.put(2, 11); evans2.put(3, 27); evans2.put(4, 33);
 		evans2.put(5, 94); evans2.put(6, 122); evans2.put(7, 125); evans2.put(8, 128);
 		
-		//Evans Way Hall floor 3
+		//Evans Way floor 3
 		evansWay.put(3, "");
 		evans3.put(0, 0);
 		
-		//Evans Way Hall floor 4
+		//Evans Way floor 4
 		evansWay.put(4, "");
 		evans4.put(0, 0);
 		
-		//Evans Way Hall floor 5
+		//Evans Way floor 5
 		evansWay.put(5, "");
 		evans5.put(0, 0);
 		
+		//***********************************************Rubenstein Hall**************************************************
+		//Rubenstein Hall floor 0
+		rubensteinHall.put(0, "Williston Entrance[0], Student Affacirs Office 003[1], Lab 005[2], Exit[3], Kingman Entrance/Bathroom(W)[4], "
+				   + "Exit[5]");
+		rubens0.put(0, 0); rubens0.put(1, 15); rubens0.put(2, 60); rubens0.put(3, 84); rubens0.put(4, 114);
+		rubens0.put(5, 123);
 		
+		//Rubenstein Hall floor 1
+		rubensteinHall.put(1, "Williston Entrance[0], Classroom 105[1], Classroom 104[2], Classroom 103[3], Lab 101[4], "
+				   + "Stairs[5]");
+		rubens1.put(0, 0); rubens1.put(1, 5); rubens1.put(2, 47); rubens1.put(3, 55); rubens1.put(4, 83);
+		rubens1.put(5, 108);
+		
+		//Rubenstein Hall floor 2
+		rubensteinHall.put(2, "Stairs[0], Office 202A[1], Classroom 201[2], Stairs[3], Office 203[4], "
+				   + "Office 202[5], Office 207[6], Office 208[7], Office 209[8]");
+		rubens2.put(0, 0); rubens2.put(1, 3); rubens2.put(2, 26); rubens2.put(3, 33); rubens2.put(4, 40);
+		rubens2.put(5, 46); rubens2.put(6, 56); rubens2.put(7, 75); rubens2.put(8, 80);
+		
+		//***********************************************Kingman Hall**************************************************
+		//Kingman Hall floor 0
+		kingmanHall.put(0, "");
+		kings0.put(0, 0);
+		
+		//Kingman Hall floor 1
+		kingmanHall.put(1, "Willson Entrance[0], Lab 103[1], Lab 102[2], Lab 101[3], Stairs[4], "
+				+ "Rubenstein Entrance[5]");
+		kings1.put(0, 0); kings1.put(1, 76); kings1.put(2, 91); kings1.put(3, 127); kings1.put(4, 132);
+		kings1.put(5, 152);
+		
+		//Kingman Hall floor 2
+		kingmanHall.put(2, "Willson Entrance[0], Stairs[1], Office 211[2], Office 212[3], Office 210[4], "
+				+ "Classroom 202[5], Office 209[6], Office 208[7], Office 207[8], Office 206[9], "
+				+ "Classroom 201[10], Office 204[11], Office 205[12], Stairs[13]");
+		kings2.put(0, 0); kings2.put(1, 75); kings2.put(2, 97); kings2.put(3, 97); kings2.put(4, 103);
+		kings2.put(5, 103); kings2.put(6, 119); kings2.put(7, 129); kings2.put(8, 139); kings2.put(9, 149);
+		kings2.put(10, 154); kings2.put(11, 154); kings2.put(12, 154); kings2.put(13, 166);
+		
+		//***********************************************wieee**************************************************
+		//wieee floor 0
+		wieee.put(0, "");
+		wie.put(0, 0);
+		//***********************************************wieee**************************************************
+		//wieee floor 0
+		wieee.put(0, "");
+		wie.put(0, 0);
+		//***********************************************wieee**************************************************
+		//wieee floor 0
+		wieee.put(0, "");
+		wie.put(0, 0);
+		//***********************************************wieee**************************************************
+		//wieee floor 0
+		wieee.put(0, "");
+		wie.put(0, 0);
 		
 		
 		System.out.println(tudbury.size()); //9.
