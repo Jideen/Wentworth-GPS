@@ -46,10 +46,47 @@ public class launcher {
 		static HashMap<Integer, Integer> kings1 = new HashMap<>();
 		static HashMap<Integer, Integer> kings2 = new HashMap<>();
 	
-	//Beatty(Int floors, String rooms[#])
-	static HashMap<String, String> beatty = new HashMap<>();
+	//Dobbs Hall(Int floors, String rooms[#])
+	static HashMap<String, String> dobbsHall = new HashMap<>();
+		//floors(Int rooms[#], Int [Distance x in ft] )
+		static HashMap<Integer, Integer> dobs0 = new HashMap<>();
+		static HashMap<Integer, Integer> dobs1 = new HashMap<>();
+		static HashMap<Integer, Integer> dobs2 = new HashMap<>();
+		static HashMap<Integer, Integer> dobs3 = new HashMap<>();
+		static HashMap<Integer, Integer> dobs4 = new HashMap<>();
 	
+	//Williston Hall Hall(Int floors, String rooms[#])
+	static HashMap<String, String> willistonHall = new HashMap<>();
+		//floors(Int rooms[#], Int [Distance x in ft] )
+		static HashMap<Integer, Integer> willists0 = new HashMap<>();
+		static HashMap<Integer, Integer> willists1 = new HashMap<>();
+		static HashMap<Integer, Integer> willists2 = new HashMap<>();
+		static HashMap<Integer, Integer> willists3 = new HashMap<>();
+		static HashMap<Integer, Integer> willists4 = new HashMap<>();
 	
+	//Watson Hall Hall(Int floors, String rooms[#])
+	static HashMap<String, String> watsonHall = new HashMap<>();
+		//floors(Int rooms[#], Int [Distance x in ft] )
+		static HashMap<Integer, Integer> wats0 = new HashMap<>();
+		static HashMap<Integer, Integer> wats1 = new HashMap<>();
+		static HashMap<Integer, Integer> wats2 = new HashMap<>();
+		static HashMap<Integer, Integer> wats3 = new HashMap<>();
+	
+	//Beatty Hall(Int floors, String rooms[#])
+	static HashMap<String, String> beattyHall = new HashMap<>();
+	//floors(Int rooms[#], Int [Distance x in ft] )
+		static HashMap<Integer, Integer> beats0 = new HashMap<>();
+		static HashMap<Integer, Integer> beats1 = new HashMap<>();
+		static HashMap<Integer, Integer> beats2 = new HashMap<>();
+		static HashMap<Integer, Integer> beatsM = new HashMap<>();
+		static HashMap<Integer, Integer> beats3 = new HashMap<>();
+		static HashMap<Integer, Integer> beats4 = new HashMap<>();
+	
+	//Willson Hall(Int floors, String rooms[#])
+	static HashMap<String, String> willsonHall = new HashMap<>();
+		//floors(Int rooms[#], Int [Distance x in ft] )
+		static HashMap<Integer, Integer> wills0 = new HashMap<>();
+		static HashMap<Integer, Integer> wills1 = new HashMap<>();	
 
 	public static void main(String[] args) {
 		//***********************************************Tudbury**************************************************
@@ -182,29 +219,98 @@ public class launcher {
 		kings2.put(10, 154); kings2.put(11, 154); kings2.put(12, 154); kings2.put(13, 166);
 		
 		//***********************************************Dobbs Hall**************************************************
-		//wieee floor 0
-		wieee.put(0, "");
-		wie.put(0, 0);
+		//Dobbs Hall floor 0
+		dobbsHall.put(0, "");
+		dobs0.put(0, 0);
+		
+		//Dobbs Hall floor 1
+		dobbsHall.put(1, "");
+		dobs1.put(0, 0);
+		
+		//Dobbs Hall floor 2
+		dobbsHall.put(2, "");
+		dobs2.put(0, 0);
+		
+		//Dobbs Hall floor 3
+		dobbsHall.put(3, "");
+		dobs3.put(0, 0);
+		
+		//Dobbs Hall floor 4
+		dobbsHall.put(4, "");
+		dobs4.put(0, 0);
 		
 		//***********************************************Williston Hall**************************************************
-		//wieee floor 0
-		wieee.put(0, "");
-		wie.put(0, 0);
+		//Williston Hall floor 0
+		willistonHall.put(0, "");
+		willists0.put(0, 0);
+		
+		//Williston Hall floor 1
+		willistonHall.put(1, "");
+		willists1.put(0, 0);
+		
+		//Williston Hall floor 2
+		willistonHall.put(2, "");
+		willists2.put(0, 0);
+		
+		//Williston Hall floor 3
+		willistonHall.put(3, "");
+		willists3.put(0, 0);
+		
+		//Williston Hall floor 4
+		willistonHall.put(4, "");
+		willists4.put(0, 0);
 		
 		//***********************************************Watson Hall**************************************************
-		//wieee floor 0
-		wieee.put(0, "");
-		wie.put(0, 0);
+		//Watson Hall floor 0
+		watsonHall.put(0, "");
+		wats0.put(0, 0);
+		
+		//Watson Hall floor 1
+		watsonHall.put(1, "");
+		wats1.put(0, 0);
+		
+		//Watson Hall floor 2
+		watsonHall.put(2, "");
+		wats2.put(0, 0);
+		
+		//Watson Hall floor 3
+		watsonHall.put(3, "");
+		wats3.put(0, 0);
 		
 		//***********************************************Beatty Hall**************************************************
-		//wieee floor 0
-		wieee.put(0, "");
-		wie.put(0, 0);
+		//Beatty Hall floor 0
+		beattyHall.put(0, "");
+		beats0.put(0, 0);
+		
+		//Beatty Hall floor 1
+		beattyHall.put(1, "");
+		beats1.put(0, 0);
+		
+		//Beatty Hall floor 2
+		beattyHall.put(2, "");
+		beats2.put(0, 0);
+		
+		//Beatty Hall floor M
+		beattyHall.put(3, "");
+		beatsM.put(0, 0);
+		
+		//Beatty Hall floor 3
+		beattyHall.put(4, "");
+		beats3.put(0, 0);
+		
+		//Beatty Hall floor 4
+		beattyHall.put(5, "");
+		beats4.put(0, 0);
 		
 		//***********************************************Willson Hall**************************************************
-		//wieee floor 0
-		wieee.put(0, "");
-		wie.put(0, 0);
+		//Willson Hall floor 0
+		willsonHall.put(0, "");
+		wills0.put(0, 0);
+		
+		//Willson Hall floor 1
+		willsonHall.put(1, "");
+		wills1.put(0, 0);
+		
 		
 		
 		System.out.println(tudbury.size()); //9.
