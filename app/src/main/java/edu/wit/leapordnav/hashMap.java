@@ -9,9 +9,12 @@ public class launcher {
 		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> tuds0 = new HashMap<>();
 		static HashMap<Integer, Integer> tuds1 = new HashMap<>();
-		static HashMap<Integer, Integer> tuds2 = new HashMap<>();
-		static HashMap<Integer, Integer> tuds3 = new HashMap<>();
-		static HashMap<Integer, Integer> tuds4 = new HashMap<>();
+		static HashMap<Integer, Integer> tuds2A = new HashMap<>();
+		static HashMap<Integer, Integer> tuds2B = new HashMap<>();
+		static HashMap<Integer, Integer> tuds3A = new HashMap<>();
+		static HashMap<Integer, Integer> tuds3B = new HashMap<>();
+		static HashMap<Integer, Integer> tuds4A = new HashMap<>();
+		static HashMap<Integer, Integer> tuds4B = new HashMap<>();
 
 	//Wentworth Hall(Int floors, String rooms[#])
 	static HashMap<String, String> wentworthHall = new HashMap<>();
@@ -66,7 +69,6 @@ public class launcher {
 		static HashMap<Integer, Integer> wats0 = new HashMap<>();
 		static HashMap<Integer, Integer> wats1 = new HashMap<>();
 		static HashMap<Integer, Integer> wats2 = new HashMap<>();
-		static HashMap<Integer, Integer> wats3 = new HashMap<>();
 	
 	//Beatty Hall(Int floors, String rooms[#])
 	static HashMap<String, String> beattyHall = new HashMap<>();
@@ -104,17 +106,29 @@ public class launcher {
 		tuds1.put(10, 0136); tuds1.put(11, 141); tuds1.put(12, 156); tuds1.put(13, 156); tuds1.put(14, 156);
 		tuds1.put(15,213);
 
-		//Tudbury floor 2
+		//Tudbury floor 2A
 		tudbury.put(2, "");
-		tuds2.put(0, 0);
+		tuds2A.put(0, 0);
 		
-		//Tudbury floor 3
+		//Tudbury floor 2B
 		tudbury.put(3, "");
-		tuds3.put(0, 0);
-
-		//Tudbury floor 4
+		tuds2B.put(0, 0);
+		
+		//Tudbury floor 3A
 		tudbury.put(4, "");
-		tuds4.put(0, 0);
+		tuds3A.put(0, 0);
+		
+		//Tudbury floor 3B
+		tudbury.put(5, "");
+		tuds3B.put(0, 0);
+
+		//Tudbury floor 4A
+		tudbury.put(6, "");
+		tuds4A.put(0, 0);
+		
+		//Tudbury floor 4B
+		tudbury.put(7, "");
+		tuds4B.put(0, 0);
 		
 		//***********************************************Wentworth Hall**********************************************
 		//Wentworth Hall floor 0
@@ -223,11 +237,11 @@ public class launcher {
 		dobs0.put(0, 0); dobs0.put(1, 34); dobs0.put(2, 63); dobs0.put(3, 110); dobs0.put(4, 132);
 		dobs0.put(5, 149); dobs0.put(6, 174); dobs0.put(7, 174); dobs0.put(8, 179);
 		
-		//Dobbs Hall floor 1 ------------------------------ have map
+		//Dobbs Hall floor 1
 		dobbsHall.put(1, "");
 		dobs1.put(0, 0);
 		
-		//Dobbs Hall floor 2 ------------------------------ have map
+		//Dobbs Hall floor 2
 		dobbsHall.put(2, "");
 		dobs2.put(0, 0);
 		
@@ -240,19 +254,19 @@ public class launcher {
 		dobs3.put(10, 175);
 		
 		//***********************************************Williston Hall**************************************************
-		//Williston Hall floor 0 ------------------------------ have map
+		//Williston Hall floor 0
 		willistonHall.put(0, "");
 		willists0.put(0, 0);
 		
-		//Williston Hall floor 1 ------------------------------ have map
+		//Williston Hall floor 1
 		willistonHall.put(1, "");
 		willists1.put(0, 0);
 		
-		//Williston Hall floor 2 ------------------------------ have map
+		//Williston Hall floor 2
 		willistonHall.put(2, "");
 		willists2.put(0, 0);
 		
-		//Williston Hall floor 3 ------------------------------ have map
+		//Williston Hall floor 3
 		willistonHall.put(3, "");
 		willists3.put(0, 0);
 		
@@ -276,11 +290,11 @@ public class launcher {
 		wats2.put(0, 0);
 		
 		//***********************************************Beatty Hall**************************************************
-		//Beatty Hall floor 0 ------------------------------ have map
+		//Beatty Hall floor 0
 		beattyHall.put(0, "");
 		beats0.put(0, 0);
 		
-		//Beatty Hall floor 1 ------------------------------ have map
+		//Beatty Hall floor 1
 		beattyHall.put(1, "");
 		beats1.put(0, 0);
 		
@@ -288,26 +302,28 @@ public class launcher {
 		beattyHall.put(2, "Library[0]");
 		beats2.put(0, 0);
 		
-		//Beatty Hall floor M ------------------------------ have map
+		//Beatty Hall floor M
 		beattyHall.put(3, "");
 		beatsM.put(0, 0);
 		
-		//Beatty Hall floor 3 ------------------------------ have map
+		//Beatty Hall floor 3
 		beattyHall.put(4, "");
 		beats3.put(0, 0);
 		
-		//Beatty Hall floor 4 ------------------------------ have map
+		//Beatty Hall floor 4
 		beattyHall.put(5, "");
 		beats4.put(0, 0);
 		
 		//***********************************************Willson Hall**************************************************
-		//Willson Hall floor 1 ------------------------------ have map
-		willsonHall.put(1, "");
-		wills1.put(0, 0);
+		//Willson Hall floor 1
+		willsonHall.put(1, "Exit[0], Kingman Entrance[1], Office 108[2], Classroom 105[3], Bathroom(M)[4], "
+				+ "Stairs[5], Classroom 103[6], Classroom 102[7], Office 101[8], Exit[9]");
+		wills1.put(0, 0); wills1.put(1, 38); wills1.put(2, 67); wills1.put(3, 67); wills1.put(4, 77);
+		wills1.put(5, 90); wills1.put(6, 98); wills1.put(7, 102); wills1.put(8, 112); wills1.put(9, 119);
 		
-		//Willson Hall floor 2 ------------------------------ have map
-		willsonHall.put(2, "");
-		wills2.put(0, 0);
+		//Willson Hall floor 2
+		willsonHall.put(2, "Stairs[0], Office 201[1], Lab 204[2], Lab 203[3], Lab 202[4]");
+		wills2.put(0, 0); wills2.put(1, 10); wills2.put(2, 10); wills2.put(3, 10); wills2.put(4, 10);
 		
 		
 		
