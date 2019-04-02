@@ -288,15 +288,15 @@ public class launcher {
 		beattyHall.put(2, "");
 		beats2.put(0, 0);
 		
-		//Beatty Hall floor M
+		//Beatty Hall floor M ------------------------------ have map
 		beattyHall.put(3, "");
 		beatsM.put(0, 0);
 		
-		//Beatty Hall floor 3
+		//Beatty Hall floor 3 ------------------------------ have map
 		beattyHall.put(4, "");
 		beats3.put(0, 0);
 		
-		//Beatty Hall floor 4
+		//Beatty Hall floor 4 ------------------------------ have map
 		beattyHall.put(5, "");
 		beats4.put(0, 0);
 		
