@@ -254,7 +254,8 @@ public class launcher {
 		
 		//***********************************************Watson Hall**************************************************
 		//Watson Hall floor 0
-		watsonHall.put(0, "");
+		watsonHall.put(0, "Dobbs Entrance[0], Bathroom(M)[1], Bathroom(W)[2], Exit[3], Bathroom[4], "
+			       + "Classroom 002[5], Classroom 001[6], Classroom 004[7], Stairs[8], Classroom 006[9], ");
 		wats0.put(0, 0);
 		
 		//Watson Hall floor 1
