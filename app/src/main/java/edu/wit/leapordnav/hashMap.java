@@ -138,8 +138,12 @@ public class launcher {
 		wents2.put(10, 110); wents2.put(11, 110); wents2.put(12, 123);
 		
 		//Wentworth Hall floor 3
-		wentworthHall.put(3, "");
-		wents3.put(0, 0);
+		wentworthHall.put(3, "Williston Entrance[0], Stairs[1], Bathroom(M)[2], Classroom 306[3], Classroom 305[4], "
+				  + "Classroom 308[5], Classroom 307[6], Classroom 310[7], Classroom 309[8], Classroom 312[9], "
+				  + "Classroom 314[10], Stairs[11], Bathroom(W)[12], Dobbs Entrance[13]");
+		wents3.put(0, 0); wents3.put(1, 5); wents3.put(2, 5); wents3.put(3, 18); wents3.put(4, 34);
+		wents3.put(5, 34); wents3.put(6, 42); wents3.put(7, 42); wents3.put(8, 76); wents3.put(9, 81);
+		wents3.put(10, 104); wents3.put(11, 104); wents3.put(12, 104); wents3.put(13, 109);
 		
 		//***********************************************Evans Way**************************************************
 		//Evans Way floor 0
@@ -219,11 +223,11 @@ public class launcher {
 		dobs0.put(0, 0); dobs0.put(1, 34); dobs0.put(2, 63); dobs0.put(3, 110); dobs0.put(4, 132);
 		dobs0.put(5, 149); dobs0.put(6, 174); dobs0.put(7, 174); dobs0.put(8, 179);
 		
-		//Dobbs Hall floor 1
+		//Dobbs Hall floor 1 ------------------------------ have map
 		dobbsHall.put(1, "");
 		dobs1.put(0, 0);
 		
-		//Dobbs Hall floor 2
+		//Dobbs Hall floor 2 ------------------------------ have map
 		dobbsHall.put(2, "");
 		dobs2.put(0, 0);
 		
@@ -236,19 +240,19 @@ public class launcher {
 		dobs3.put(10, 175);
 		
 		//***********************************************Williston Hall**************************************************
-		//Williston Hall floor 0
+		//Williston Hall floor 0 ------------------------------ have map
 		willistonHall.put(0, "");
 		willists0.put(0, 0);
 		
-		//Williston Hall floor 1
+		//Williston Hall floor 1 ------------------------------ have map
 		willistonHall.put(1, "");
 		willists1.put(0, 0);
 		
-		//Williston Hall floor 2
+		//Williston Hall floor 2 ------------------------------ have map
 		willistonHall.put(2, "");
 		willists2.put(0, 0);
 		
-		//Williston Hall floor 3
+		//Williston Hall floor 3 ------------------------------ have map
 		willistonHall.put(3, "");
 		willists3.put(0, 0);
 		
@@ -267,25 +271,21 @@ public class launcher {
 		watsonHall.put(1, "Dobbs Entrance[0], Bathroom(W)[1], Stairs[2], Watson Auditorium[3], Bathroom(M)[4]");
 		wats1.put(0, 0); wats1.put(1, 67); wats1.put(2, 90); wats1.put(3, 115); wats1.put(4, 115);
 		
-		//Watson Hall floor 2
+		//Watson Hall floor 2 ------------------------------ map missinggggggggggggggggggggggggg
 		watsonHall.put(2, "");
 		wats2.put(0, 0);
 		
-		//Watson Hall floor 3
-		watsonHall.put(3, "");
-		wats3.put(0, 0);
-		
 		//***********************************************Beatty Hall**************************************************
-		//Beatty Hall floor 0
+		//Beatty Hall floor 0 ------------------------------ have map
 		beattyHall.put(0, "");
 		beats0.put(0, 0);
 		
-		//Beatty Hall floor 1
+		//Beatty Hall floor 1 ------------------------------ have map
 		beattyHall.put(1, "");
 		beats1.put(0, 0);
 		
 		//Beatty Hall floor 2
-		beattyHall.put(2, "");
+		beattyHall.put(2, "Library[0]");
 		beats2.put(0, 0);
 		
 		//Beatty Hall floor M ------------------------------ have map
@@ -301,11 +301,11 @@ public class launcher {
 		beats4.put(0, 0);
 		
 		//***********************************************Willson Hall**************************************************
-		//Willson Hall floor 1
+		//Willson Hall floor 1 ------------------------------ have map
 		willsonHall.put(1, "");
 		wills1.put(0, 0);
 		
-		//Willson Hall floor 2
+		//Willson Hall floor 2 ------------------------------ have map
 		willsonHall.put(2, "");
 		wills2.put(0, 0);
 		
