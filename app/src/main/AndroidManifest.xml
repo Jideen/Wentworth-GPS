@@ -26,6 +26,10 @@
         <activity
             android:name=".Navigation"
             android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Map_Activity"
+            android:label="@string/title_activity_map_"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

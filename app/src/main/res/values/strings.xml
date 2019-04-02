@@ -30,5 +30,6 @@
     <string-array name="Tudbury_0_Rooms">
         <item></item>
     </string-array>
+    <string name="title_activity_map_">Map_Activity</string>
 </resources>
 
