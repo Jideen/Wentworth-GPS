@@ -356,8 +356,18 @@ public class launcher {
 		beats3.put(30, 339);
 		
 		//Beatty Hall floor 4
-		beattyHall.put(5, "Stairs[0]");
-		beats4.put(0, 0);
+		beattyHall.put(5, "Stairs[0], Bathroom(M)[1], Bathroom[2], Elevator[3], Boardroom 432[4], "
+			       + "Office 414[5], Office 413[6], Office 410[7], Office 409[8], Office 408[9], "
+			       + "Office 407[10], Office 406[11], Office 405[12], Office 404[13], Office 403[14], "
+			       + "Elevator[15], Stairs[16], Study Room 402[17], Lecture Hall 426[18], Classroom 401[19], "
+			       + "Stairs[20], Classroom 421[21], Classroom 420[22], Classroom 419[23], Classroom 418[24], "
+			       + "Office 433[25], Office 433A[26]");
+		beats4.put(0, 0); beats4.put(1, 5); beats4.put(2, 17); beats4.put(3, 24); beats4.put(4, 24);
+		beats4.put(5, 29); beats4.put(6, 34); beats4.put(7, 46); beats4.put(8, 68); beats4.put(9, 78);
+		beats4.put(10, 83); beats4.put(11, 103); beats4.put(12, 108); beats4.put(13, 108); beats4.put(14, 108);
+		beats4.put(15, 115); beats4.put(16, 115); beats4.put(17, 129); beats4.put(18, 178); beats4.put(19, 188);
+		beats4.put(20, 196); beats4.put(21, 211); beats4.put(22, 239); beats4.put(23, 249); beats4.put(24, 249);
+		beats4.put(25, 295); beats4.put(26, 313);
 		
 		//***********************************************Willson Hall**************************************************
 		//Willson Hall floor 1
