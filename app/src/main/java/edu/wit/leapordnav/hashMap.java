@@ -238,12 +238,35 @@ public class launcher {
 		dobs0.put(5, 149); dobs0.put(6, 174); dobs0.put(7, 174); dobs0.put(8, 179);
 		
 		//Dobbs Hall floor 1
-		dobbsHall.put(1, "");
-		dobs1.put(0, 0);
+		dobbsHall.put(1, "Wentworth Hall Entrance[0], Office 102A[1], Office 102B[2], Office 103A[3], Office 103B[4], "
+			      
+			      + "Office 103C[5], Office 103D[6], Bathroom[7], Stairs[8], Office 147[9], "
+			      + "Office 146[10], Office 145[11], Office 144[12], Office 143[13], Office 142[14], "
+			      + "Office 141[15], Office 139[16], Office 140[17], Stairs[18], Office 138[19], "
+			      + "Office 137[20], Office 136[21], Office 135[22], Office 134[23], Office 133[24], "
+			      + "Stairs[25], Conference Room 131[26], Office 128[27], Office 127[28], Office 126[29], "
+			      + "Office 124[30], Office 122[31], Office 120[32], Office 118[33], Office 116[34], "
+			      + "Office 114[35], Office 113[36], Office 112[37], Office 110[38], Office 108[39], "
+			      + "Reception Desk 107[40]");
+		dobs1.put(0, 0); dobs1.put(1, 8); dobs1.put(2, 8); dobs1.put(3, 8); dobs1.put(4, 8);
+		dobs1.put(5, 8); dobs1.put(6, 8); dobs1.put(7, 36); dobs1.put(8, 61); dobs1.put(9, 113);
+		dobs1.put(10, 135); dobs1.put(11, 141); dobs1.put(12, 157); dobs1.put(13, 162); dobs1.put(14, 177);
+		dobs1.put(15, 182); dobs1.put(16, 187); dobs1.put(17, 190); dobs1.put(18, 195); dobs1.put(19, 218);
+		dobs1.put(20, 223); dobs1.put(21, 227); dobs1.put(22, 227); dobs1.put(23, 242); dobs1.put(24, 242);
+		dobs1.put(25, 255); dobs1.put(26, 270); dobs1.put(27, 275); dobs1.put(28, 280); dobs1.put(29, 290);
+		dobs1.put(30, 302); dobs1.put(31, 305); dobs1.put(32, 305); dobs1.put(33, 320); dobs1.put(34, 330);
+		dobs1.put(35, 340); dobs1.put(36, 340); dobs1.put(37, 350); dobs1.put(38, 360); dobs1.put(39, 370);
+		dobs1.put(40, 390);
 		
 		//Dobbs Hall floor 2
-		dobbsHall.put(2, "");
-		dobs2.put(0, 0);
+		dobbsHall.put(2, "Wentworth Hall Entrance[0], Office 201[1], Stairs[2], Classroom 203[3], Office 204[4], "
+			      + "Office 220[5], Office 219[6], Office 218[7], Office 205[8], Office 206[9], "
+			      + "Office 217[10], Office 207[11], Office 208[12], Lab 215C[13], Office 209[14], "
+			      + "Stairs[15], Office 210[16], Exit[17]");
+		dobs2.put(0, 0); dobs2.put(1, 43); dobs2.put(2, 58); dobs2.put(3, 58); dobs2.put(4, 68);
+		dobs2.put(5, 73); dobs2.put(6, 78); dobs2.put(7, 95); dobs2.put(8, 95); dobs2.put(9, 100);
+		dobs2.put(10, 111); dobs2.put(11, 126); dobs2.put(12, 131); dobs2.put(13, 147); dobs2.put(14, 157);
+		dobs2.put(15, 159); dobs2.put(16, 162); dobs2.put(17, 172);
 		
 		//Dobbs Hall floor 3
 		dobbsHall.put(3, "Exit[0], Office 301[1], Stairs[2], Classroom 302[3], Lab 303[4], "
@@ -291,27 +314,49 @@ public class launcher {
 		
 		//***********************************************Beatty Hall**************************************************
 		//Beatty Hall floor 0
-		beattyHall.put(0, "");
-		beats0.put(0, 0);
+		beattyHall.put(0, "Stairs[0], Recreation Room 006[1], Elevator[2], Information Desk[3], Gym[4], "
+			       + "New Student Program Reception Room[5], Intercultural Center[6], Bookstore[7], Student Leadership Program Reception Room[8]");
+		beats0.put(0, 0); beats0.put(1, 0); beats0.put(2, 10); beats0.put(3, 10); beats0.put(4, 23);
+		beats0.put(5, 82); beats0.put(6, 104); beats0.put(7, 104); beats0.put(8, 114);
 		
 		//Beatty Hall floor 1
-		beattyHall.put(1, "");
-		beats1.put(0, 0);
+		beattyHall.put(1, "Stairs[0], Bathroom(M)[1], Stairs[2], Cafeteria[3], Elevator[4], "
+			       + "Stairs[5], Multi-Purpose Room 119[6]");
+		beats1.put(0, 0); beats1.put(1, 0); beats1.put(2, 10); beats1.put(3, 10); beats1.put(4, 20);
+		beats1.put(5, 142); beats1.put(6, 192);
 		
 		//Beatty Hall floor 2
 		beattyHall.put(2, "Library[0]");
 		beats2.put(0, 0);
 		
 		//Beatty Hall floor M
-		beattyHall.put(3, "");
-		beatsM.put(0, 0);
+		beattyHall.put(3, "Stairs to Library[0], Office M209[1], Office M210[2], Office M211A[3], Sec/Rec M211[4], "
+			       + "Office M207[5], Office M208[6], Elevator[7], Stairs[8], Reading Room M212B[9], "
+			       + "Stairs[10], Elevator[11], Office M212A[12], Service Room M212AA[13], Office M212AB[14], "
+			       + "Study Room M212[15], Stairs[16]");
+		beatsM.put(0, 0); beatsM.put(1, 0); beatsM.put(2, 0); beatsM.put(3, 0); beatsM.put(4, 0);
+		beatsM.put(5, 49); beatsM.put(6, 49); beatsM.put(7, 64); beatsM.put(8, 79); beatsM.put(9, 161);
+		beatsM.put(10, 161); beatsM.put(11, 161); beatsM.put(12, 219); beatsM.put(13, 219); beatsM.put(14, 225);
+		beatsM.put(15, 261); beatsM.put(16, 271);
 		
 		//Beatty Hall floor 3
-		beattyHall.put(4, "");
-		beats3.put(0, 0);
+		beattyHall.put(4, "Stairs[0], Bathroom(M)[1], Bathroom(W)[2], Office 314[3], Office 313[4], "
+			       + "Office 312[5], Office 311[6], Office 310[7], Office 309[8], Office 308[9], "
+			       + "Office 306[10], Office 305[11], Office 304[12], Stairs[13], Elevator[14], "
+			       + "PC Lab 303[15], PC lab 302[16], MAC lab 301[17], Stairs[18], Office 327[19], "
+			       + "Office 327B[20], Office 328[21], Office 328A[22], Office 329[23], Office 322[24], "
+			       + "Office 320[25], Office 320B[26], Office 320C[27], Office 320D[28], Open Lab 318[29], "
+			       + "Elevator[30]");
+		beats3.put(0, 0); beats3.put(1, 5); beats3.put(2, 17); beats3.put(3, 29); beats3.put(4, 34);
+		beats3.put(5, 46); beats3.put(6, 68); beats3.put(7, 78); beats3.put(8, 83); beats3.put(9, 103);
+		beats3.put(10, 108); beats3.put(11, 108); beats3.put(12, 108); beats3.put(13, 115); beats3.put(14, 115);
+		beats3.put(15, 129); beats3.put(16, 166); beats3.put(17, 196); beats3.put(18, 196); beats3.put(19, 224);
+		beats3.put(20, 224); beats3.put(21, 224); beats3.put(22, 224); beats3.put(23, 224); beats3.put(24, 270);
+		beats3.put(25, 270); beats3.put(26, 270); beats3.put(27, 270); beats3.put(28, 270); beats3.put(29, 285);
+		beats3.put(30, 339);
 		
 		//Beatty Hall floor 4
-		beattyHall.put(5, "");
+		beattyHall.put(5, "Stairs[0]");
 		beats4.put(0, 0);
 		
 		//***********************************************Willson Hall**************************************************
