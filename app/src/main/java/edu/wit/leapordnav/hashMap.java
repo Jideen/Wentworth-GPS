@@ -278,20 +278,22 @@ public class launcher {
 		
 		//***********************************************Williston Hall**************************************************
 		//Williston Hall floor 0
-		willistonHall.put(0, "");
-		willists0.put(0, 0);
+		willistonHall.put(0, "Rubenstein Entrance[0], Exit[1], Lab 001[2], Stairs[3], Bathroom(W)[4], "
+				  + "Wentworth Hall Entrance[5]");
+		willists0.put(0, 0); willists0.put(1, 60); willists0.put(2, 66); willists0.put(3, 90); willists0.put(4, 125);
+		willists0.put(5, 150);
 		
 		//Williston Hall floor 1
-		willistonHall.put(1, "");
+		willistonHall.put(1, "Student Service Center[0]");
 		willists1.put(0, 0);
 		
 		//Williston Hall floor 2
-		willistonHall.put(2, "");
-		willists2.put(0, 0);
+		willistonHall.put(2, "Human Resources[0], Executive Offices[]");
+		willists2.put(0, 0); willists2.put(1, 0);
 		
 		//Williston Hall floor 3
-		willistonHall.put(3, "");
-		willists3.put(0, 0);
+		willistonHall.put(3, "Business Service[0], Controller's Office[1], Institutional Advancement[2], Purchasing[3]");
+		willists3.put(0, 0); willists3.put(1, 0); willists3.put(2, 0); willists3.put(3, 0);
 		
 		//***********************************************Watson Hall**************************************************
 		//Watson Hall floor 0
