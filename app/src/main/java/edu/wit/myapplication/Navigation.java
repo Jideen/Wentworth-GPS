@@ -35,7 +35,6 @@ public class Navigation extends AppCompatActivity {
         building2 = (Spinner) findViewById(R.id.buildings_spinner2);
         floor2 = (Spinner) findViewById(R.id.floor_spinner2);
         room2 = (Spinner) findViewById(R.id.room_spinner2);
-        WeightedGraph.main();
         building.setAdapter(SpinnerPopulate.Populate(this, R.array.building_names));
         building.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override

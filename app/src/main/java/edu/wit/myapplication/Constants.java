@@ -8,28 +8,113 @@ public class Constants {
     }
 
     public static class Buildings {
-        public static final Building Annex = new Building(-71.094217, 42.335399, "Annex", 10);
-        public static final Building EvansWay = new Building(-71.097403, 42.337800, "EvansWay", 1);
-        public static final Building Watson = new Building(-71.094804, 42.336274, "Watson", 7);
-        public static final Building Beatty = new Building(-71.095534, 42.335615, "Beatty", 9);
-        public static final Building Rubenstein = new Building(-71.095795, 42.336600, "Rubenstein", 4);
-        public static final Building Kingman = new Building(-71.095915, 42.336389, "Kingman", 5);
-        public static final Building Dobbs = new Building(-71.094458, 42.336568, "Dobbs", 8);
-        public static final Building Williston = new Building(-71.095212, 42.336896, "Williston", 3);
-        public static final Building Willson = new Building(-71.095816, 42.336104, "Willson", 6);
-        public static final Building Wentworth = new Building(-71.094927, 42.336629, "Wentworth", 2);
-        public static final Building Irall = new Building(-71.093813, 42.336102, "Irall", 11);
-        public static final Building Tudbury = new Building(71.097840, 42.337356, "Tudbury", 0);
-        public static final Building[] BUILDINGS = new Building[]{Annex, EvansWay, Watson, Beatty, Rubenstein, Kingman, Dobbs, Williston, Willson, Wentworth, Irall, Tudbury};
-        public static final Building[] AnnexN = {Irall, Watson, Beatty, Willson, Tudbury};
+        public static Building Annex = new Building(-71.094217, 42.335399, "Annex", 0, false);
+        public static Building EvansWay = new Building(-71.097403, 42.337800, "EvansWay", 1, false);
+        public static Building Watson = new Building(-71.094804, 42.336274, "Watson", 2, false);
+        public static Building Beatty = new Building(-71.095534, 42.335615, "Beatty", 3, false);
+        public static Building Rubenstein = new Building(-71.095795, 42.336600, "Rubenstein", 4, false);
+        public static Building Kingman = new Building(-71.095915, 42.336389, "Kingman", 5, false);
+        public static Building Dobbs = new Building(-71.094458, 42.336568, "Dobbs", 6, false);
+        public static Building Williston = new Building(-71.095212, 42.336896, "Williston", 7, false);
+        public static Building Willson = new Building(-71.095816, 42.336104, "Willson", 8, false);
+        public static Building Wentworth = new Building(-71.094927, 42.336629, "Wentworth", 9, false);
+        public static Building Irall = new Building(-71.093813, 42.336102, "Irall", 10, false);
+        public static Building Tudbury = new Building(-71.097840, 42.337356, "Tudbury", 11, false);
+
+        public static final Building[] AnnexN = {Irall, Beatty, Willson, Tudbury};
+        public static final int[] AnnexWeights = {79, 136, 171, 525};
+
         public static final Building[] EvansWayN = {Tudbury};
-        public static final Building[] WatsonN = {Dobbs, Wentworth, Beatty, Irall, Tudbury, Kingman};
+        public static final int[] EvansWayWeights = {61};
+
+        public static final Building[] WatsonN = {Dobbs, Beatty, Irall, Kingman};
+        public static final int[] WatsonWeights = {47, 99, 98, 107};
+
         public static final Building[] BeattyN = {Annex, Tudbury, Willson, Watson};
+        public static final int[] BeattyWeights = {136, 284, 57, 99};
+
         public static final Building[] RubensteinN = {Kingman, Williston, Wentworth};
-        public static final Building[] KingmanN = {Willson, Wentworth, Rubenstein};
-        public static final Building[] DobbsN = {Annex, Tudbury, Willson, Watson};
-        public static final Building[] TudburyN = {Annex, EvansWay, Beatty, Willson, Watson};
+        public static final int[] RubensteinWeights = {21, 78, 95};
+
+        public static final Building[] KingmanN = {Willson, Wentworth, Rubenstein, Watson};
+        public static final int[] KingmanWeights = {28, 90, 21, 107};
+
+        public static final Building[] DobbsN = {Wentworth, Watson};
+        public static final int[] DobbsWeights = {52, 47};
+
+        public static final Building[] WillistonN = {Wentworth, Rubenstein};
+        public static final int[] WillistonWeights = {41, 78};
+
+        public static final Building[] WillsonN = {Beatty, Kingman, Annex, Tudbury};
+        public static final int[] WillsonWeights = {57, 28, 171, 232};
+
+        public static final Building[] WentworthN = {Rubenstein, Williston, Dobbs, Kingman};
+        public static final int[] WentworthWeights = {95, 41, 52, 90};
+
+        public static final Building[] IrallN = {Annex, Watson};
+        public static final int[] IrallWeights = {79, 98};
+
+        public static final Building[] TudburyN = {Annex, EvansWay, Beatty, Willson};
+        public static final int[] TudburyWeights = {525, 61, 284, 232};
+
+
+        public static final Building[] BUILDINGS = new Building[]{Annex, EvansWay, Watson, Beatty, Rubenstein, Kingman, Dobbs, Williston, Willson, Wentworth, Irall, Tudbury};
+        public static final Building[][] neighborArrays = {AnnexN, EvansWayN, WatsonN, BeattyN, RubensteinN, KingmanN, DobbsN,
+                WillistonN, WillsonN, WentworthN, TudburyN, IrallN};
+        public static final int[][] weightArrays = {AnnexWeights, EvansWayWeights, WatsonWeights, BeattyWeights,
+                RubensteinWeights, KingmanWeights, DobbsWeights, WillistonWeights, WillistonWeights, WentworthWeights,
+                TudburyWeights, IrallWeights};
 
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
