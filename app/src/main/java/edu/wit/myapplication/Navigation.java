@@ -27,15 +27,6 @@ public class Navigation extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
-        c = this;
-        buildingArray = getResources().getStringArray(R.array.building_ids);
-        building = (Spinner) findViewById(R.id.buildings_spinner);
-        floor = (Spinner) findViewById(R.id.floor_spinner);
-        room = (Spinner) findViewById(R.id.room_spinner);
-        building2 = (Spinner) findViewById(R.id.buildings_spinner2);
-        floor2 = (Spinner) findViewById(R.id.floor_spinner2);
-        room2 = (Spinner) findViewById(R.id.room_spinner2);
-        building.setAdapter(SpinnerPopulate.Populate(this, R.array.building_names));
         building.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
@@ -81,7 +72,7 @@ public class Navigation extends AppCompatActivity {
 
             }
         });
-        building2.setAdapter(SpinnerPopulate.Populate(this, R.array.building_names));
+
         building2.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
