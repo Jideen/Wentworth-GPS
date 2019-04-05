@@ -1,12 +1,14 @@
 package edu.wit.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -21,10 +23,16 @@ public class Navigation extends AppCompatActivity {
     Context c;
     ArrayList<String> floors, floors2, rooms, rooms2;
 
+    public void buttonCode(View v) {
+        Button b = (Button) v;
+        Intent toMap = new Intent(this, mapActivity.class);
+        startActivity(toMap);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
+// TODO: move
+//        Pathfinder p = new Pathfinder();
+//        p.run();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         c = this;
@@ -650,6 +658,12 @@ public class Navigation extends AppCompatActivity {
             building.setSelection(startPos);
 
         }
+        final Button launch = findViewById(R.id.button7);
+        launch.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                buttonCode(v);
+            }
+        });
 
     }
 

@@ -149,10 +149,12 @@ public class Pathfinder {
         tud.addDestination(evw, 61);
         tud.addDestination(bea, 284);
         tud.addDestination(wil, 232);
-        calculateShortestPathFromSource(tud);
+        Vertex c = tud;
+        calculateShortestPathFromSource(c);
         StringBuilder s = new StringBuilder();
-        Vertex v = wen;
-        Vertex w = anx;
+        Vertex v = ira;
+        //Vertex w = anx;
+        //s.append(c.name+",");
         for (int i = 0; i < v.shortestPath.size(); i++) {
             s.append(v.shortestPath.get(i).alias.name);
             s.append(", ");
