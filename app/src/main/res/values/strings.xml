@@ -16,7 +16,10 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_navigation">Navigation</string>
     <string name="test">test</string>
+    <string name="top_png_for_navigation">Top PNG for navigation</string>
+    <string name="nav_title">nav_title</string>
     <string-array name="building_names">
+        <item>Building</item>
         <item>Annex</item>
         <item>Evans Way</item>
         <item>Main Building</item>
@@ -75,9 +78,6 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
-    </string-array>
-    <string-array name="empty_Floors">
-        <item>Select a building</item>
     </string-array>
 
     <!--Add arrays for each floor of each building-->
@@ -250,9 +250,7 @@
         <item>3</item>
         <item>4</item>
     </string-array>
-    <string-array name="empty_0_Rooms">
-        <item>Select a floor</item>
-    </string-array>
+
     <!--Add arrays for each floor of each building-->
     <!-- Format: {Building_name}_{FloorNum}_Rooms -->
     <string-array name="Tudbury_0_Rooms">
