@@ -20,9 +20,6 @@ public class Building {
         id = i;
         isIndexed = b;
         switch (building) {
-            case "Annex":
-                neighbors = Constants.Buildings.AnnexN;
-                break;
             case "EvansWay":
                 neighbors = Constants.Buildings.EvansWayN;
                 break;
@@ -49,9 +46,6 @@ public class Building {
                 break;
             case "Wentworth":
                 neighbors = Constants.Buildings.WentworthN;
-                break;
-            case "Irall":
-                neighbors = Constants.Buildings.IrallN;
                 break;
             case "Tudbury":
                 neighbors = Constants.Buildings.TudburyN;

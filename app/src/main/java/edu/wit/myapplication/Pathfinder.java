@@ -38,15 +38,6 @@ public class Pathfinder {
         public Map<Vertex, Integer> getAdjacentVerts() {
             return adjacentVerts;
         }
-//        public void getNeighbors(){
-//            this.neighborArray = Constants.Buildings.neighborArrays[this.id];
-//            this.neighbors = Constants.Buildings.neighborArrays[this.id].length;
-//            for(int i = 0; i<neighbors; i++){
-//                for(int j  = 0; j<Constants.Buildings.weightArrays[i].length;j++) {
-//                    this.addDestination(new Vertex(neighborArray[i]),Constants.Buildings.weightArrays[i][j]);
-//                }
-//            }
-//        }
     }
 
     public static void CalculateMinimumDistance(Vertex evaluationNode,
@@ -94,8 +85,9 @@ public class Pathfinder {
         }
     }
 
-    public void run() {
-        Pathfinder.Vertex Annex = new Pathfinder.Vertex(Constants.Buildings.Annex);
+    public String run(String source, String dest) {
+        Vertex Start = new Vertex(Constants.Buildings.EvansWay);
+        Vertex Dest = new Vertex(Constants.Buildings.Beatty);
         Pathfinder.Vertex EvansWay = new Pathfinder.Vertex(Constants.Buildings.EvansWay);
         Pathfinder.Vertex Watson = new Pathfinder.Vertex(Constants.Buildings.Watson);
         Pathfinder.Vertex Beatty = new Pathfinder.Vertex(Constants.Buildings.Beatty);
@@ -105,22 +97,85 @@ public class Pathfinder {
         Pathfinder.Vertex Williston = new Pathfinder.Vertex(Constants.Buildings.Williston);
         Pathfinder.Vertex Willson = new Pathfinder.Vertex(Constants.Buildings.Willson);
         Pathfinder.Vertex Wentworth = new Pathfinder.Vertex(Constants.Buildings.Wentworth);
-        Pathfinder.Vertex Irall = new Pathfinder.Vertex(Constants.Buildings.Irall);
         Pathfinder.Vertex Tudbury = new Pathfinder.Vertex(Constants.Buildings.Tudbury);
-        run(Annex, EvansWay, Watson, Beatty, Rubenstein, Kingman, Dobbs, Williston, Willson, Wentworth, Tudbury, Irall);
+        switch (source) {
+            case "evw":
+                Start = EvansWay;
+                break;
+            case "wat":
+                Start = Watson;
+                break;
+            case "bty":
+                Start = Beatty;
+                break;
+            case "rub":
+                Start = Rubenstein;
+                break;
+            case "king":
+                Start = Kingman;
+                break;
+            case "dobb":
+                Start = Dobbs;
+                break;
+            case "will":
+                Start = Williston;
+                break;
+            case "wils":
+                Start = Willson;
+                break;
+            case "went":
+                Start = Wentworth;
+                break;
+            case "tdby":
+                Start = Tudbury;
+                break;
+            case "empty":
+                Start = EvansWay;
+                break;
+        }
+        switch (dest) {
+            case "evw":
+                Dest = EvansWay;
+                break;
+            case "wat":
+                Dest = Watson;
+                break;
+            case "bty":
+                Dest = Beatty;
+                break;
+            case "rub":
+                Dest = Rubenstein;
+                break;
+            case "king":
+                Dest = Kingman;
+                break;
+            case "dobb":
+                Dest = Dobbs;
+                break;
+            case "will":
+                Dest = Williston;
+                break;
+            case "wils":
+                Dest = Willson;
+                break;
+            case "went":
+                Dest = Wentworth;
+                break;
+            case "tdby":
+                Dest = Tudbury;
+                break;
+            case "empty":
+                Dest = Beatty;
+                break;
+        }
+        return run( EvansWay, Watson, Beatty, Rubenstein, Kingman, Dobbs, Williston, Willson, Wentworth, Tudbury,Start,Dest);
     }
 
-    public static void run(Vertex anx, Vertex evw, Vertex wat, Vertex bea, Vertex rub, Vertex kin, Vertex dob, Vertex wili, Vertex wil, Vertex wen, Vertex tud, Vertex ira) {
-        anx.addDestination(ira, 79);
-        anx.addDestination(bea, 136);
-        anx.addDestination(wil, 171);
-        anx.addDestination(tud, 525);
+    public static String run(Vertex evw, Vertex wat, Vertex bea, Vertex rub, Vertex kin, Vertex dob, Vertex wili, Vertex wil, Vertex wen, Vertex tud, Vertex source, Vertex dest) {
         evw.addDestination(tud, 61);
         wat.addDestination(dob, 47);
         wat.addDestination(bea, 99);
-        wat.addDestination(ira, 98);
         wat.addDestination(wat, 107);
-        bea.addDestination(anx, 136);
         bea.addDestination(tud, 284);
         bea.addDestination(wil, 57);
         bea.addDestination(wat, 99);
@@ -137,30 +192,27 @@ public class Pathfinder {
         wili.addDestination(rub, 78);
         wil.addDestination(bea, 57);
         wil.addDestination(kin, 28);
-        wil.addDestination(anx, 171);
         wil.addDestination(tud, 232);
         wen.addDestination(rub, 95);
         wen.addDestination(wili, 41);
         wen.addDestination(dob, 52);
         wen.addDestination(kin, 90);
-        ira.addDestination(anx, 79);
-        ira.addDestination(wat, 98);
-        tud.addDestination(anx, 525);
         tud.addDestination(evw, 61);
         tud.addDestination(bea, 284);
         tud.addDestination(wil, 232);
-        Vertex c = tud;
-        calculateShortestPathFromSource(c);
+        Vertex src = source;
+        Vertex dst = dest;
+        calculateShortestPathFromSource(src);
         StringBuilder s = new StringBuilder();
-        Vertex v = ira;
         //Vertex w = anx;
         //s.append(c.name+",");
-        for (int i = 0; i < v.shortestPath.size(); i++) {
-            s.append(v.shortestPath.get(i).alias.name);
+        for (int i = 0; i < dst.shortestPath.size(); i++) {
+            s.append(dst.shortestPath.get(i).alias.name);
             s.append(", ");
         }
-        s.append(v.name);
+        s.append(dst.name);
         System.out.println(String.format("%s", s));
         Log.i("Path result", String.format("%s", s));
+        return s.toString();
     }
 }
