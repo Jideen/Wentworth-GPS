@@ -25,7 +25,7 @@ public class Main2Activity extends AppCompatActivity {
 
     public void buttonCode(View v) {
         Button b = (Button) v;
-        Intent toMap = new Intent(this, Map.class);
+        Intent toMap = new Intent(this, MapActivity.class);
         startActivity(toMap);
     }
     @Override

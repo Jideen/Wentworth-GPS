@@ -48,7 +48,7 @@ public class Mapper {
             }
         }
         if (Math.abs(p.getX() - dest.getX()) <= Constants.Mapper.X_THRESH) {
-            System.out.printf("Map successfully generated!%n");
+            System.out.printf("MapActivity successfully generated!%n");
             return 0.12345;
         }
         return 0;
