@@ -107,28 +107,34 @@ public class launcher {
 		tuds1.put(15,213);
 
 		//Tudbury floor 2A
-		tudbury.put(2, "");
-		tuds2A.put(0, 0);
+		tudbury.put(2, "Suite 201[0], Stairs[1], Suite 202[2], Suite 203[3], Elevator[4], "
+			    + "Suite 204[5], Stairs[6], Suite 205[7]");
+		tuds2A.put(0, 0); tuds2A.put(1, 3); tuds2A.put(2, 18); tuds2A.put(3, 30); tuds2A.put(4, 38);
+		tuds2A.put(5, 63); tuds2A.put(6, 76); tuds2A.put(7, 79);
 		
 		//Tudbury floor 2B
-		tudbury.put(3, "");
-		tuds2B.put(0, 0);
+		tudbury.put(3, "Stairs[0], Elevator[1], Suite 207[2], Stairs[3], Suite 209[4]");
+		tuds2B.put(0, 0); tuds2B.put(1, 20); tuds2B.put(2, 43); tuds2B.put(3, 78); tuds2B.put(4, 81);
 		
 		//Tudbury floor 3A
-		tudbury.put(4, "");
-		tuds3A.put(0, 0);
+		tudbury.put(4,, "Suite 301[0], Stairs[1], Suite 302[2], Suite 303[3], Elevator[4], "
+			    + "Suite 304[5], Stairs[6], Suite 305[7]");
+		tuds3A.put(0, 0); tuds3A.put(1, 3); tuds3A.put(2, 18); tuds3A.put(3, 30); tuds3A.put(4, 38);
+		tuds3A.put(5, 63); tuds3A.put(6, 76); tuds3A.put(7, 79);
 		
 		//Tudbury floor 3B
-		tudbury.put(5, "");
-		tuds3B.put(0, 0);
+		tudbury.put(5, "Stairs[0], Elevator[1], Suite 307[2], Stairs[3], Suite 309[4]");
+		tuds3B.put(0, 0); tuds3B.put(1, 20); tuds3B.put(2, 43); tuds3B.put(3, 78); tuds3B.put(4, 81);
 
 		//Tudbury floor 4A
-		tudbury.put(6, "");
-		tuds4A.put(0, 0);
+		tudbury.put(6, "Suite 401[0], Stairs[1], Suite 402[2], Suite 403[3], Elevator[4], "
+			    + "Suite 404[5], Stairs[6], Suite 405[7]");
+		tuds4A.put(0, 0); tuds4A.put(1, 3); tuds4A.put(2, 18); tuds4A.put(3, 30); tuds4A.put(4, 38);
+		tuds4A.put(5, 63); tuds4A.put(6, 76); tuds4A.put(7, 79);
 		
 		//Tudbury floor 4B
-		tudbury.put(7, "");
-		tuds4B.put(0, 0);
+		tudbury.put(7, "Stairs[0], Elevator[1], Suite 407[2], Stairs[3], Suite 409[4]");
+		tuds4B.put(0, 0); tuds4B.put(1, 20); tuds4B.put(2, 43); tuds4B.put(3, 78); tuds4B.put(4, 81);
 		
 		//***********************************************Wentworth Hall**********************************************
 		//Wentworth Hall floor 0
