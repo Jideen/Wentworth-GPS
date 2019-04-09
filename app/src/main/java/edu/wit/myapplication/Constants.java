@@ -210,12 +210,25 @@ public class Constants {
 
         //***********************************************Willson Hall**************************************************
         //Willson Hall floor 1
-        static Point2D Will1_1 = new Point2D(0, 0, "");
-        static Point2D[] Willson_1_Items = new Point2D[]{};
+        static Point2D Will1_1 = new Point2D(337, 0, "Exit");
+        static Point2D Will1_2 = new Point2D(337, 130, "Kingman Entrance");
+        static Point2D Will1_3 = new Point2D(240, 130, "Office 108");
+        static Point2D Will1_4 = new Point2D(240, 130, "Classroom 105");
+        static Point2D Will1_5 = new Point2D(208, 130, "Bathroom(M)");
+        static Point2D Will1_6 = new Point2D(141, 130, "Classroom 103");
+        static Point2D Will1_7 = new Point2D(120, 130, "Classroom 102");
+        static Point2D Will1_8 = new Point2D(120, 169, "Office 101");
+        static Point2D Will1_9 = new Point2D(120, 169, "Stairs");
+        static Point2D Will1_10 = new Point2D(120, 185, "Exit");
+        static Point2D[] Willson_1_Items = new Point2D[]{Will1_1, Will1_2, Will1_3, Will1_4, Will1_5, Will1_6, Will1_7, Will1_8, Will1_9, Will1_10};
 
         //Willson Hall floor 1
-        static Point2D Will2_1 = new Point2D(0, 0, "");
-        static Point2D[] Willson_2_Items = new Point2D[]{};
+        static Point2D Will2_1 = new Point2D(130, 157, "Stairs");
+        static Point2D Will2_2 = new Point2D(130, 157, "Office 201");
+        static Point2D Will2_3 = new Point2D(130, 157, "Lab 204");
+        static Point2D Will2_4 = new Point2D(130, 157, "Lab 203");
+        static Point2D Will2_5 = new Point2D(130, 157, "Lab 202");
+        static Point2D[] Willson_2_Items = new Point2D[]{Will2_1, Will2_2, Will2_3, Will2_4, Will2_5};
     }
 
     public static class Buildings {
