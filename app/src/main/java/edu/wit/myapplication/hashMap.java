@@ -1,4 +1,4 @@
-package map;
+package edu.wit.myapplication;
 
 import java.util.HashMap;
 
