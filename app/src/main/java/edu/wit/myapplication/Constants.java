@@ -154,16 +154,37 @@ public class Constants {
 
         //***********************************************Rubenstein Hall**************************************************
         //Rubenstein Hall floor 0
-        static Point2D Rub0_1 = new Point2D(0, 0, "");
-        static Point2D[] Rubenstein_0_Items = new Point2D[]{};
+        static Point2D Rub0_1 = new Point2D(0, 25, "Kingman Entrance");
+        static Point2D Rub0_2 = new Point2D(55, 25, "Exit");
+        static Point2D Rub0_3 = new Point2D(55, 25, "Bathroom(W)");
+        static Point2D Rub0_4 = new Point2D(155, 25, "Exit");
+        static Point2D Rub0_5 = new Point2D(173, 70, "Corner boi");
+        static Point2D Rub0_6 = new Point2D(173, 115, "Lab 005");
+        static Point2D Rub0_7 = new Point2D(320, 115, "Student Affairs Office 003");
+        static Point2D Rub0_8 = new Point2D(365, 115, "Williston Entrance");
+        static Point2D[] Rubenstein_0_Items = new Point2D[]{Rub0_1, Rub0_2, Rub0_3, Rub0_4, Rub0_5, Rub0_6, Rub0_7, Rub0_8};
 
         //Rubenstein Hall floor 1
-        static Point2D Rub1_1 = new Point2D(0, 0, "");
-        static Point2D[] Rubenstein_1_Items = new Point2D[]{};
+        static Point2D Rub1_1 = new Point2D(60, 40, "Stairs");
+        static Point2D Rub1_2 = new Point2D(60, 40, "Classroom 103");
+        static Point2D Rub1_3 = new Point2D(60, 112, "Lab 101");
+        static Point2D Rub1_4 = new Point2D(130, 112, "Stairs");
+        static Point2D Rub1_5 = new Point2D(182, 112, "Classroom 104");
+        static Point2D Rub1_6 = new Point2D(326, 112, "Classroom 105");
+        static Point2D Rub1_7 = new Point2D(345, 112, "Williston Entrance");
+        static Point2D[] Rubenstein_1_Items = new Point2D[]{Rub1_1, Rub1_2, Rub1_3, Rub1_4, Rub1_5, Rub1_6, Rub1_7};
 
         //Rubenstein Hall floor 2
-        static Point2D Rub2_1 = new Point2D(0, 0, "");
-        static Point2D[] Rubenstein_2_Items = new Point2D[]{};
+        static Point2D Rub2_1 = new Point2D(76, 40, "Stairs");
+        static Point2D Rub2_2 = new Point2D(76, 40, "Classroom 201");
+        static Point2D Rub2_3 = new Point2D(76, 53, "Office 202A");
+        static Point2D Rub2_4 = new Point2D(76, 150, "Stairs");
+        static Point2D Rub2_5 = new Point2D(76, 190, "Office 202");
+        static Point2D Rub2_6 = new Point2D(76, 190, "Office 203");
+        static Point2D Rub2_7 = new Point2D(76, 190, "Office 207");
+        static Point2D Rub2_8 = new Point2D(115, 190, "Office 208");
+        static Point2D Rub2_9 = new Point2D(133, 190, "Office 209");
+        static Point2D[] Rubenstein_2_Items = new Point2D[]{Rub2_1, Rub2_2, Rub2_3, Rub2_4, Rub2_5, Rub2_6, Rub2_7, Rub2_8, Rub2_9};
 
         //***********************************************Kingman Hall**************************************************
         //Kingman Hall floor 1
