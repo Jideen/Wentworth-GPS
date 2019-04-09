@@ -1,8 +1,8 @@
-package map;
+package edu.wit.myapplication;
 
 import java.util.HashMap;
 
-public class launcher {
+public class hashMap {
 	
 	//Tudbury(Int floors, String rooms[#])
 	static HashMap<Integer, String> tudbury = new HashMap<>();
@@ -17,7 +17,7 @@ public class launcher {
 		static HashMap<Integer, Integer> tuds4B = new HashMap<>();
 
 	//Wentworth Hall(Int floors, String rooms[#])
-	static HashMap<String, String> wentworthHall = new HashMap<>();
+	static HashMap<Integer, String> wentworthHall = new HashMap<>();
 		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> wents0 = new HashMap<>();
 		static HashMap<Integer, Integer> wents1 = new HashMap<>();
@@ -25,7 +25,7 @@ public class launcher {
 		static HashMap<Integer, Integer> wents3 = new HashMap<>();
 	
 	//Evans Way(Int floors, String rooms[#])
-	static HashMap<String, String> evansWay = new HashMap<>();
+	static HashMap<Integer, String> evansWay = new HashMap<>();
 		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> evans0 = new HashMap<>();
 		static HashMap<Integer, Integer> evans1 = new HashMap<>();
@@ -35,20 +35,20 @@ public class launcher {
 		static HashMap<Integer, Integer> evans5 = new HashMap<>();
 
 	//Rubenstein Hall(Int floors, String rooms[#])
-	static HashMap<String, String> rubensteinHall = new HashMap<>();
+	static HashMap<Integer, String> rubensteinHall = new HashMap<>();
 		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> rubens0 = new HashMap<>();
 		static HashMap<Integer, Integer> rubens1 = new HashMap<>();
 		static HashMap<Integer, Integer> rubens2 = new HashMap<>();
 	
 	//Kingman Hall(Int floors, String rooms[#])
-	static HashMap<String, String> kingmanHall = new HashMap<>();
+	static HashMap<Integer, String> kingmanHall = new HashMap<>();
 		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> kings1 = new HashMap<>();
 		static HashMap<Integer, Integer> kings2 = new HashMap<>();
 	
 	//Dobbs Hall(Int floors, String rooms[#])
-	static HashMap<String, String> dobbsHall = new HashMap<>();
+	static HashMap<Integer, String> dobbsHall = new HashMap<>();
 		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> dobs0 = new HashMap<>();
 		static HashMap<Integer, Integer> dobs1 = new HashMap<>();
@@ -56,7 +56,7 @@ public class launcher {
 		static HashMap<Integer, Integer> dobs3 = new HashMap<>();
 	
 	//Williston Hall Hall(Int floors, String rooms[#])
-	static HashMap<String, String> willistonHall = new HashMap<>();
+	static HashMap<Integer, String> willistonHall = new HashMap<>();
 		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> willists0 = new HashMap<>();
 		static HashMap<Integer, Integer> willists1 = new HashMap<>();
@@ -64,14 +64,14 @@ public class launcher {
 		static HashMap<Integer, Integer> willists3 = new HashMap<>();
 	
 	//Watson Hall Hall(Int floors, String rooms[#])
-	static HashMap<String, String> watsonHall = new HashMap<>();
+	static HashMap<Integer, String> watsonHall = new HashMap<>();
 		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> wats0 = new HashMap<>();
 		static HashMap<Integer, Integer> wats1 = new HashMap<>();
 		static HashMap<Integer, Integer> wats2 = new HashMap<>();
 	
 	//Beatty Hall(Int floors, String rooms[#])
-	static HashMap<String, String> beattyHall = new HashMap<>();
+	static HashMap<Integer, String> beattyHall = new HashMap<>();
 	//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> beats0 = new HashMap<>();
 		static HashMap<Integer, Integer> beats1 = new HashMap<>();
@@ -81,7 +81,7 @@ public class launcher {
 		static HashMap<Integer, Integer> beats4 = new HashMap<>();
 	
 	//Willson Hall(Int floors, String rooms[#])
-	static HashMap<String, String> willsonHall = new HashMap<>();
+	static HashMap<Integer, String> willsonHall = new HashMap<>();
 		//floors(Int rooms[#], Int [Distance x in ft] )
 		static HashMap<Integer, Integer> wills1 = new HashMap<>();
 		static HashMap<Integer, Integer> wills2 = new HashMap<>();	
@@ -117,7 +117,7 @@ public class launcher {
 		tuds2B.put(0, 0); tuds2B.put(1, 20); tuds2B.put(2, 43); tuds2B.put(3, 78); tuds2B.put(4, 81);
 		
 		//Tudbury floor 3A
-		tudbury.put(4,, "Suite 301[0], Stairs[1], Suite 302[2], Suite 303[3], Elevator[4], "
+		tudbury.put(4, "Suite 301[0], Stairs[1], Suite 302[2], Suite 303[3], Elevator[4], "
 			    + "Suite 304[5], Stairs[6], Suite 305[7]");
 		tuds3A.put(0, 0); tuds3A.put(1, 3); tuds3A.put(2, 18); tuds3A.put(3, 30); tuds3A.put(4, 38);
 		tuds3A.put(5, 63); tuds3A.put(6, 76); tuds3A.put(7, 79);
