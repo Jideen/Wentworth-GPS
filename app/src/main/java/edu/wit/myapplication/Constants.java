@@ -15,13 +15,13 @@ public class Constants {
 
         //***********************************************Wentworth Hall**********************************************
         //Wentworth Hall floor 0
-        static Point2D Went0_1 = new Point2D(0, 174, "Dobb Entrance");
-        static Point2D Went0_2 = new Point2D(123, 174, "Lab 007");
-        static Point2D Went0_3 = new Point2D(210, 174, "Classroom 010");
-        static Point2D Went0_4 = new Point2D(259, 174, "Elevator");
-        static Point2D Went0_5 = new Point2D(467, 174, "Lab 003");
-        static Point2D Went0_6 = new Point2D(530, 174, "Lab 004");
-        static Point2D Went0_7 = new Point2D(650, 174, "Williston Entrance");
+        static Point2D Went0_1 = new Point2D(0, 164, "Dobb Entrance");
+        static Point2D Went0_2 = new Point2D(108, 164, "Lab 007");
+        static Point2D Went0_3 = new Point2D(195, 164, "Classroom 010");
+        static Point2D Went0_4 = new Point2D(239, 164, "Elevator");
+        static Point2D Went0_5 = new Point2D(467, 166, "Lab 003");
+        static Point2D Went0_6 = new Point2D(530, 169, "Lab 004");
+        static Point2D Went0_7 = new Point2D(650, 170, "Williston Entrance");
 
         static Point2D[] Wentworth_0_Items = new Point2D[]{Went0_1, Went0_2, Went0_3, Went0_4, Went0_5, Went0_6, Went0_7};
 
@@ -188,12 +188,30 @@ public class Constants {
 
         //***********************************************Kingman Hall**************************************************
         //Kingman Hall floor 1
-        static Point2D Kin1_1 = new Point2D(0, 0, "");
-        static Point2D[] Kingman_1_Items = new Point2D[]{};
+        static Point2D Kin1_1 = new Point2D(0, 13, "Rubenstein Entrance");
+        static Point2D Kin1_2 = new Point2D(17, 25, "Stairs");
+        static Point2D Kin1_3 = new Point2D(112, 25, "Lab 101");
+        static Point2D Kin1_4 = new Point2D(222, 25, "Lab 102");
+        static Point2D Kin1_5 = new Point2D(274, 25, "Lab 103");
+        static Point2D Kin1_6 = new Point2D(502, 25, "Willson Entrance");
+        static Point2D[] Kingman_1_Items = new Point2D[]{Kin1_1, Kin1_2, Kin1_3, Kin1_4, Kin1_5, Kin1_6};
 
         //Kingman Hall floor 2
-        static Point2D Kin2_1 = new Point2D(0, 0, "");
-        static Point2D[] Kingman_2_Items = new Point2D[]{};
+        static Point2D Kin2_1 = new Point2D(60, 13, "Stairs");
+        static Point2D Kin2_2 = new Point2D(60, 47, "Office 204");
+        static Point2D Kin2_3 = new Point2D(60, 47, "Office 205");
+        static Point2D Kin2_4 = new Point2D(60, 47, "Classroom 201");
+        static Point2D Kin2_5 = new Point2D(75, 47, "Office 206");
+        static Point2D Kin2_6 = new Point2D(110, 47, "Office 207");
+        static Point2D Kin2_7 = new Point2D(143, 47, "Office 208");
+        static Point2D Kin2_8 = new Point2D(177, 47, "Office 209");
+        static Point2D Kin2_9 = new Point2D(205, 47, "Corner boi");
+        static Point2D Kin2_10 = new Point2D(205, 73, "Classroom 202");
+        static Point2D Kin2_11 = new Point2D(205, 80, "Office 210");
+        static Point2D Kin2_12 = new Point2D(205, 95, "Office 211");
+        static Point2D Kin2_13 = new Point2D(205, 95, "Office 212");
+        static Point2D Kin2_14 = new Point2D(250, 95, "Willson Entrance");
+        static Point2D[] Kingman_2_Items = new Point2D[]{Kin2_1, Kin2_2, Kin2_3, Kin2_4, Kin2_5, Kin2_6, Kin2_7, Kin2_8, Kin2_9, Kin2_10, Kin2_11, Kin2_12, Kin2_13, Kin2_14};
 
         //***********************************************Dobbs Hall**************************************************
         //Dobbs Hall floor 0
