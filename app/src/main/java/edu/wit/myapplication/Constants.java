@@ -134,20 +134,37 @@ public class Constants {
 
         //***********************************************Williston Hall**************************************************
         //Williston Hall floor 0
-        static Point2D Willi0_1 = new Point2D(0, 0, "");
-        static Point2D[] Williston_0_Items = new Point2D[]{};
+        static Point2D Willi0_1 = new Point2D(0, 295, "Rubenstein Entrance");
+        static Point2D Willi0_2 = new Point2D(55, 295, "Exit");
+        static Point2D Willi0_3 = new Point2D(55, 295, "Lab 001");
+        static Point2D Willi0_4 = new Point2D(111, 370, "Stairs");
+        static Point2D Willi0_5 = new Point2D(111, 490, "Bathroom(W)");
+        static Point2D Willi0_6 = new Point2D(111, 490, "Office 001A");
+        static Point2D Willi0_7 = new Point2D(111, 545, "Wentworth Hall Entrance");
+        static Point2D[] Williston_0_Items = new Point2D[]{Willi0_1, Willi0_2, Willi0_3, Willi0_4, Willi0_5, Willi0_6, Willi0_7};
 
         //Williston Hall floor 1
-        static Point2D Willi1_1 = new Point2D(0, 0, "");
-        static Point2D[] Williston_1_Items = new Point2D[]{};
+        static Point2D Willi1_1 = new Point2D(0, 265, "Rubenstein Entrance");
+        static Point2D Willi1_2 = new Point2D(92, 265, "Student Service Center");
+        static Point2D Willi1_3 = new Point2D(92, 320, "Stairs");
+        static Point2D Willi1_4 = new Point2D(92, 470, "Wentworth Hall Entrance");
+        static Point2D[] Williston_1_Items = new Point2D[]{Willi1_1, Willi1_2, Willi1_3, Willi1_4};
 
         //Williston Hall floor 2
-        static Point2D Willi2_1 = new Point2D(0, 0, "");
-        static Point2D[] Williston_2_Items = new Point2D[]{};
+        static Point2D Willi2_1 = new Point2D(100, 320, "Stairs");
+        static Point2D Willi2_2 = new Point2D(100, 320, "Human Resources");
+        static Point2D Willi2_3 = new Point2D(100, 320, "Executive Offices");
+        static Point2D Willi2_4 = new Point2D(100, 470, "Wentworth Hall Entrance");
+        static Point2D[] Williston_2_Items = new Point2D[]{Willi2_1, Willi2_2, Willi2_3, Willi2_4};
 
         //Williston Hall floor 3
-        static Point2D Willi3_1 = new Point2D(0, 0, "");
-        static Point2D[] Williston_3_Items = new Point2D[]{};
+        static Point2D Willi3_1 = new Point2D(88, 120, "Stairs");
+        static Point2D Willi3_2 = new Point2D(88, 128, "Business Service");
+        static Point2D Willi3_3 = new Point2D(88, 128, "Controller's Office");
+        static Point2D Willi3_4 = new Point2D(88, 128, "Institutional Advancement");
+        static Point2D Willi3_5 = new Point2D(88, 128, "Purchasing");
+        static Point2D Willi3_6 = new Point2D(88, 295, "Wentworth Hall Entrance");
+        static Point2D[] Williston_3_Items = new Point2D[]{Willi3_1, Willi3_2, Willi3_3, Willi3_4, Willi3_5, Willi3_6};
 
         //***********************************************Watson Hall**************************************************
         //Watson Hall floor 0
