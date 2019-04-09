@@ -17,25 +17,31 @@ public class Point2D {
         yvald = y;
     }
     public Point2D() {
-        this(0., 0., "");
+        this(0, 0, "");
     }
 
     public int getX() {
         return xval;
     }
 
-    public double getY() {
+    public int getY() {
         return yval;
     }
     public String getName() {
         return name;
     }
 
-    public void setX(double x) {
+    public void setX(int x) {
         this.xval = x;
     }
-    public void setY(double y) {
+    public void setY(int y) {
         this.yval = y;
+    }
+    public void setX(double x) {
+        this.xvald = x;
+    }
+    public void setY(double y) {
+        this.yvald = y;
     }
     public void setName(String nam) {
         this.name = nam;

@@ -1,18 +1,6 @@
 package edu.wit.myapplication;
 
 public class Constants {
-
-    public static class testPoints {
-        static Point2D Went1_1 = new Point2D(0, 95, "Dobb Entrance");
-        static Point2D Went1_2 = new Point2D(73, 95, "Receptions Office 101");
-        static Point2D Went1_3 = new Point2D(117, 95, "Stairs");
-        static Point2D Went1_4 = new Point2D(193, 95, "Exit");
-        static Point2D Went1_5 = new Point2D(193, 95, "Admissions Office 106");
-        static Point2D Went1_6 = new Point2D(250, 95, "Copy/Mail Room 118");
-        static Point2D Went1_7 = new Point2D(273, 95, "Stairs");
-        static Point2D Went1_8 = new Point2D(380, 95, "Williston Entrance");
-        static Point2D[] Wentworth_1_Items = new Point2D[]{Went1_1, Went1_2, Went1_3, Went1_4, Went1_5, Went1_6, Went1_7, Went1_8};
-    }
     public class Mapper {
         public static final double X_THRESH = 1;
         public static final double Y_THRESH = 1;

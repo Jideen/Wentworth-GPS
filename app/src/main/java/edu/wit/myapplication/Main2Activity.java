@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 public class Main2Activity extends AppCompatActivity {
     Spinner building, floor, room, building2, floor2, room2;
-    String selBuilding, selBuilding2, selFloor,b1str, b2str;
+    String selBuilding, selBuilding2, selFloor, selFloor2, selRoom, selRoom2, b1str, b2str;
     int bldgGlobal,bldg2Global,floorGlobal,floorGlobal2;
     String[] buildingArray, buildingArray2, floorArray, roomsArray, floor2Array;
     Context c;
@@ -29,6 +29,10 @@ public class Main2Activity extends AppCompatActivity {
         Intent toFin = new Intent(this, mapActivity.class);
         toFin.putExtra("Source",b1str);
         toFin.putExtra("Dest",b2str);
+        toFin.putExtra("SourceFloor",selFloor);
+        toFin.putExtra("DestFloor",selFloor2);
+        toFin.putExtra("SourceRoom",selRoom);
+        toFin.putExtra("DestRoom",selRoom2);
         startActivity(toFin);
     }
     @Override
@@ -56,46 +60,47 @@ public class Main2Activity extends AppCompatActivity {
                 switch (buildingArray[i]) {
                     case "evw":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_Floors)));
-                        selBuilding = "evw";
+                        selBuilding = "Evans Way";
                         break;
                     case "wat":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.wat_Floors)));
-                        selBuilding = "wat";
+                        selBuilding = "Watson";
                         break;
                     case "bty":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_Floors)));
-                        selBuilding = "bty";
+                        selBuilding = "Beatty";
                         break;
                     case "rub":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.rub_Floors)));
-                        selBuilding = "rub";
+                        selBuilding = "Rubenstein";
                         break;
                     case "king":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.king_Floors)));
-                        selBuilding = "king";
+                        selBuilding = "Kingman";
                         break;
                     case "dobb":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_Floors)));
-                        selBuilding = "dobb";
+                        selBuilding = "Dobbs";
                         break;
                     case "will":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.will_Floors)));
-                        selBuilding = "will";
+                        selBuilding = "Williston";
                         break;
                     case "wils":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.wils_Floors)));
-                        selBuilding = "wils";
+                        selBuilding = "Wilson";
                         break;
                     case "went":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.went_Floors)));
-                        selBuilding = "went";
+                        selBuilding = "Wentworth";
                         break;
                     case "tdby":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_Floors)));
-                        selBuilding = "tdby";
+                        selBuilding = "Tudbury";
                         break;
                     case "empty":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_Floors)));
+                        selBuilding = "Empty";
                         break;
                 }
                 floor.setAdapter(SpinnerPopulate.updateData(c, floors));
@@ -179,9 +184,11 @@ public class Main2Activity extends AppCompatActivity {
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.evw_Floors);
                         Log.i("Room Array 1:",floorArray[l]);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_0_Rooms)));
+
                                 break;
                             case "1":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_1_Rooms)));
@@ -204,6 +211,7 @@ public class Main2Activity extends AppCompatActivity {
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.wat_Floors);
                         Log.i("Room Array 1:",floorArray[l]);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.wat_0_Rooms)));
@@ -220,6 +228,7 @@ public class Main2Activity extends AppCompatActivity {
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.bty_Floors);
                         Log.i("Room Array 1:",floorArray[l]);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_0_Rooms)));
@@ -245,6 +254,7 @@ public class Main2Activity extends AppCompatActivity {
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.rub_Floors);
                         Log.i("Room Array 1:",floorArray[l]);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.rub_0_Rooms)));
@@ -261,6 +271,7 @@ public class Main2Activity extends AppCompatActivity {
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.king_Floors);
                         Log.i("Room Array 1:",floorArray[l]);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "1":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.king_1_Rooms)));
@@ -274,6 +285,7 @@ public class Main2Activity extends AppCompatActivity {
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.dobb_Floors);
                         Log.i("Room Array 1:",floorArray[l]);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_0_Rooms)));
@@ -293,6 +305,7 @@ public class Main2Activity extends AppCompatActivity {
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.will_Floors);
                         Log.i("Room Array 1:",floorArray[l]);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.will_0_Rooms)));
@@ -312,6 +325,7 @@ public class Main2Activity extends AppCompatActivity {
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.wils_Floors);
                         Log.i("Room Array 1:",floorArray[l]);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "1":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.wils_1_Rooms)));
@@ -325,6 +339,7 @@ public class Main2Activity extends AppCompatActivity {
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.went_Floors);
                         Log.i("Room Array 1:",floorArray[l]);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.went_0_Rooms)));
@@ -344,6 +359,7 @@ public class Main2Activity extends AppCompatActivity {
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.tdby_Floors);
                         Log.i("Room Array 1:",floorArray[l]);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_0_Rooms)));
@@ -365,6 +381,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "empty":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.empty_Floors);
+                        selFloor = floorArray[l];
                         switch (floorArray[l]) {
                             case "Select a Building":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_0_Rooms)));
@@ -391,6 +408,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "evw":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.evw_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "0":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_0_Rooms)));
@@ -415,6 +433,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "wat":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.wat_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "0":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wat_0_Rooms)));
@@ -430,6 +449,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "bty":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.bty_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "0":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_0_Rooms)));
@@ -454,6 +474,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "rub":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.rub_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "0":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.rub_0_Rooms)));
@@ -469,6 +490,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "king":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.king_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "1":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.king_1_Rooms)));
@@ -481,6 +503,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "dobb":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.dobb_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "0":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_0_Rooms)));
@@ -499,6 +522,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "will":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.will_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "0":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.will_0_Rooms)));
@@ -517,6 +541,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "wils":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.wils_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "1":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wils_1_Rooms)));
@@ -529,6 +554,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "went":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.went_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "0":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.went_0_Rooms)));
@@ -547,6 +573,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "tdby":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.tdby_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "0":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_0_Rooms)));
@@ -568,6 +595,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "empty":
                         rooms2 = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.empty_Floors);
+                        selFloor2 = floorArray[k];
                         switch (floorArray[k]) {
                             case "Select a Building":
                                 rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_0_Rooms)));
