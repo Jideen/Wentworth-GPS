@@ -19,22 +19,13 @@ public class Constants {
         public static Building Wentworth = new Building(-71.094927, 42.336629, "Wentworth", 9, false);
         public static Building Tudbury = new Building(-71.097840, 42.337356, "Tudbury", 11, false);
 
-        public static final Building[] AnnexN = {Irall, Beatty, Willson, Tudbury};
-        public static final int[] AnnexWeights = {79, 136, 171, 525};
+        public static final Building[] AnnexN = {Beatty, Willson, Tudbury};
+        public static final int[] AnnexWeights = {136, 171, 525};
 
         public static final Building[] EvansWayN = {Tudbury};
         public static final int[] EvansWayWeights = {61};
 
         public static final Building[] WatsonN = {Dobbs, Beatty,Kingman};
-        public static final int[] WatsonWeights = {47, 99, 107};
-
-        public static final Building[] BeattyN = {Tudbury, Willson, Watson};
-        public static final int[] BeattyWeights = {284, 57, 99};
-        
-        public static final Building[] EvansWayN = {Tudbury};
-        public static final int[] EvansWayWeights = {61};
-
-        public static final Building[] WatsonN = {Dobbs, Beatty, Kingman};
         public static final int[] WatsonWeights = {47, 99, 107};
 
         public static final Building[] BeattyN = {Tudbury, Willson, Watson};
