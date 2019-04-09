@@ -8,4 +8,11 @@
     tools:context="Main2Activity"
     tools:showIn="@layout/activity_main2">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_bar"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="125dp" />
 </android.support.constraint.ConstraintLayout>

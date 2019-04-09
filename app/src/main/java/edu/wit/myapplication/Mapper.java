@@ -11,15 +11,10 @@ public class Mapper {
 
     public boolean isInHall(Point2D p, Hall h) {
         if (h.isVertical()) {
-            if (p.getY() <= h.end.getY() && p.getY() >= h.start.getY() && p.getX() == h.start.getX()) {
-                return true;
-            }
+            return p.getY() <= h.end.getY() && p.getY() >= h.start.getY() && p.getX() == h.start.getX();
         } else {
-            if (p.getX() <= h.end.getX() && p.getX() >= h.start.getX() && p.getY() == h.start.getY()) {
-                return true;
-            }
+            return p.getX() <= h.end.getX() && p.getX() >= h.start.getX() && p.getY() == h.start.getY();
         }
-        return false;
     }
 
     public void pointNav(Point2D p, Hall h, Point2D dest) {
@@ -53,7 +48,7 @@ public class Mapper {
             }
         }
         if (Math.abs(p.getX() - dest.getX()) <= Constants.Mapper.X_THRESH) {
-            System.out.printf("Map successfully generated!%n");
+            System.out.printf("MapActivity successfully generated!%n");
             return 0.12345;
         }
         return 0;
