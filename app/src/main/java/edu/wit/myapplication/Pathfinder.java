@@ -197,7 +197,6 @@ public class Pathfinder {
         wen.addDestination(wili, 41);
         wen.addDestination(dob, 52);
         wen.addDestination(kin, 90);
-        tud.addDestination(anx, 525);
         tud.addDestination(evw, 61);
         tud.addDestination(bea, 284);
         tud.addDestination(wil, 232);
