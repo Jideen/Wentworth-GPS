@@ -300,16 +300,31 @@ public class Constants {
 
         //***********************************************Beatty Hall**************************************************
         //Beatty Hall floor 0
-        static Point2D Bea0_1 = new Point2D(0, 0, "");
-        static Point2D[] Beatty_0_Items = new Point2D[]{};
+        static Point2D Bea0_1 = new Point2D(725, 240, "Stairs");
+        static Point2D Bea0_2 = new Point2D(725, 240, "Elevator");
+        static Point2D Bea0_3 = new Point2D(650, 290, "Recreation Room");
+        static Point2D Bea0_4 = new Point2D(650, 280, "Information Desk");
+        static Point2D Bea0_5 = new Point2D(650, 365, "Gym");
+        static Point2D Bea0_6 = new Point2D(620, 365, "Organization Office");
+        static Point2D Bea0_7 = new Point2D(388, 480, "New Student Program Reception Room");
+        static Point2D Bea0_8 = new Point2D(293, 535, "Intercultural Center");
+        static Point2D Bea0_9 = new Point2D(293, 535, "Student Leadership Program Reception Room");
+        static Point2D Bea0_10 = new Point2D(293, 535, "Bookstore");
+        static Point2D[] Beatty_0_Items = new Point2D[]{Bea0_1, Bea0_2, Bea0_3, Bea0_4, Bea0_5, Bea0_6, Bea0_7, Bea0_8, Bea0_9, Bea0_10};
 
         //Beatty Hall floor 1
-        static Point2D Bea1_1 = new Point2D(0, 0, "");
-        static Point2D[] Beatty_1_Items = new Point2D[]{};
+        static Point2D Bea1_1 = new Point2D(740, 193, "Stairs");
+        static Point2D Bea1_2 = new Point2D(693, 193, "Meeting Room 103");
+        static Point2D Bea1_3 = new Point2D(693, 250, "Stairs");
+        static Point2D Bea1_4 = new Point2D(693, 305, "Elevator");
+        static Point2D Bea1_5 = new Point2D(690, 665, "Corner boi");
+        static Point2D Bea1_6 = new Point2D(390, 665, "Stairs");
+        static Point2D Bea1_7 = new Point2D(150, 665, "Multi Purpose Room");
+        static Point2D[] Beatty_1_Items = new Point2D[]{Bea1_1, Bea1_2, Bea1_3, Bea1_4, Bea1_5, Bea1_6, Bea1_7};
 
         //Beatty Hall floor 2
-        static Point2D Bea2_1 = new Point2D(0, 0, "");
-        static Point2D[] Beatty_2_Items = new Point2D[]{};
+        static Point2D Bea2_1 = new Point2D(450, 450, "Library");
+        static Point2D[] Beatty_2_Items = new Point2D[]{Bea2_1};
 
         //Beatty Hall floor M
         static Point2D Beam_1 = new Point2D(0, 0, "");
