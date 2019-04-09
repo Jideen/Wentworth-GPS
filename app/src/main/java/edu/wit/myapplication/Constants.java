@@ -173,11 +173,11 @@ public class Constants {
         static Point2D[] Watson_0_Items = new Point2D[]{Wat0_1, Wat0_2, Wat0_3, Wat0_4, Wat0_5, Wat0_6, Wat0_7, Wat0_8, Wat0_9, Wat0_10, Wat0_11, Wat0_12, Wat0_13, Wat0_14, Wat0_15, Wat0_16, Wat0_17, Wat0_18, Wat0_19};
 
         //Watson Hall floor 1
-        static Point2D Wat1_1 = new Point2D(0, 0, "Dobbs Entrance");
-        static Point2D Wat1_2 = new Point2D(0, 0, "Bathroom(W)");
-        static Point2D Wat1_3 = new Point2D(0, 0, "Stairs");
-        static Point2D Wat1_4 = new Point2D(0, 0, "Watson Auditorium");
-        static Point2D Wat1_5 = new Point2D(0, 0, "Bathroom(M)");
+        static Point2D Wat1_1 = new Point2D(55, 0, "Dobbs Entrance");
+        static Point2D Wat1_2 = new Point2D(55, 190, "Bathroom(W)");
+        static Point2D Wat1_3 = new Point2D(55, 265, "Stairs");
+        static Point2D Wat1_4 = new Point2D(55, 265, "Watson Auditorium");
+        static Point2D Wat1_5 = new Point2D(55, 335, "Bathroom(M)");
         static Point2D[] Watson_1_Items = new Point2D[]{Wat1_1, Wat1_2, Wat1_3, Wat1_4, Wat1_5};
 
         //Watson Hall floor 2 ------------------------ missinggggggggg
