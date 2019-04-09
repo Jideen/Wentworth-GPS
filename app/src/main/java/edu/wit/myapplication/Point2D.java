@@ -5,29 +5,35 @@ package edu.wit.myapplication;
  */
 public class Point2D {
     double xval, yval;
+    String name;
 
-    public Point2D(double x, double y) {
+    public Point2D(double x, double y, String nm) {
         xval = x;
         yval = y;
     }
 
     public Point2D() {
-        this(0., 0.);
+        this(0., 0., "");
     }
 
     public double getX() {
         return xval;
     }
-
-    public void setY(double y) {
-        this.yval = y;
+    public double getY() {
+        return yval;
     }
+    public String getName() {
+        return name;
+    }
+
     public void setX(double x) {
         this.xval = x;
     }
-
-    public double getY() {
-        return yval;
+    public void setY(double y) {
+        this.yval = y;
+    }
+    public void setName(String nam) {
+        this.name = nam;
     }
 
     public static double distance(Point2D p1, Point2D p2) {

@@ -7,6 +7,98 @@ public class Constants {
         public static final double Y_THRESH = 1;
     }
 
+    public static class Graphs {
+        //***********************************************Tudbury**************************************************
+        Point2D Tud1 = new Point2D(0,0,"Tud stairs");
+
+        Point2D[] Tudbury_1_Items = new Point2D[]{};
+
+        //***********************************************Wentworth Hall**********************************************
+        //Wentworth Hall floor 0
+        Point2D Went0_1 = new Point2D(0, 174, "Dobb Entrance");
+        Point2D Went0_2 = new Point2D(123, 174, "Lab 007");
+        Point2D Went0_3 = new Point2D(210, 174, "Classroom 010");
+        Point2D Went0_4 = new Point2D(259, 174, "Elevator");
+        Point2D Went0_5 = new Point2D(467, 174, "Lab 003");
+        Point2D Went0_6 = new Point2D(530, 174, "Lab 004");
+        Point2D Went0_7 = new Point2D(650, 174, "Williston Entrance");
+
+        Point2D[] Wentworth_0_Items = new Point2D[]{Went0_1, Went0_2, Went0_3, Went0_4, Went0_5, Went0_6, Went0_7};
+
+        //Wentworth Hall floor 1
+        Point2D Went1_1 = new Point2D(0, 95, "Dobb Entrance");
+        Point2D Went1_2 = new Point2D(73, 95, "Receptions Office 101");
+        Point2D Went1_3 = new Point2D(117, 95, "Stairs");
+        Point2D Went1_4 = new Point2D(193, 95, "Exit");
+        Point2D Went1_5 = new Point2D(193, 95, "Admissions Office 106");
+        Point2D Went1_6 = new Point2D(250, 95, "Copy/Mail Room 118");
+        Point2D Went1_7 = new Point2D(273, 95, "Stairs");
+        Point2D Went1_8 = new Point2D(380, 95, "Williston Entrance");
+        Point2D[] Wentworth_1_Items = new Point2D[]{Went1_1, Went1_2, Went1_3, Went1_4, Went1_5, Went1_6, Went1_7, Went1_8};
+
+        //Wentworth Hall floor 2
+        Point2D Went2_1 = new Point2D(0, 95, "Dobb Entrance");
+        Point2D Went2_2 = new Point2D(28, 95, "Classroom 214");
+        Point2D Went2_3 = new Point2D(28, 95, "Stair/Bathroom(W)");
+        Point2D Went2_4 = new Point2D(107, 95, "Classroom 212");
+        Point2D Went2_5 = new Point2D(125, 95, "Classroom 209");
+        Point2D Went2_6 = new Point2D(153, 95, "Elevator");
+        Point2D Went2_7 = new Point2D(237, 95, "Classroom 210");
+        Point2D Went2_8 = new Point2D(237, 95, "Classroom 207");
+        Point2D Went2_9 = new Point2D(265, 95, "Classroom 208");
+        Point2D Went2_10 = new Point2D(265, 95, "Classroom 205");
+        Point2D Went2_11 = new Point2D(323, 95, "Classroom 206");
+        Point2D Went2_12 = new Point2D(362, 95, "Stair/Bathroom(M)");
+        Point2D Went2_13 = new Point2D(380, 95, "Williston Entrance");
+        Point2D[] Wentworth_2_Items = new Point2D[]{Went2_1, Went2_2, Went2_3, Went2_4, Went2_5, Went2_6, Went2_7, Went2_8, Went2_9, Went2_10, Went2_11, Went2_12, Went2_13};
+
+        //Wentworth Hall floor 3
+        Point2D Went3_1 = new Point2D(0, 95, "Dobb Entrance");
+        Point2D Went3_2 = new Point2D(28, 95, "Stairs/Bathroom(W)");
+        Point2D Went3_3 = new Point2D(28, 95, "Classroom 314");
+        Point2D Went3_4 = new Point2D(107, 95, "Classroom 312");
+        Point2D Went3_5 = new Point2D(125, 95, "Classroom 309");
+        Point2D Went3_6 = new Point2D(153, 95, "Elevator");
+        Point2D Went3_7 = new Point2D(237, 95, "Classroom 310");
+        Point2D Went3_8 = new Point2D(237, 95, "Classroom 307");
+        Point2D Went3_9 = new Point2D(265, 95, "Classroom 308");
+        Point2D Went3_10 = new Point2D(265, 95, "Classroom 305");
+        Point2D Went3_11 = new Point2D(323, 95, "Classroom 306");
+        Point2D Went3_12 = new Point2D(362, 95, "Stair/Bathroom(M)");
+        Point2D Went3_13 = new Point2D(380, 95, "Williston Entrance");
+        Point2D[] Wentworth_3_Items = new Point2D[]{Went3_1, Went3_2, Went3_3, Went3_4, Went3_5, Went3_6, Went3_7, Went3_8, Went3_9, Went3_10, Went3_11, Went3_12, Went3_13};
+
+        //***********************************************Evans Way**************************************************
+
+
+        //***********************************************Rubenstein Hall**************************************************
+
+        //***********************************************Kingman Hall**************************************************
+
+        //***********************************************Dobbs Hall**************************************************
+
+        //***********************************************Williston Hall**************************************************
+        //Williston Hall floor 0
+
+
+        //Williston Hall floor 1
+
+
+        //Williston Hall floor 2
+
+
+        //Williston Hall floor 3
+
+
+        //***********************************************Watson Hall**************************************************
+
+        //***********************************************Beatty Hall**************************************************
+
+        //***********************************************Willson Hall**************************************************
+
+
+    }
+
     public static class Buildings {
         public static Building EvansWay = new Building(-71.097403, 42.337800, "EvansWay", 1, false);
         public static Building Watson = new Building(-71.094804, 42.336274, "Watson", 2, false);
