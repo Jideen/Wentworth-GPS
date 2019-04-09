@@ -19,7 +19,6 @@
     <string name="go">GO</string>
     <string name="title_activity_map">mapActivity</string>
     <string-array name="building_names">
-        <item>Annex</item>
         <item>Evans Way</item>
         <item>Watson Hall</item>
         <item>Beatty</item>
@@ -29,12 +28,10 @@
         <item>Williston Hall</item>
         <item>Willson Hall</item>
         <item>Wentworth Hall</item>
-        <item>Ira Allen</item>
         <item>Tudbury</item>
         <item>Building</item>
     </string-array>
     <string-array name="building_ids">
-        <item>anx</item>
         <item>evw</item>
         <item>wat</item>
         <item>bty</item>
@@ -44,18 +41,11 @@
         <item>will</item>
         <item>wils</item>
         <item>went</item>
-        <item>iral</item>
         <item>tdby</item>
         <item>empty</item>
     </string-array>
     <!-- Add arrays for floor counts per building -->
     <!--      Format: {Building_name}_Floors      -->
-    <string-array name="anx_Floors">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
     <string-array name="evw_Floors">
         <item>0</item>
         <item>1</item>
@@ -108,47 +98,17 @@
         <item>2</item>
         <item>3</item>
     </string-array>
-    <string-array name="iral_Floors">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
     <string-array name="tdby_Floors">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
-        <item>4</item>
     </string-array>
     <string-array name="empty_Floors">
         <item>Select a building</item>
     </string-array>
     <!--Add arrays for each floor of each building-->
     <!--  Format: {Building_id}_{FloorNum}_Rooms  -->
-    <string-array name="anx_0_Rooms">
-        <item>011</item>
-        <item>012</item>
-        <item>013</item>
-        <item>014</item>
-    </string-array>
-    <string-array name="anx_1_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="anx_2_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="anx_3_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
     <string-array name="evw_0_Rooms">
         <item>Suite 002</item>
         <item>Suite 007</item>
@@ -572,8 +532,6 @@
         <item>Office 108B</item>
         <item>Shipping and Receiving 116</item>
         <item>Copy/Mail Center 118</item>
-
-
     </string-array>
     <string-array name="went_2_Rooms">
         <item>Classroom 205</item>
@@ -594,24 +552,6 @@
         <item>Classroom 310</item>
         <item>Classroom 312</item>
         <item>Classroom 314</item>
-    </string-array>
-    <string-array name="iral_1_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="iral_2_Rooms">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="iral_3_Rooms">
-        <item>oof1</item>
-        <item>oof2</item>
-        <item>oof3</item>
-        <item>oof4</item>
     </string-array>
     <string-array name="tdby_0_Rooms">
         <item>Suite 002</item>
@@ -661,7 +601,5 @@
     <string-array name="empty_0_Rooms">
         <item>Select a floor</item>
     </string-array>
-    K
 
 </resources>
-
