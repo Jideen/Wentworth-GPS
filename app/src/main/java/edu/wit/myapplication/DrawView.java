@@ -10,24 +10,30 @@ import android.view.View;
 public class DrawView extends View {
     private Bitmap b;
 
-    public Bitmap linePath(Point2D[] points,int dest, Canvas canvas){
-        int offsetx = 12;
-        int offsety = 10;
-        double scaleConstx = 1.36;
-        double scaleConsty = 1.25;
+    public Bitmap linePath(Point2D[] points,int source, int dest, Canvas canvas){
+        int offsetx = 13;
+        int offsety = 0;
+        double scaleConstx = 0.8;
+        double scaleConsty = 0.8;
         Paint green = new Paint();
         green.setColor(Color.GREEN);
+        Paint red = new Paint();
+        red.setColor(Color.RED);
         b = BitmapFactory.decodeResource(getResources(),R.drawable.went_0);
         canvas.drawBitmap(b,0,0,new Paint());
-        canvas.drawLine((float)((points[0].getX()+ offsetx)*scaleConstx)
-                ,(float)((points[0].getY()+ offsety)*scaleConsty),(float)((points[0].getX()+ offsetx)*scaleConstx),(float)((points[0].getY()+ offsety)*scaleConsty),new Paint());
-        canvas.drawCircle((float)((points[0].getX()+ offsetx)*scaleConstx),(float)((points[0].getY()+ offsety)*scaleConsty),5,new Paint());
-        for(int i = 1; i<points.length;i++){
-            canvas.drawLine((float)((points[i-1].getX()+ offsetx)*scaleConstx),(float)((points[i-1].getY()+ offsety)*scaleConsty),(float)((points[i].getX()+ offsetx)*scaleConstx),(float)((points[i].getY()+ offsety)*scaleConsty),new Paint());
-            canvas.drawCircle((float)((points[i].getX()+ offsetx)*scaleConstx),(float)((points[i].getY()+ offsety)*scaleConsty),5,new Paint());
+
+        canvas.drawLine((float)((points[source].getX()*scaleConstx)+ offsetx)
+                ,(float)((points[source].getY()*scaleConsty)+ offsety),(float)((points[source].getX()*scaleConstx)+ offsetx),(float)((points[source].getY()*scaleConsty)+ offsety),new Paint());
+        canvas.drawCircle((float)((points[source].getX()*scaleConstx)+ offsetx),(float)((points[source].getY()*scaleConsty)+ offsety),5,new Paint());
+        for(int i = source; i<dest;i++){
+            canvas.drawLine((float)((points[i].getX()*scaleConstx)+ offsetx),(float)((points[i].getY()*scaleConsty)+ offsety),(float)((points[i+1].getX()*scaleConstx)+ offsetx),(float)((points[i+1].getY()*scaleConsty)+ offsety),new Paint());
+            canvas.drawCircle((float)((points[i+1].getX()*scaleConstx)+ offsetx),(float)((points[i+1].getY()*scaleConsty)+ offsety),5,new Paint());
         }
-        canvas.drawCircle((float)((points[dest].getX()+ offsetx)*scaleConstx),(float)((points[dest].getY()+ offsety)*scaleConsty),5,green);
+
+        canvas.drawCircle((float)((points[source].getX()*scaleConstx)+ offsetx),(float)((points[source].getY()*scaleConsty)+ offsety),5,red);
+        canvas.drawCircle((float)((points[dest].getX()*scaleConstx)+ offsetx),(float)((points[dest].getY()*scaleConsty)+ offsety),5,green);
         return b;
+
     }
     public DrawView(Context context){
         super(context);
@@ -37,7 +43,7 @@ public class DrawView extends View {
         super.onDraw(canvas);
         //canvas.drawColor(Color.BLUE);
         canvas.drawColor(Color.TRANSPARENT);
-        linePath(Constants.Graphs.Wentworth_1_Items,3,canvas);
+        linePath(Constants.Graphs.Wentworth_0_Items,0,6,canvas);
         //canvas.drawBitmap(b,10,10,new Paint());
         //canvas.drawPath(linePath(Constants.testPoints.pts,3),new Paint());
     }

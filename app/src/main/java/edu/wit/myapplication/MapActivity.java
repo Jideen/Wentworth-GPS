@@ -1,11 +1,14 @@
 package edu.wit.myapplication;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class mapActivity extends AppCompatActivity {
+    public String curBuilding;
+    int buildingTracker = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,10 @@ public class mapActivity extends AppCompatActivity {
         String dest = getIntent().getExtras().getString("Dest");
         Pathfinder p = new Pathfinder();
         StringBuilder s = new StringBuilder();
+        Context c = this;
+        DrawView d = new DrawView(c);
+        //d.linePath();
+
         int len = p.run(source,dest).length;
         String[] strArray = p.run(source,dest);
         for(int i=0;i<len; i++){
