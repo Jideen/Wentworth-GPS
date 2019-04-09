@@ -387,12 +387,5 @@ public class launcher {
 		//Willson Hall floor 2
 		willsonHall.put(2, "Stairs[0], Office 201[1], Lab 204[2], Lab 203[3], Lab 202[4]");
 		wills2.put(0, 0); wills2.put(1, 10); wills2.put(2, 10); wills2.put(3, 10); wills2.put(4, 10);
-		
-		
-		
-		System.out.println(tudbury.size()); //9.
-		System.out.println(tudbury.get(1));
-		
-		System.out.println(tuds1.get(2));
 	}
 }
