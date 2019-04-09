@@ -85,19 +85,19 @@ public class Pathfinder {
         }
     }
 
-    public String run(String source, String dest) {
+    public String[] run(String source, String dest) {
         Vertex Start = new Vertex(Constants.Buildings.EvansWay);
         Vertex Dest = new Vertex(Constants.Buildings.Beatty);
-        Pathfinder.Vertex EvansWay = new Pathfinder.Vertex(Constants.Buildings.EvansWay);
-        Pathfinder.Vertex Watson = new Pathfinder.Vertex(Constants.Buildings.Watson);
-        Pathfinder.Vertex Beatty = new Pathfinder.Vertex(Constants.Buildings.Beatty);
-        Pathfinder.Vertex Rubenstein = new Pathfinder.Vertex(Constants.Buildings.Rubenstein);
-        Pathfinder.Vertex Kingman = new Pathfinder.Vertex(Constants.Buildings.Kingman);
-        Pathfinder.Vertex Dobbs = new Pathfinder.Vertex(Constants.Buildings.Dobbs);
-        Pathfinder.Vertex Williston = new Pathfinder.Vertex(Constants.Buildings.Williston);
-        Pathfinder.Vertex Willson = new Pathfinder.Vertex(Constants.Buildings.Willson);
-        Pathfinder.Vertex Wentworth = new Pathfinder.Vertex(Constants.Buildings.Wentworth);
-        Pathfinder.Vertex Tudbury = new Pathfinder.Vertex(Constants.Buildings.Tudbury);
+        Vertex EvansWay = new Pathfinder.Vertex(Constants.Buildings.EvansWay);
+        Vertex Watson = new Pathfinder.Vertex(Constants.Buildings.Watson);
+        Vertex Beatty = new Pathfinder.Vertex(Constants.Buildings.Beatty);
+        Vertex Rubenstein = new Pathfinder.Vertex(Constants.Buildings.Rubenstein);
+        Vertex Kingman = new Pathfinder.Vertex(Constants.Buildings.Kingman);
+        Vertex Dobbs = new Pathfinder.Vertex(Constants.Buildings.Dobbs);
+        Vertex Williston = new Pathfinder.Vertex(Constants.Buildings.Williston);
+        Vertex Willson = new Pathfinder.Vertex(Constants.Buildings.Willson);
+        Vertex Wentworth = new Pathfinder.Vertex(Constants.Buildings.Wentworth);
+        Vertex Tudbury = new Pathfinder.Vertex(Constants.Buildings.Tudbury);
         switch (source) {
             case "evw":
                 Start = EvansWay;
@@ -171,7 +171,7 @@ public class Pathfinder {
         return run( EvansWay, Watson, Beatty, Rubenstein, Kingman, Dobbs, Williston, Willson, Wentworth, Tudbury,Start,Dest);
     }
 
-    public static String run(Vertex evw, Vertex wat, Vertex bea, Vertex rub, Vertex kin, Vertex dob, Vertex wili, Vertex wil, Vertex wen, Vertex tud, Vertex source, Vertex dest) {
+    public static String[] run(Vertex evw, Vertex wat, Vertex bea, Vertex rub, Vertex kin, Vertex dob, Vertex wili, Vertex wil, Vertex wen, Vertex tud, Vertex source, Vertex dest) {
         evw.addDestination(tud, 61);
         wat.addDestination(dob, 47);
         wat.addDestination(bea, 99);
@@ -206,14 +206,16 @@ public class Pathfinder {
         Vertex src = source;
         Vertex dst = dest;
         calculateShortestPathFromSource(src);
-        StringBuilder s = new StringBuilder();
+        ArrayList<String> s = new ArrayList<>();
         for (int i = 0; i < dst.shortestPath.size(); i++) {
-            s.append(dst.shortestPath.get(i).alias.name);
-            s.append(", ");
+            if(dst.shortestPath.get(i).alias.name.length()>2) {
+                s.add(String.format("%s ", dst.shortestPath.get(i).alias.name));
+            }
         }
-        s.append(dst.name);
-        System.out.println(String.format("%s", s));
-        Log.i("Path result", String.format("%s", s));
-        return s.toString();
+        s.add(dst.name);
+        System.out.println(String.format("%s", s.toArray().toString()));
+        Log.i("Path result", String.format("%s", s.toArray().toString()));
+        String[] oof = s.toArray(new String[s.size()]);
+        return oof;
     }
 }

@@ -23,7 +23,6 @@ public class hashMap {
 		static HashMap<Integer, Integer> wents1 = new HashMap<>();
 		static HashMap<Integer, Integer> wents2 = new HashMap<>();
 		static HashMap<Integer, Integer> wents3 = new HashMap<>();
-	
 	//Evans Way(Int floors, String rooms[#])
 	static HashMap<Integer, String> evansWay = new HashMap<>();
 		//floors(Int rooms[#], Int [Distance x in ft] )
@@ -103,7 +102,7 @@ public class hashMap {
 				+ "Stair to Evansway[15]");
 		tuds1.put(0, 0); tuds1.put(1, 10); tuds1.put(2, 28); tuds1.put(3, 40); tuds1.put(4, 50);
 		tuds1.put(5, 50); tuds1.put(6, 62); tuds1.put(7, 77); tuds1.put(8, 98); tuds1.put(9, 132);
-		tuds1.put(10, 0136); tuds1.put(11, 141); tuds1.put(12, 156); tuds1.put(13, 156); tuds1.put(14, 156);
+		tuds1.put(10, 136); tuds1.put(11, 141); tuds1.put(12, 156); tuds1.put(13, 156); tuds1.put(14, 156);
 		tuds1.put(15,213);
 
 		//Tudbury floor 2A

@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class MapActivity extends AppCompatActivity {
+public class mapActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,9 +14,15 @@ public class MapActivity extends AppCompatActivity {
         final TextView text = findViewById(R.id.textView2);
 
         String source = getIntent().getExtras().getString("Source");
-        String dest = getIntent().getExtras().getString("Target");
+        String dest = getIntent().getExtras().getString("Dest");
         Pathfinder p = new Pathfinder();
-        text.setText(p.run(source,dest));
+        StringBuilder s = new StringBuilder();
+        String[] strArray = p.run(source,dest);
+        for(int i=0;i<strArray.length; i++){
+            s.append(strArray[i]);
+            s.append(", ");
+        }
+        text.setText(s.toString());
     }
 
 }

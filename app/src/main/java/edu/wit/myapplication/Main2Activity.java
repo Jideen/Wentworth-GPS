@@ -17,18 +17,18 @@ import java.util.Arrays;
 
 public class Main2Activity extends AppCompatActivity {
     Spinner building, floor, room, building2, floor2, room2;
-    String selBuilding, selBuilding2, selFloor;
-    int bldgGlobal;
-    String[] buildingArray, floorArray, roomsArray, floor2Array;
+    String selBuilding, selBuilding2, selFloor,b1str, b2str;
+    int bldgGlobal,bldg2Global,floorGlobal,floorGlobal2;
+    String[] buildingArray, buildingArray2, floorArray, roomsArray, floor2Array;
     Context c;
     ArrayList<String> floors, floors2, rooms, rooms2;
 
 
     public void buttonCode(View v) {
         Button b = (Button) v;
-        Intent toFin = new Intent(this, MapActivity.class);
-        toFin.putExtra("Source",selBuilding);
-        toFin.putExtra("Dest",selBuilding2);
+        Intent toFin = new Intent(this, mapActivity.class);
+        toFin.putExtra("Source",b1str);
+        toFin.putExtra("Dest",b2str);
         startActivity(toFin);
     }
     @Override
@@ -40,6 +40,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         c = this;
         buildingArray = getResources().getStringArray(R.array.building_ids);
+        buildingArray2 = getResources().getStringArray(R.array.building_ids);
         building = (Spinner) findViewById(R.id.buildings_spinner);
         floor = (Spinner) findViewById(R.id.floor_spinner);
         room = (Spinner) findViewById(R.id.room_spinner);
@@ -110,9 +111,10 @@ public class Main2Activity extends AppCompatActivity {
         building2.setAdapter(SpinnerPopulate.Populate(this, R.array.building_names));
         building2.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int j, long l) {
+                bldg2Global = j;
                 floors2 = new ArrayList<>();
-                switch (buildingArray[i]) {
+                switch (buildingArray2[j]) {
                     case "evw":
                         floors2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_Floors)));
                         selBuilding2 = "evw";
@@ -158,209 +160,7 @@ public class Main2Activity extends AppCompatActivity {
                         break;
                 }
                 floor2.setAdapter(SpinnerPopulate.updateData(c, floors2));
-                Log.i("2nd Floor Array", buildingArray[i]);
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
-        floor2.setOnItemSelectedListener(new OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
-                switch (buildingArray[bldgGlobal]) {
-                    case "evw":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.evw_Floors);
-                        switch (floorArray[i]) {
-                            case "0":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_0_Rooms)));
-                                break;
-                            case "1":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_1_Rooms)));
-                                break;
-                            case "2":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_2_Rooms)));
-                                break;
-                            case "3":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_3_Rooms)));
-                                break;
-                            case "4":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_4_Rooms)));
-                                break;
-                            case "5":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_5_Rooms)));
-                                break;
-                        }
-                        break;
-                    case "wat":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.wat_Floors);
-                        switch (floorArray[i]) {
-                            case "0":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wat_0_Rooms)));
-                                break;
-                            case "1":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wat_1_Rooms)));
-                                break;
-                            case "2":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wat_2_Rooms)));
-                                break;
-                        }
-                        break;
-                    case "bty":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.bty_Floors);
-                        switch (floorArray[i]) {
-                            case "0":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_0_Rooms)));
-                                break;
-                            case "1":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_1_Rooms)));
-                                break;
-                            case "2":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_2_Rooms)));
-                                break;
-                            case "M":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_M_Rooms)));
-                                break;
-                            case "3":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_3_Rooms)));
-                                break;
-                            case "4":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_4_Rooms)));
-                                break;
-                        }
-                        break;
-                    case "rub":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.rub_Floors);
-                        switch (floorArray[i]) {
-                            case "0":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.rub_0_Rooms)));
-                                break;
-                            case "1":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.rub_1_Rooms)));
-                                break;
-                            case "2":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.rub_2_Rooms)));
-                                break;
-                        }
-                        break;
-                    case "king":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.king_Floors);
-                        switch (floorArray[i]) {
-                            case "1":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.king_1_Rooms)));
-                                break;
-                            case "2":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.king_2_Rooms)));
-                                break;
-                        }
-                        break;
-                    case "dobb":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.dobb_Floors);
-                        switch (floorArray[i]) {
-                            case "0":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_0_Rooms)));
-                                break;
-                            case "1":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_1_Rooms)));
-                                break;
-                            case "2":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_2_Rooms)));
-                                break;
-                            case "3":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_3_Rooms)));
-                                break;
-                        }
-                        break;
-                    case "will":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.will_Floors);
-                        switch (floorArray[i]) {
-                            case "0":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.will_0_Rooms)));
-                                break;
-                            case "1":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.will_1_Rooms)));
-                                break;
-                            case "2":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.will_2_Rooms)));
-                                break;
-                            case "3":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.will_3_Rooms)));
-                                break;
-                        }
-                        break;
-                    case "wils":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.wils_Floors);
-                        switch (floorArray[i]) {
-                            case "1":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wils_1_Rooms)));
-                                break;
-                            case "2":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wils_2_Rooms)));
-                                break;
-                        }
-                        break;
-                    case "went":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.went_Floors);
-                        switch (floorArray[i]) {
-                            case "0":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.went_0_Rooms)));
-                                break;
-                            case "1":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.went_1_Rooms)));
-                                break;
-                            case "2":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.went_2_Rooms)));
-                                break;
-                            case "3":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.went_3_Rooms)));
-                                break;
-                        }
-                        break;
-                    case "tdby":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.tdby_Floors);
-                        switch (floorArray[i]) {
-                            case "0":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_0_Rooms)));
-                                break;
-                            case "1":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_1_Rooms)));
-                                break;
-                            case "2":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_2_Rooms)));
-                                break;
-                            case "3":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_3_Rooms)));
-                                break;
-                            case "4":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_4_Rooms)));
-                                break;
-                        }
-                        break;
-                    case "empty":
-                        rooms2 = new ArrayList<>();
-                        floorArray = getResources().getStringArray(R.array.empty_Floors);
-                        switch (floorArray[i]) {
-                            case "Select a Building":
-                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_0_Rooms)));
-                                break;
-                        }
-                        break;
-                }
-                room2.setAdapter(SpinnerPopulate.updateData(c, rooms2));
-                Log.i("1st Room Array", buildingArray[i]);
+                Log.i("2nd Floor Array", buildingArray2[j]);
 
             }
 
@@ -371,14 +171,15 @@ public class Main2Activity extends AppCompatActivity {
         });
         floor.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-
+            public void onItemSelected(AdapterView<?> adapterView, View view, int l, long lo) {
+                floorGlobal = l;
+                b1str = buildingArray[bldgGlobal];
                 switch (buildingArray[bldgGlobal]) {
                     case "evw":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.evw_Floors);
-                        Log.i("Room Array 1:",floorArray[i]);
-                        switch (floorArray[i]) {
+                        Log.i("Room Array 1:",floorArray[l]);
+                        switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_0_Rooms)));
                                 break;
@@ -402,8 +203,8 @@ public class Main2Activity extends AppCompatActivity {
                     case "wat":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.wat_Floors);
-                        Log.i("Room Array 1:",floorArray[i]);
-                        switch (floorArray[i]) {
+                        Log.i("Room Array 1:",floorArray[l]);
+                        switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.wat_0_Rooms)));
                                 break;
@@ -418,8 +219,8 @@ public class Main2Activity extends AppCompatActivity {
                     case "bty":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.bty_Floors);
-                        Log.i("Room Array 1:",floorArray[i]);
-                        switch (floorArray[i]) {
+                        Log.i("Room Array 1:",floorArray[l]);
+                        switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_0_Rooms)));
                                 break;
@@ -443,8 +244,8 @@ public class Main2Activity extends AppCompatActivity {
                     case "rub":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.rub_Floors);
-                        Log.i("Room Array 1:",floorArray[i]);
-                        switch (floorArray[i]) {
+                        Log.i("Room Array 1:",floorArray[l]);
+                        switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.rub_0_Rooms)));
                                 break;
@@ -459,8 +260,8 @@ public class Main2Activity extends AppCompatActivity {
                     case "king":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.king_Floors);
-                        Log.i("Room Array 1:",floorArray[i]);
-                        switch (floorArray[i]) {
+                        Log.i("Room Array 1:",floorArray[l]);
+                        switch (floorArray[l]) {
                             case "1":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.king_1_Rooms)));
                                 break;
@@ -472,8 +273,8 @@ public class Main2Activity extends AppCompatActivity {
                     case "dobb":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.dobb_Floors);
-                        Log.i("Room Array 1:",floorArray[i]);
-                        switch (floorArray[i]) {
+                        Log.i("Room Array 1:",floorArray[l]);
+                        switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_0_Rooms)));
                                 break;
@@ -491,8 +292,8 @@ public class Main2Activity extends AppCompatActivity {
                     case "will":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.will_Floors);
-                        Log.i("Room Array 1:",floorArray[i]);
-                        switch (floorArray[i]) {
+                        Log.i("Room Array 1:",floorArray[l]);
+                        switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.will_0_Rooms)));
                                 break;
@@ -510,8 +311,8 @@ public class Main2Activity extends AppCompatActivity {
                     case "wils":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.wils_Floors);
-                        Log.i("Room Array 1:",floorArray[i]);
-                        switch (floorArray[i]) {
+                        Log.i("Room Array 1:",floorArray[l]);
+                        switch (floorArray[l]) {
                             case "1":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.wils_1_Rooms)));
                                 break;
@@ -523,8 +324,8 @@ public class Main2Activity extends AppCompatActivity {
                     case "went":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.went_Floors);
-                        Log.i("Room Array 1:",floorArray[i]);
-                        switch (floorArray[i]) {
+                        Log.i("Room Array 1:",floorArray[l]);
+                        switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.went_0_Rooms)));
                                 break;
@@ -542,8 +343,8 @@ public class Main2Activity extends AppCompatActivity {
                     case "tdby":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.tdby_Floors);
-                        Log.i("Room Array 1:",floorArray[i]);
-                        switch (floorArray[i]) {
+                        Log.i("Room Array 1:",floorArray[l]);
+                        switch (floorArray[l]) {
                             case "0":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_0_Rooms)));
                                 break;
@@ -564,7 +365,7 @@ public class Main2Activity extends AppCompatActivity {
                     case "empty":
                         rooms = new ArrayList<>();
                         floorArray = getResources().getStringArray(R.array.empty_Floors);
-                        switch (floorArray[i]) {
+                        switch (floorArray[l]) {
                             case "Select a Building":
                                 rooms.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_0_Rooms)));
                                 break;
@@ -572,7 +373,210 @@ public class Main2Activity extends AppCompatActivity {
                         break;
                 }
                 room.setAdapter(SpinnerPopulate.updateData(c, rooms));
-                Log.i("2nd Room Array", buildingArray[i]);
+                Log.i("1st Room Array", buildingArray[bldgGlobal]);
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+        floor2.setOnItemSelectedListener(new OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int k, long l) {
+                floorGlobal2 = k;
+                b2str=buildingArray[bldg2Global];
+                switch (buildingArray[bldg2Global]) {
+                    case "evw":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.evw_Floors);
+                        switch (floorArray[k]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_2_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_3_Rooms)));
+                                break;
+                            case "4":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_4_Rooms)));
+                                break;
+                            case "5":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.evw_5_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "wat":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.wat_Floors);
+                        switch (floorArray[k]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wat_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wat_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wat_2_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "bty":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.bty_Floors);
+                        switch (floorArray[k]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_2_Rooms)));
+                                break;
+                            case "M":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_M_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_3_Rooms)));
+                                break;
+                            case "4":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.bty_4_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "rub":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.rub_Floors);
+                        switch (floorArray[k]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.rub_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.rub_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.rub_2_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "king":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.king_Floors);
+                        switch (floorArray[k]) {
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.king_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.king_2_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "dobb":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.dobb_Floors);
+                        switch (floorArray[k]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_2_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.dobb_3_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "will":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.will_Floors);
+                        switch (floorArray[k]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.will_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.will_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.will_2_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.will_3_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "wils":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.wils_Floors);
+                        switch (floorArray[k]) {
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wils_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.wils_2_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "went":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.went_Floors);
+                        switch (floorArray[k]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.went_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.went_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.went_2_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.went_3_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "tdby":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.tdby_Floors);
+                        switch (floorArray[k]) {
+                            case "0":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_0_Rooms)));
+                                break;
+                            case "1":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_1_Rooms)));
+                                break;
+                            case "2":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_2_Rooms)));
+                                break;
+                            case "3":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_3_Rooms)));
+                                break;
+                            case "4":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.tdby_4_Rooms)));
+                                break;
+                        }
+                        break;
+                    case "empty":
+                        rooms2 = new ArrayList<>();
+                        floorArray = getResources().getStringArray(R.array.empty_Floors);
+                        switch (floorArray[k]) {
+                            case "Select a Building":
+                                rooms2.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_0_Rooms)));
+                                break;
+                        }
+                        break;
+                }
+                room2.setAdapter(SpinnerPopulate.updateData(c, rooms2));
+                Log.i("2nd Room Array", buildingArray[bldg2Global]);
 
             }
 
