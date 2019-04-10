@@ -57,7 +57,6 @@
     <string-array name="wat_Floors">
         <item>0</item>
         <item>1</item>
-        <item>2</item>
     </string-array>
     <string-array name="bty_Floors">
         <item>0</item>
@@ -174,12 +173,6 @@
     </string-array>
     <string-array name="wat_1_Rooms">
         <item>Auditorium 101</item>
-    </string-array>
-    <string-array name="wat_2_Rooms">
-        <item>011</item>
-        <item>012</item>
-        <item>013</item>
-        <item>014</item>
     </string-array>
     <string-array name="bty_0_Rooms">
         <item>Recreation Room 006</item>

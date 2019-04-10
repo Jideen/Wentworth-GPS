@@ -109,13 +109,13 @@ public class Constants {
 
         //***********************************************Wentworth Hall**********************************************
         //Wentworth Hall floor 0
-        static Point2D Went0_1 = new Point2D(0, 164, "Dobb Entrance");
-        static Point2D Went0_2 = new Point2D(108, 164, "Lab 007");
-        static Point2D Went0_3 = new Point2D(195, 164, "Classroom 010");
-        static Point2D Went0_4 = new Point2D(239, 164, "Elevator");
-        static Point2D Went0_5 = new Point2D(467, 166, "Lab 003");
-        static Point2D Went0_6 = new Point2D(530, 169, "Lab 004");
-        static Point2D Went0_7 = new Point2D(650, 170, "Williston Entrance");
+        static Point2D Went0_1 = new Point2D(0, 129, "Dobb Entrance");
+        static Point2D Went0_2 = new Point2D(108, 146, "Lab 007");
+        static Point2D Went0_3 = new Point2D(175, 125, "Classroom 010");
+        static Point2D Went0_4 = new Point2D(275, 129, "Elevator");
+        static Point2D Went0_5 = new Point2D(380, 146, "Lab 003");
+        static Point2D Went0_6 = new Point2D(435, 130, "Lab 004");
+        static Point2D Went0_7 = new Point2D(535, 130, "Williston Entrance");
 
         static Point2D[] Wentworth_0_Items = new Point2D[]{Went0_1, Went0_2, Went0_3, Went0_4, Went0_5, Went0_6, Went0_7};
 
@@ -179,73 +179,73 @@ public class Constants {
         static Point2D[] EvansWay_0_Items = new Point2D[]{Eva0_1, Eva0_2, Eva0_3, Eva0_4, Eva0_5, Eva0_6, Eva0_7, Eva0_8, Eva0_9, Eva0_10,Eva0_11,Eva0_12};
 
         //Evans Way floor 1
-        static Point2D Eva1_1 = new Point2D(153, 148, "Stairs");
-        static Point2D Eva1_2 = new Point2D(153, 148, "Suite 102");
-        static Point2D Eva1_3 = new Point2D(170, 148, "Suite 107");
-        static Point2D Eva1_4 = new Point2D(300, 148, "Elevator");
-        static Point2D Eva1_5 = new Point2D(378, 148, "Corner boi");
-        static Point2D Eva1_6 = new Point2D(378, 130, "Corner boi");
-        static Point2D Eva1_7 = new Point2D(450, 130, "Suite 104");
-        static Point2D Eva1_8 = new Point2D(470, 130, "Suite 111");
-        static Point2D Eva1_9 = new Point2D(525, 130, "Stairs");
-        static Point2D Eva1_10 = new Point2D(545, 130, "Suite 117");
-        static Point2D Eva1_11 = new Point2D(565, 130, "Suite 108");
+        static Point2D Eva1_1 = new Point2D(200, 218, "Stairs");
+        static Point2D Eva1_2 = new Point2D(200, 218, "Suite 102");
+        static Point2D Eva1_3 = new Point2D(170, 218, "Suite 107");
+        static Point2D Eva1_4 = new Point2D(425, 218, "Elevator");
+        static Point2D Eva1_5 = new Point2D(525, 218, "Corner boi");
+        static Point2D Eva1_6 = new Point2D(525, 185, "Corner boi");
+        static Point2D Eva1_7 = new Point2D(625, 185, "Suite 104");
+        static Point2D Eva1_8 = new Point2D(655, 205, "Suite 111");
+        static Point2D Eva1_9 = new Point2D(730, 185, "Stairs");
+        static Point2D Eva1_10 = new Point2D(755, 205, "Suite 117");
+        static Point2D Eva1_11 = new Point2D(795, 195, "Suite 108");
         static Point2D[] EvansWay_1_Items = new Point2D[]{Eva1_1, Eva1_2, Eva1_3, Eva1_4, Eva1_5, Eva1_6, Eva1_7, Eva1_8, Eva1_9, Eva1_10, Eva1_11};
 
         //Evans Way floor 2
-        static Point2D Eva2_1 = new Point2D(153, 148, "Stairs");
-        static Point2D Eva2_2 = new Point2D(153, 148, "Suite 102");
-        static Point2D Eva2_3 = new Point2D(170, 148, "Suite 107");
-        static Point2D Eva2_4 = new Point2D(300, 148, "Elevator");
-        static Point2D Eva2_5 = new Point2D(378, 148, "Corner boi");
-        static Point2D Eva2_6 = new Point2D(378, 130, "Corner boi");
-        static Point2D Eva2_7 = new Point2D(450, 130, "Suite 104");
-        static Point2D Eva2_8 = new Point2D(470, 130, "Suite 111");
-        static Point2D Eva2_9 = new Point2D(525, 130, "Stairs");
-        static Point2D Eva2_10 = new Point2D(545, 130, "Suite 117");
-        static Point2D Eva2_11 = new Point2D(565, 130, "Suite 108");
+        static Point2D Eva2_1 = new Point2D(200, 218, "Stairs");
+        static Point2D Eva2_2 = new Point2D(200, 218, "Suite 202");
+        static Point2D Eva2_3 = new Point2D(170, 218, "Suite 207");
+        static Point2D Eva2_4 = new Point2D(425, 218, "Elevator");
+        static Point2D Eva2_5 = new Point2D(525, 218, "Corner 2oi");
+        static Point2D Eva2_6 = new Point2D(525, 185, "Corner 2oi");
+        static Point2D Eva2_7 = new Point2D(625, 185, "Suite 204");
+        static Point2D Eva2_8 = new Point2D(655, 205, "Suite 211");
+        static Point2D Eva2_9 = new Point2D(730, 185, "Stairs");
+        static Point2D Eva2_10 = new Point2D(755, 205, "Suite 217");
+        static Point2D Eva2_11 = new Point2D(795, 195, "Suite 208");
         static Point2D[] EvansWay_2_Items = new Point2D[]{Eva2_1, Eva2_2, Eva2_3, Eva2_4, Eva2_5, Eva2_6, Eva2_7, Eva2_8, Eva2_9, Eva2_10, Eva2_11};
 
         //Evans Way floor 3
-        static Point2D Eva3_1 = new Point2D(153, 148, "Stairs");
-        static Point2D Eva3_2 = new Point2D(153, 148, "Suite 102");
-        static Point2D Eva3_3 = new Point2D(170, 148, "Suite 107");
-        static Point2D Eva3_4 = new Point2D(300, 148, "Elevator");
-        static Point2D Eva3_5 = new Point2D(378, 148, "Corner boi");
-        static Point2D Eva3_6 = new Point2D(378, 130, "Corner boi");
-        static Point2D Eva3_7 = new Point2D(450, 130, "Suite 104");
-        static Point2D Eva3_8 = new Point2D(470, 130, "Suite 111");
-        static Point2D Eva3_9 = new Point2D(525, 130, "Stairs");
-        static Point2D Eva3_10 = new Point2D(545, 130, "Suite 117");
-        static Point2D Eva3_11 = new Point2D(565, 130, "Suite 108");
+        static Point2D Eva3_1 = new Point2D(200, 218, "Stairs");
+        static Point2D Eva3_2 = new Point2D(200, 218, "Suite 302");
+        static Point2D Eva3_3 = new Point2D(170, 218, "Suite 307");
+        static Point2D Eva3_4 = new Point2D(425, 218, "Elevator");
+        static Point2D Eva3_5 = new Point2D(525, 218, "Corner boi");
+        static Point2D Eva3_6 = new Point2D(525, 185, "Corner boi");
+        static Point2D Eva3_7 = new Point2D(625, 185, "Suite 304");
+        static Point2D Eva3_8 = new Point2D(655, 205, "Suite 311");
+        static Point2D Eva3_9 = new Point2D(730, 185, "Stairs");
+        static Point2D Eva3_10 = new Point2D(755, 205, "Suite 317");
+        static Point2D Eva3_11 = new Point2D(795, 195, "Suite 308");
         static Point2D[] EvansWay_3_Items = new Point2D[]{Eva3_1, Eva3_2, Eva3_3, Eva3_4, Eva3_5, Eva3_6, Eva3_7, Eva3_8, Eva3_9, Eva3_10, Eva3_11};
 
         //Evans Way floor 4
-        static Point2D Eva4_1 = new Point2D(153, 148, "Stairs");
-        static Point2D Eva4_2 = new Point2D(153, 148, "Suite 102");
-        static Point2D Eva4_3 = new Point2D(170, 148, "Suite 107");
-        static Point2D Eva4_4 = new Point2D(300, 148, "Elevator");
-        static Point2D Eva4_5 = new Point2D(378, 148, "Corner boi");
-        static Point2D Eva4_6 = new Point2D(378, 130, "Corner boi");
-        static Point2D Eva4_7 = new Point2D(450, 130, "Suite 104");
-        static Point2D Eva4_8 = new Point2D(470, 130, "Suite 111");
-        static Point2D Eva4_9 = new Point2D(525, 130, "Stairs");
-        static Point2D Eva4_10 = new Point2D(545, 130, "Suite 117");
-        static Point2D Eva4_11 = new Point2D(565, 130, "Suite 108");
+        static Point2D Eva4_1 = new Point2D(200, 218, "Stairs");
+        static Point2D Eva4_2 = new Point2D(200, 218, "Suite 102");
+        static Point2D Eva4_3 = new Point2D(170, 218, "Suite 107");
+        static Point2D Eva4_4 = new Point2D(425, 218, "Elevator");
+        static Point2D Eva4_5 = new Point2D(525, 218, "Corner boi");
+        static Point2D Eva4_6 = new Point2D(525, 185, "Corner boi");
+        static Point2D Eva4_7 = new Point2D(625, 185, "Suite 104");
+        static Point2D Eva4_8 = new Point2D(655, 205, "Suite 111");
+        static Point2D Eva4_9 = new Point2D(730, 185, "Stairs");
+        static Point2D Eva4_10 = new Point2D(755, 205, "Suite 117");
+        static Point2D Eva4_11 = new Point2D(795, 195, "Suite 108");
         static Point2D[] EvansWay_4_Items = new Point2D[]{Eva4_1, Eva4_2, Eva4_3, Eva4_4, Eva4_5, Eva4_6, Eva4_7, Eva4_8, Eva4_9, Eva4_10, Eva4_11};
 
         //Evans Way floor 5
-        static Point2D Eva5_1 = new Point2D(153, 148, "Stairs");
-        static Point2D Eva5_2 = new Point2D(153, 148, "Suite 102");
-        static Point2D Eva5_3 = new Point2D(170, 148, "Suite 107");
-        static Point2D Eva5_4 = new Point2D(300, 148, "Elevator");
-        static Point2D Eva5_5 = new Point2D(378, 148, "Corner boi");
-        static Point2D Eva5_6 = new Point2D(378, 130, "Corner boi");
-        static Point2D Eva5_7 = new Point2D(450, 130, "Suite 104");
-        static Point2D Eva5_8 = new Point2D(470, 130, "Suite 111");
-        static Point2D Eva5_9 = new Point2D(525, 130, "Stairs");
-        static Point2D Eva5_10 = new Point2D(545, 130, "Suite 117");
-        static Point2D Eva5_11 = new Point2D(565, 130, "Suite 108");
+        static Point2D Eva5_1 = new Point2D(200, 218, "Stairs");
+        static Point2D Eva5_2 = new Point2D(200, 218, "Suite 502");
+        static Point2D Eva5_3 = new Point2D(170, 218, "Suite 507");
+        static Point2D Eva5_4 = new Point2D(425, 218, "Elevator");
+        static Point2D Eva5_5 = new Point2D(525, 218, "Corner boi");
+        static Point2D Eva5_6 = new Point2D(525, 185, "Corner boi");
+        static Point2D Eva5_7 = new Point2D(625, 185, "Suite 504");
+        static Point2D Eva5_8 = new Point2D(655, 205, "Suite 511");
+        static Point2D Eva5_9 = new Point2D(730, 185, "Stairs");
+        static Point2D Eva5_10 = new Point2D(755, 205, "Suite 517");
+        static Point2D Eva5_11 = new Point2D(795, 195, "Suite 508");
         static Point2D[] EvansWay_5_Items = new Point2D[]{Eva5_1, Eva5_2, Eva5_3, Eva5_4, Eva5_5, Eva5_6, Eva5_7, Eva5_8, Eva5_9, Eva5_10, Eva5_11};
 
         //***********************************************Rubenstein Hall**************************************************
@@ -489,16 +489,16 @@ public class Constants {
     }
 
     public static class Buildings {
-        public static Building EvansWay = new Building(-71.097403, 42.337800, "EvansWay", 1, false);
-        public static Building Watson = new Building(-71.094804, 42.336274, "Watson", 2, false);
-        public static Building Beatty = new Building(-71.095534, 42.335615, "Beatty", 3, false);
-        public static Building Rubenstein = new Building(-71.095795, 42.336600, "Rubenstein", 4, false);
-        public static Building Kingman = new Building(-71.095915, 42.336389, "Kingman", 5, false);
-        public static Building Dobbs = new Building(-71.094458, 42.336568, "Dobbs", 6, false);
-        public static Building Williston = new Building(-71.095212, 42.336896, "Williston", 7, false);
-        public static Building Willson = new Building(-71.095816, 42.336104, "Willson", 8, false);
-        public static Building Wentworth = new Building(-71.094927, 42.336629, "Wentworth", 9, false);
-        public static Building Tudbury = new Building(-71.097840, 42.337356, "Tudbury", 11, false);
+        public static Building EvansWay = new Building(-71.097403, 42.337800, "evw", 1, false);
+        public static Building Watson = new Building(-71.094804, 42.336274, "wat", 2, false);
+        public static Building Beatty = new Building(-71.095534, 42.335615, "bty", 3, false);
+        public static Building Rubenstein = new Building(-71.095795, 42.336600, "rub", 4, false);
+        public static Building Kingman = new Building(-71.095915, 42.336389, "king", 5, false);
+        public static Building Dobbs = new Building(-71.094458, 42.336568, "dobb", 6, false);
+        public static Building Williston = new Building(-71.095212, 42.336896, "will", 7, false);
+        public static Building Willson = new Building(-71.095816, 42.336104, "wils", 8, false);
+        public static Building Wentworth = new Building(-71.094927, 42.336629, "went", 9, false);
+        public static Building Tudbury = new Building(-71.097840, 42.337356, "tdby", 11, false);
 
         public static final Building[] AnnexN = {Beatty, Willson, Tudbury};
         public static final int[] AnnexWeights = {136, 171, 525};
