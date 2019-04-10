@@ -8,9 +8,104 @@ public class Constants {
 
     public static class Graphs {
         //***********************************************Tudbury**************************************************
-        static Point2D Tud1 = new Point2D(0,0,"Tud stairs");
+        //Tudbury floor 0
+        static Point2D Tud0_1 = new Point2D(0,260,"Evansway Entrance");
+        static Point2D Tud0_2 = new Point2D(55,260,"Exercise room");
+        static Point2D Tud0_3 = new Point2D(80,260,"Stairs");
+        static Point2D Tud0_4 = new Point2D(129,267,"Female Bathroom");
+        static Point2D Tud0_5 = new Point2D(190,267,"Commom room");
+        static Point2D Tud0_6 = new Point2D(245,267,"Male Bathroom");
+        static Point2D Tud0_7 = new Point2D(320,267,"Stairs");
+        static Point2D Tud0_8 = new Point2D(375,215,"Corner boi");
+        static Point2D Tud0_9 = new Point2D(423,215,"Suite 005");
+        static Point2D Tud0_10 = new Point2D(492,215,"Stairs");
+        static Point2D Tud0_11 = new Point2D(620,215,"Elevator");
+        static Point2D Tud0_12 = new Point2D(653,215,"Suite 003");
+        static Point2D Tud0_13 = new Point2D(750,215,"Recreation room");
+        static Point2D Tud0_14 = new Point2D(750,250,"Stairs");
+        static Point2D[] Tudbury_0_Items = new Point2D[]{Tud0_1, Tud0_2, Tud0_3, Tud0_4, Tud0_5, Tud0_6, Tud0_7, Tud0_8, Tud0_9, Tud0_10, Tud0_11, Tud0_12, Tud0_13, Tud0_14};
 
-        static Point2D[] Tudbury_1_Items = new Point2D[]{};
+        //Tudbury floor 1
+        static Point2D Tud1_1 = new Point2D(85,230,"Stairs to Evansway");
+        static Point2D Tud1_2 = new Point2D(85,260,"Corner boi");
+        static Point2D Tud1_3 = new Point2D(190,260,"Exit");
+        static Point2D Tud1_4 = new Point2D(243,260,"RA Office");
+        static Point2D Tud1_5 = new Point2D(243,260,"Game Room");
+        static Point2D Tud1_6 = new Point2D(266,260,"Auditorium");
+        static Point2D Tud1_7 = new Point2D(298,260,"RD Office");
+        static Point2D Tud1_8 = new Point2D(312,260,"Elevator");
+        static Point2D Tud1_9 = new Point2D(323,260,"Stairs");
+        static Point2D Tud1_10 = new Point2D(365,215,"Corner boi");
+        static Point2D Tud1_11 = new Point2D(423,215,"Suite 105");
+        static Point2D Tud1_12 = new Point2D(493,215,"Stairs");
+        static Point2D Tud1_13 = new Point2D(547,215,"Suite 104");
+        static Point2D Tud1_14 = new Point2D(615,215,"Elevator");
+        static Point2D Tud1_15 = new Point2D(615,215,"Exit");
+        static Point2D Tud1_16 = new Point2D(652,215,"Suite 103");
+        static Point2D Tud1_17 = new Point2D(692,215,"Suite 102");
+        static Point2D Tud1_18 = new Point2D(753,215,"Suite 101");
+        static Point2D Tud1_19 = new Point2D(753,215,"Stairs");
+        static Point2D[] Tudbury_1_Items = new Point2D[]{Tud1_1, Tud1_2, Tud1_3, Tud1_4, Tud1_5, Tud1_6, Tud1_7, Tud1_8, Tud1_9, Tud1_10, Tud1_11, Tud1_12, Tud1_13, Tud1_14, Tud1_15, Tud1_16, Tud1_17, Tud1_18, Tud1_19};
+
+        //Tudbury floor 2A
+        static Point2D Tud2A_1 = new Point2D(502,155,"Stairs");
+        static Point2D Tud2A_2 = new Point2D(502,155,"Suite 205");
+        static Point2D Tud2A_3 = new Point2D(546,155,"Suite 204");
+        static Point2D Tud2A_4 = new Point2D(621,155,"Elevator");
+        static Point2D Tud2A_5 = new Point2D(652,155,"Suite 203");
+        static Point2D Tud2A_6 = new Point2D(691,155,"Suite 202");
+        static Point2D Tud2A_7 = new Point2D(743,155,"Suite 201");
+        static Point2D Tud2A_8 = new Point2D(743,155,"Stairs");
+        static Point2D[] Tudbury_2A_Items = new Point2D[]{Tud2A_1, Tud2A_2, Tud2A_3, Tud2A_4, Tud2A_5, Tud2A_6, Tud2A_7, Tud2A_8};
+
+        //Tudbury floor 2B
+        static Point2D Tud2B_1 = new Point2D(115,165,"Stairs");
+        static Point2D Tud2B_2 = new Point2D(115,165,"Suite 209");
+        static Point2D Tud2B_3 = new Point2D(228,165,"Suite 207");
+        static Point2D Tud2B_4 = new Point2D(300,165,"Elevator");
+        static Point2D Tud2B_5 = new Point2D(300,180,"Corner boi");
+        static Point2D Tud2B_6 = new Point2D(350,180,"Stairs");
+        static Point2D[] Tudbury_2B_Items = new Point2D[]{Tud2B_1, Tud2B_2, Tud2B_3, Tud2B_4, Tud2B_5, Tud2B_6};
+
+        //Tudbury floor 3A
+        static Point2D Tud3A_1 = new Point2D(502,155,"Stairs");
+        static Point2D Tud3A_2 = new Point2D(502,155,"Suite 305");
+        static Point2D Tud3A_3 = new Point2D(546,155,"Suite 304");
+        static Point2D Tud3A_4 = new Point2D(621,155,"Elevator");
+        static Point2D Tud3A_5 = new Point2D(652,155,"Suite 303");
+        static Point2D Tud3A_6 = new Point2D(691,155,"Suite 302");
+        static Point2D Tud3A_7 = new Point2D(743,155,"Suite 301");
+        static Point2D Tud3A_8 = new Point2D(743,155,"Stairs");
+        static Point2D[] Tudbury_3A_Items = new Point2D[]{Tud3A_1, Tud3A_2, Tud3A_3, Tud3A_4, Tud3A_5, Tud3A_6, Tud3A_7, Tud3A_8};
+
+        //Tudbury floor 3B
+        static Point2D Tud3B_1 = new Point2D(115,165,"Stairs");
+        static Point2D Tud3B_2 = new Point2D(115,165,"Suite 309");
+        static Point2D Tud3B_3 = new Point2D(228,165,"Suite 307");
+        static Point2D Tud3B_4 = new Point2D(300,165,"Elevator");
+        static Point2D Tud3B_5 = new Point2D(300,180,"Corner boi");
+        static Point2D Tud3B_6 = new Point2D(350,180,"Stairs");
+        static Point2D[] Tudbury_3B_Items = new Point2D[]{Tud3B_1, Tud3B_2, Tud3B_3, Tud3B_4, Tud3B_5, Tud3B_6};
+
+        //Tudbury floor 4A
+        static Point2D Tud4A_1 = new Point2D(502,155,"Stairs");
+        static Point2D Tud4A_2 = new Point2D(502,155,"Suite 405");
+        static Point2D Tud4A_3 = new Point2D(546,155,"Suite 404");
+        static Point2D Tud4A_4 = new Point2D(621,155,"Elevator");
+        static Point2D Tud4A_5 = new Point2D(652,155,"Suite 403");
+        static Point2D Tud4A_6 = new Point2D(691,155,"Suite 402");
+        static Point2D Tud4A_7 = new Point2D(743,155,"Suite 401");
+        static Point2D Tud4A_8 = new Point2D(743,155,"Stairs");
+        static Point2D[] Tudbury_4A_Items = new Point2D[]{Tud4A_1, Tud4A_2, Tud4A_3, Tud4A_4, Tud4A_5, Tud4A_6, Tud4A_7, Tud4A_8};
+
+        //Tudbury floor 4B
+        static Point2D Tud4B_1 = new Point2D(115,165,"Stairs");
+        static Point2D Tud4B_2 = new Point2D(115,165,"Suite 409");
+        static Point2D Tud4B_3 = new Point2D(228,165,"Suite 407");
+        static Point2D Tud4B_4 = new Point2D(300,165,"Elevator");
+        static Point2D Tud4B_5 = new Point2D(300,180,"Corner boi");
+        static Point2D Tud4B_6 = new Point2D(350,180,"Stairs");
+        static Point2D[] Tudbury_4B_Items = new Point2D[]{Tud4B_1, Tud4B_2, Tud4B_3, Tud4B_4, Tud4B_5, Tud4B_6};
 
         //***********************************************Wentworth Hall**********************************************
         //Wentworth Hall floor 0
@@ -216,20 +311,51 @@ public class Constants {
 
         //***********************************************Dobbs Hall**************************************************
         //Dobbs Hall floor 0
-        static Point2D Dob0_1 = new Point2D(0, 0, "");
-        static Point2D[] Dobbs_0_Items = new Point2D[]{};
+        static Point2D Dob0_1 = new Point2D(385, 0, "Wentworth Hall Entrance");
+        static Point2D Dob0_2 = new Point2D(385, 93, "Watson Hall Entrance");
+        static Point2D Dob0_3 = new Point2D(385, 93, "Stairs");
+        static Point2D Dob0_4 = new Point2D(385, 189, "Strength & Materials Lab 008");
+        static Point2D Dob0_5 = new Point2D(338, 340, "Classroom 002");
+        static Point2D Dob0_6 = new Point2D(290, 404, "Classroom 003");
+        static Point2D Dob0_7 = new Point2D(265, 450, "Materials Science Classroom 007");
+        static Point2D Dob0_8 = new Point2D(265, 507, "Nanotechnology Lab 006");
+        static Point2D Dob0_9 = new Point2D(265, 507, "Classroom 005");
+        static Point2D Dob0_10 = new Point2D(265, 540, "Stairs");
+        static Point2D[] Dobbs_0_Items = new Point2D[]{Dob0_1, Dob0_2, Dob0_3, Dob0_4, Dob0_5, Dob0_6, Dob0_7, Dob0_8, Dob0_9, Dob0_10};
 
         //Dobbs Hall floor 1
-        static Point2D Dob1_1 = new Point2D(0, 0, "");
-        static Point2D[] Dobbs_1_Items = new Point2D[]{};
+        static Point2D Dob1_1 = new Point2D(433, 442, "Wentworth Hall Entrance");
+        static Point2D Dob1_2 = new Point2D(433, 283, "Stairs");
+        static Point2D Dob1_3 = new Point2D(433, 278, "College of Professional and Continuing Education(office 108-128)");
+        static Point2D Dob1_4 = new Point2D(287, 278, "Department of Computer Science and Networking(office 133-146)");
+        static Point2D Dob1_5 = new Point2D(236, 327, "Corner boi");
+        static Point2D Dob1_6 = new Point2D(95, 327, "Corner boi");
+        static Point2D Dob1_7 = new Point2D(46, 267, "Corner boi");
+        static Point2D Dob1_8 = new Point2D(65, 224, "Stairs");
+        static Point2D[] Dobbs_1_Items = new Point2D[]{Dob1_1, Dob1_2, Dob1_3, Dob1_4, Dob1_5, Dob1_6, Dob1_7, Dob1_8};
 
         //Dobbs Hall floor 2
-        static Point2D Dob2_1 = new Point2D(0, 0, "");
-        static Point2D[] Dobbs_2_Items = new Point2D[]{};
+        static Point2D Dob2_1 = new Point2D(403, 360, "Wentworth Hall Entrance");
+        static Point2D Dob2_2 = new Point2D(403, 286, "Stairs");
+        static Point2D Dob2_3 = new Point2D(403, 286, "Classroom 203");
+        static Point2D Dob2_4 = new Point2D(210, 286, "Department of Electrical and Computer Engineering");
+        static Point2D Dob2_5 = new Point2D(210, 286, "Lab 202");
+        static Point2D Dob2_6 = new Point2D(61, 234, "Stairs");
+        static Point2D[] Dobbs_2_Items = new Point2D[]{Dob2_1, Dob2_2, Dob2_3, Dob2_4, Dob2_5, Dob2_6};
 
         //Dobbs Hall floor 3
-        static Point2D Dob3_1 = new Point2D(0, 0, "");
-        static Point2D[] Dobbs_3_Items = new Point2D[]{};
+        static Point2D Dob3_1 = new Point2D(409, 175, "Wentworth Hall Entrance");
+        static Point2D Dob3_2 = new Point2D(409, 160, "Office 301");
+        static Point2D Dob3_3 = new Point2D(409, 160, "Stairs");
+        static Point2D Dob3_4 = new Point2D(409, 160, "Classroom 302");
+        static Point2D Dob3_5 = new Point2D(340, 160, "Lab 303");
+        static Point2D Dob3_6 = new Point2D(340, 160, "Classroom 306");
+        static Point2D Dob3_7 = new Point2D(136, 160, "Classroom 307");
+        static Point2D Dob3_8 = new Point2D(103, 160, "Classroom 308");
+        static Point2D Dob3_9 = new Point2D(103, 66, "Classroom 307A");
+        static Point2D Dob3_10 = new Point2D(103, 47, "Office 309");
+        static Point2D Dob3_11 = new Point2D(58, 47, "Stairs");
+        static Point2D[] Dobbs_3_Items = new Point2D[]{Dob3_1, Dob3_2, Dob3_3, Dob3_4, Dob3_5, Dob3_6, Dob3_7, Dob3_8, Dob3_9, Dob3_10, Dob3_11};
 
         //***********************************************Williston Hall**************************************************
         //Williston Hall floor 0
@@ -301,16 +427,31 @@ public class Constants {
 
         //***********************************************Beatty Hall**************************************************
         //Beatty Hall floor 0
-        static Point2D Bea0_1 = new Point2D(0, 0, "");
-        static Point2D[] Beatty_0_Items = new Point2D[]{};
+        static Point2D Bea0_1 = new Point2D(725, 240, "Stairs");
+        static Point2D Bea0_2 = new Point2D(725, 240, "Elevator");
+        static Point2D Bea0_3 = new Point2D(650, 290, "Recreation Room");
+        static Point2D Bea0_4 = new Point2D(650, 280, "Information Desk");
+        static Point2D Bea0_5 = new Point2D(650, 365, "Gym");
+        static Point2D Bea0_6 = new Point2D(620, 365, "Organization Office");
+        static Point2D Bea0_7 = new Point2D(388, 480, "New Student Program Reception Room");
+        static Point2D Bea0_8 = new Point2D(293, 535, "Intercultural Center");
+        static Point2D Bea0_9 = new Point2D(293, 535, "Student Leadership Program Reception Room");
+        static Point2D Bea0_10 = new Point2D(293, 535, "Bookstore");
+        static Point2D[] Beatty_0_Items = new Point2D[]{Bea0_1, Bea0_2, Bea0_3, Bea0_4, Bea0_5, Bea0_6, Bea0_7, Bea0_8, Bea0_9, Bea0_10};
 
         //Beatty Hall floor 1
-        static Point2D Bea1_1 = new Point2D(0, 0, "");
-        static Point2D[] Beatty_1_Items = new Point2D[]{};
+        static Point2D Bea1_1 = new Point2D(740, 193, "Stairs");
+        static Point2D Bea1_2 = new Point2D(693, 193, "Meeting Room 103");
+        static Point2D Bea1_3 = new Point2D(693, 250, "Stairs");
+        static Point2D Bea1_4 = new Point2D(693, 305, "Elevator");
+        static Point2D Bea1_5 = new Point2D(690, 665, "Corner boi");
+        static Point2D Bea1_6 = new Point2D(390, 665, "Stairs");
+        static Point2D Bea1_7 = new Point2D(150, 665, "Multi Purpose Room");
+        static Point2D[] Beatty_1_Items = new Point2D[]{Bea1_1, Bea1_2, Bea1_3, Bea1_4, Bea1_5, Bea1_6, Bea1_7};
 
         //Beatty Hall floor 2
-        static Point2D Bea2_1 = new Point2D(0, 0, "");
-        static Point2D[] Beatty_2_Items = new Point2D[]{};
+        static Point2D Bea2_1 = new Point2D(450, 450, "Library");
+        static Point2D[] Beatty_2_Items = new Point2D[]{Bea2_1};
 
         //Beatty Hall floor M
         static Point2D Beam_1 = new Point2D(0, 0, "");
