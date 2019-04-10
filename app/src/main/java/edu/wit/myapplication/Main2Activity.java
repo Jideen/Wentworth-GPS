@@ -100,7 +100,6 @@ public class Main2Activity extends AppCompatActivity {
                         break;
                     case "empty":
                         floors.addAll(Arrays.asList(getResources().getStringArray(R.array.empty_Floors)));
-                        selBuilding = "Empty";
                         break;
                 }
                 floor.setAdapter(SpinnerPopulate.updateData(c, floors));

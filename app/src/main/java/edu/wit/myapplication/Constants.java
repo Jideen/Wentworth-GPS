@@ -69,17 +69,19 @@ public class Constants {
 
         //***********************************************Evans Way**************************************************
         //Evans Way floor 0
-        static Point2D Eva0_1 = new Point2D(265, 149, "Exit");
-        static Point2D Eva0_2 = new Point2D(265, 149, "Suite 002");
-        static Point2D Eva0_3 = new Point2D(265, 149, "Suite 007");
-        static Point2D Eva0_4 = new Point2D(377, 149, "Corner boi");
-        static Point2D Eva0_5 = new Point2D(377, 130, "Housing Office");
-        static Point2D Eva0_6 = new Point2D(471, 130, "Suite 011");
-        static Point2D Eva0_7 = new Point2D(526, 130, "Stairs");
-        static Point2D Eva0_8 = new Point2D(545, 130, "Suite 017");
-        static Point2D Eva0_9 = new Point2D(555, 130, "Laundry");
-        static Point2D Eva0_10 = new Point2D(639, 130, "Tudsbury Entrance");
-        static Point2D[] EvansWay_0_Items = new Point2D[]{Eva0_1, Eva0_2, Eva0_3, Eva0_4, Eva0_5, Eva0_6, Eva0_7, Eva0_8, Eva0_9, Eva0_10};
+        static Point2D Eva0_1 = new Point2D(265, 240, "Exit");
+        static Point2D Eva0_2 = new Point2D(265, 240, "Suite 002");
+        static Point2D Eva0_3 = new Point2D(265, 240, "Suite 007");
+        static Point2D Eva0_4 = new Point2D(457, 240, "Corner boi");
+        static Point2D Eva0_5 = new Point2D(457, 200, "Housing Office");
+        static Point2D Eva0_6 = new Point2D(567, 220, "Suite 011");
+        static Point2D Eva0_7 = new Point2D(630, 210, "Stairs");
+        static Point2D Eva0_8 = new Point2D(655, 220, "Suite 017");
+        static Point2D Eva0_9 = new Point2D(665, 195, "Laundry");
+        static Point2D Eva0_10 = new Point2D(765, 220, "Corner boi");
+        static Point2D Eva0_11 = new Point2D(765, 260, "Corner boi");
+        static Point2D Eva0_12 = new Point2D(820, 260, "Tudsbury Entrance");
+        static Point2D[] EvansWay_0_Items = new Point2D[]{Eva0_1, Eva0_2, Eva0_3, Eva0_4, Eva0_5, Eva0_6, Eva0_7, Eva0_8, Eva0_9, Eva0_10,Eva0_11,Eva0_12};
 
         //Evans Way floor 1
         static Point2D Eva1_1 = new Point2D(153, 148, "Stairs");
