@@ -310,20 +310,51 @@ public class Constants {
 
         //***********************************************Dobbs Hall**************************************************
         //Dobbs Hall floor 0
-        static Point2D Dob0_1 = new Point2D(0, 0, "");
-        static Point2D[] Dobbs_0_Items = new Point2D[]{};
+        static Point2D Dob0_1 = new Point2D(385, 0, "Wentworth Hall Entrance");
+        static Point2D Dob0_2 = new Point2D(385, 93, "Watson Hall Entrance");
+        static Point2D Dob0_3 = new Point2D(385, 93, "Stairs");
+        static Point2D Dob0_4 = new Point2D(385, 189, "Strength & Materials Lab 008");
+        static Point2D Dob0_5 = new Point2D(338, 340, "Classroom 002");
+        static Point2D Dob0_6 = new Point2D(290, 404, "Classroom 003");
+        static Point2D Dob0_7 = new Point2D(265, 450, "Materials Science Classroom 007");
+        static Point2D Dob0_8 = new Point2D(265, 507, "Nanotechnology Lab 006");
+        static Point2D Dob0_9 = new Point2D(265, 507, "Classroom 005");
+        static Point2D Dob0_10 = new Point2D(265, 540, "Stairs");
+        static Point2D[] Dobbs_0_Items = new Point2D[]{Dob0_1, Dob0_2, Dob0_3, Dob0_4, Dob0_5, Dob0_6, Dob0_7, Dob0_8, Dob0_9, Dob0_10};
 
         //Dobbs Hall floor 1
-        static Point2D Dob1_1 = new Point2D(0, 0, "");
-        static Point2D[] Dobbs_1_Items = new Point2D[]{};
+        static Point2D Dob1_1 = new Point2D(433, 442, "Wentworth Hall Entrance");
+        static Point2D Dob1_2 = new Point2D(433, 283, "Stairs");
+        static Point2D Dob1_3 = new Point2D(433, 278, "College of Professional and Continuing Education(office 108-128)");
+        static Point2D Dob1_4 = new Point2D(287, 278, "Department of Computer Science and Networking(office 133-146)");
+        static Point2D Dob1_5 = new Point2D(236, 327, "Corner boi");
+        static Point2D Dob1_6 = new Point2D(95, 327, "Corner boi");
+        static Point2D Dob1_7 = new Point2D(46, 267, "Corner boi");
+        static Point2D Dob1_8 = new Point2D(65, 224, "Stairs");
+        static Point2D[] Dobbs_1_Items = new Point2D[]{Dob1_1, Dob1_2, Dob1_3, Dob1_4, Dob1_5, Dob1_6, Dob1_7, Dob1_8};
 
         //Dobbs Hall floor 2
-        static Point2D Dob2_1 = new Point2D(0, 0, "");
-        static Point2D[] Dobbs_2_Items = new Point2D[]{};
+        static Point2D Dob2_1 = new Point2D(403, 360, "Wentworth Hall Entrance");
+        static Point2D Dob2_2 = new Point2D(403, 286, "Stairs");
+        static Point2D Dob2_3 = new Point2D(403, 286, "Classroom 203");
+        static Point2D Dob2_4 = new Point2D(210, 286, "Department of Electrical and Computer Engineering");
+        static Point2D Dob2_5 = new Point2D(210, 286, "Lab 202");
+        static Point2D Dob2_6 = new Point2D(61, 234, "Stairs");
+        static Point2D[] Dobbs_2_Items = new Point2D[]{Dob2_1, Dob2_2, Dob2_3, Dob2_4, Dob2_5, Dob2_6};
 
         //Dobbs Hall floor 3
-        static Point2D Dob3_1 = new Point2D(0, 0, "");
-        static Point2D[] Dobbs_3_Items = new Point2D[]{};
+        static Point2D Dob3_1 = new Point2D(409, 175, "Wentworth Hall Entrance");
+        static Point2D Dob3_2 = new Point2D(409, 160, "Office 301");
+        static Point2D Dob3_3 = new Point2D(409, 160, "Stairs");
+        static Point2D Dob3_4 = new Point2D(409, 160, "Classroom 302");
+        static Point2D Dob3_5 = new Point2D(340, 160, "Lab 303");
+        static Point2D Dob3_6 = new Point2D(340, 160, "Classroom 306");
+        static Point2D Dob3_7 = new Point2D(136, 160, "Classroom 307");
+        static Point2D Dob3_8 = new Point2D(103, 160, "Classroom 308");
+        static Point2D Dob3_9 = new Point2D(103, 66, "Classroom 307A");
+        static Point2D Dob3_10 = new Point2D(103, 47, "Office 309");
+        static Point2D Dob3_11 = new Point2D(58, 47, "Stairs");
+        static Point2D[] Dobbs_3_Items = new Point2D[]{Dob3_1, Dob3_2, Dob3_3, Dob3_4, Dob3_5, Dob3_6, Dob3_7, Dob3_8, Dob3_9, Dob3_10, Dob3_11};
 
         //***********************************************Williston Hall**************************************************
         //Williston Hall floor 0
