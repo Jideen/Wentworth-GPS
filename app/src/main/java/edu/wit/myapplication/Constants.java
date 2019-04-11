@@ -162,7 +162,7 @@ public class Constants {
         static Point2D Went3_13 = new Point2D(380, 95, "Williston Entrance");
         static Point2D[] Wentworth_3_Items = new Point2D[]{Went3_1, Went3_2, Went3_3, Went3_4, Went3_5, Went3_6, Went3_7, Went3_8, Went3_9, Went3_10, Went3_11, Went3_12, Went3_13};
 
-        //***********************************************Evans Way**************************************************-------------------------------------------
+        //***********************************************Evans Way**************************************************<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         //Evans Way floor 0
         static Point2D Eva0_1 = new Point2D(265, 240, "Exit");
         static Point2D Eva0_2 = new Point2D(265, 240, "Suite 002");
@@ -248,7 +248,7 @@ public class Constants {
         static Point2D Eva5_11 = new Point2D(795, 195, "Suite 508");
         static Point2D[] EvansWay_5_Items = new Point2D[]{Eva5_1, Eva5_2, Eva5_3, Eva5_4, Eva5_5, Eva5_6, Eva5_7, Eva5_8, Eva5_9, Eva5_10, Eva5_11};
 
-        //***********************************************Rubenstein Hall**************************************************-----------------------------
+        //***********************************************Rubenstein Hall**************************************************<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         //Rubenstein Hall floor 0
         static Point2D Rub0_1 = new Point2D(170, 75, "Kingman Entrance");
         static Point2D Rub0_2 = new Point2D(130, 100, "Exit");
@@ -391,7 +391,7 @@ public class Constants {
         static Point2D Willi3_6 = new Point2D(88, 295, "Wentworth Hall Entrance");
         static Point2D[] Williston_3_Items = new Point2D[]{Willi3_1, Willi3_2, Willi3_3, Willi3_4, Willi3_5, Willi3_6};
 
-        //***********************************************Watson Hall**************************************************-----------------------------------
+        //***********************************************Watson Hall**************************************************<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         //Watson Hall floor 0
         static Point2D Wat0_1 = new Point2D(156, 0, "Dobbs Entrance");
         static Point2D Wat0_2 = new Point2D(176, 80, "Bathroom(M)");
