@@ -162,7 +162,7 @@ public class Constants {
         static Point2D Went3_13 = new Point2D(380, 95, "Williston Entrance");
         static Point2D[] Wentworth_3_Items = new Point2D[]{Went3_1, Went3_2, Went3_3, Went3_4, Went3_5, Went3_6, Went3_7, Went3_8, Went3_9, Went3_10, Went3_11, Went3_12, Went3_13};
 
-        //***********************************************Evans Way**************************************************
+        //***********************************************Evans Way**************************************************-------------------------------------------
         //Evans Way floor 0
         static Point2D Eva0_1 = new Point2D(265, 240, "Exit");
         static Point2D Eva0_2 = new Point2D(265, 240, "Suite 002");
@@ -391,35 +391,35 @@ public class Constants {
         static Point2D Willi3_6 = new Point2D(88, 295, "Wentworth Hall Entrance");
         static Point2D[] Williston_3_Items = new Point2D[]{Willi3_1, Willi3_2, Willi3_3, Willi3_4, Willi3_5, Willi3_6};
 
-        //***********************************************Watson Hall**************************************************
+        //***********************************************Watson Hall**************************************************-----------------------------------
         //Watson Hall floor 0
-        static Point2D Wat0_1 = new Point2D(78, 0, "Dobbs Entrance");
-        static Point2D Wat0_2 = new Point2D(78, 230, "Bathroom(M)");
-        static Point2D Wat0_3 = new Point2D(78, 270, "Bathroom(W)");
-        static Point2D Wat0_4 = new Point2D(78, 309, "Exit");
-        static Point2D Wat0_5 = new Point2D(78, 309, "Bathroom");
-        static Point2D Wat0_6 = new Point2D(122, 309, "Classroom 002");
-        static Point2D Wat0_7 = new Point2D(198, 309, "Classroom 001");
-        static Point2D Wat0_8 = new Point2D(332, 309, "Classroom 004");
-        static Point2D Wat0_9 = new Point2D(342, 309, "Stairs");
-        static Point2D Wat0_10 = new Point2D(352, 309, "Classroom 006");
-        static Point2D Wat0_11 = new Point2D(413, 275, "Office 003A");
-        static Point2D Wat0_12 = new Point2D(413, 275, "Office 003B");
-        static Point2D Wat0_13 = new Point2D(413, 275, "Office 003C");
-        static Point2D Wat0_14 = new Point2D(413, 275, "Office 003D");
-        static Point2D Wat0_15 = new Point2D(413, 275, "Office 005");
-        static Point2D Wat0_16 = new Point2D(413, 275, "Office 006P");
-        static Point2D Wat0_17 = new Point2D(413, 275, "Office 006R");
-        static Point2D Wat0_18 = new Point2D(413, 275, "Office 006KA");
-        static Point2D Wat0_19 = new Point2D(413, 275, "Office 006KB");
+        static Point2D Wat0_1 = new Point2D(156, 0, "Dobbs Entrance");
+        static Point2D Wat0_2 = new Point2D(176, 80, "Bathroom(M)");
+        static Point2D Wat0_3 = new Point2D(176, 160, "Bathroom(W)");
+        static Point2D Wat0_4 = new Point2D(156, 250, "Exit");
+        static Point2D Wat0_5 = new Point2D(156, 250, "Bathroom");
+        static Point2D Wat0_6 = new Point2D(235, 260, "Classroom 002");
+        static Point2D Wat0_7 = new Point2D(405, 225, "Classroom 001");
+        static Point2D Wat0_8 = new Point2D(677, 260, "Classroom 004");
+        static Point2D Wat0_9 = new Point2D(697, 215, "Stairs");
+        static Point2D Wat0_10 = new Point2D(712, 260, "Classroom 006");
+        static Point2D Wat0_11 = new Point2D(813, 190, "Office 003A");
+        static Point2D Wat0_12 = new Point2D(813, 190, "Office 003B");
+        static Point2D Wat0_13 = new Point2D(813, 190, "Office 003C");
+        static Point2D Wat0_14 = new Point2D(813, 190, "Office 003D");
+        static Point2D Wat0_15 = new Point2D(813, 190, "Office 005");
+        static Point2D Wat0_16 = new Point2D(813, 190, "Office 006P");
+        static Point2D Wat0_17 = new Point2D(813, 190, "Office 006R");
+        static Point2D Wat0_18 = new Point2D(813, 190, "Office 006KA");
+        static Point2D Wat0_19 = new Point2D(813, 190, "Office 006KB");
         static Point2D[] Watson_0_Items = new Point2D[]{Wat0_1, Wat0_2, Wat0_3, Wat0_4, Wat0_5, Wat0_6, Wat0_7, Wat0_8, Wat0_9, Wat0_10, Wat0_11, Wat0_12, Wat0_13, Wat0_14, Wat0_15, Wat0_16, Wat0_17, Wat0_18, Wat0_19};
 
         //Watson Hall floor 1
-        static Point2D Wat1_1 = new Point2D(55, 0, "Dobbs Entrance");
-        static Point2D Wat1_2 = new Point2D(55, 190, "Bathroom(W)");
-        static Point2D Wat1_3 = new Point2D(55, 265, "Stairs");
-        static Point2D Wat1_4 = new Point2D(55, 265, "Watson Auditorium");
-        static Point2D Wat1_5 = new Point2D(55, 335, "Bathroom(M)");
+        static Point2D Wat1_1 = new Point2D(110, 0, "Dobbs Entrance");
+        static Point2D Wat1_2 = new Point2D(90, 58, "Bathroom(W)");
+        static Point2D Wat1_3 = new Point2D(90, 200, "Stairs");
+        static Point2D Wat1_4 = new Point2D(140, 200, "Watson Auditorium");
+        static Point2D Wat1_5 = new Point2D(90, 340, "Bathroom(M)");
         static Point2D[] Watson_1_Items = new Point2D[]{Wat1_1, Wat1_2, Wat1_3, Wat1_4, Wat1_5};
 
         //***********************************************Beatty Hall**************************************************

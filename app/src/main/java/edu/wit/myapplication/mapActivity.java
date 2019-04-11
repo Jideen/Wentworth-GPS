@@ -47,6 +47,9 @@ public class mapActivity extends AppCompatActivity {
         if(source.equals(dest)){
             finalBldg = true;
         }
+        if(finalBldg){
+            curBuilding--;
+        }
         Log.i("Current Rooms",String.format("%d, %d",sourceRoom,destRoom));
 
             navLogic(source,dest, sourceFloor, destFloor, sourceRoom, destRoom);
