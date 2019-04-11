@@ -486,30 +486,33 @@ public class Constants {
         static Point2D[] Beatty_3_Items = new Point2D[]{};
 
         //Beatty Hall floor 4
-        static Point2D Bea4_1 = new Point2D(525, 460, "Stairs");
-        static Point2D Bea4_2 = new Point2D(470, 460, "Bathroom(M/N)");
-        static Point2D Bea4_3 = new Point2D(470, 440, "Elevator");
-        static Point2D Bea4_4 = new Point2D(470, 440, "Boardroom 432");
-        static Point2D Bea4_5 = new Point2D(470, 440, "Office 430-431");
-        static Point2D Bea4_6 = new Point2D(470, 405, "Office 414");
-        static Point2D Bea4_7 = new Point2D(470, 395, "Office 413");
-        static Point2D Bea4_8 = new Point2D(470, 340, "Office 410");
-        static Point2D Bea4_9 = new Point2D(470, 270, "Office 409");
-        static Point2D Bea4_10 = new Point2D(470, 230, "Office 408");
-        static Point2D Bea4_11 = new Point2D(470, 220, "Office 407");
-        static Point2D Bea4_12 = new Point2D(470, 175, "Office 403-406");
-        static Point2D Bea4_13 = new Point2D(440, 175, "Elevator/Stairs");
-        static Point2D Bea4_14 = new Point2D(392, 175, "Study Room 402");
-        static Point2D Bea4_15 = new Point2D(203, 175, "Classroom 401");
-        static Point2D Bea4_16 = new Point2D(180, 175, "Stairs");
-        static Point2D Bea4_17 = new Point2D(180, 220, "Classroom 421");
-        static Point2D Bea4_18 = new Point2D(180, 310, "Classroom 420");
-        static Point2D Bea4_19 = new Point2D(180, 335, "Classroom 419");
-        static Point2D Bea4_20 = new Point2D(180, 335, "Classroom 418");
-        static Point2D Bea4_21 = new Point2D(245, 335, "Lecture Hall 426");
-        static Point2D Bea4_22 = new Point2D(335, 335, "Office 433");
-        static Point2D Bea4_23 = new Point2D(392, 335, "Office 433A");
-        static Point2D[] Beatty_4_Items = new Point2D[]{Bea4_1, Bea4_2, Bea4_3, Bea4_4, Bea4_5, Bea4_6, Bea4_7, Bea4_8, Bea4_9, Bea4_10, Bea4_11, Bea4_12, Bea4_13, Bea4_14, Bea4_15, Bea4_16, Bea4_17, Bea4_18, Bea4_19, Bea4_20, Bea4_21, Bea4_22, Bea4_23};
+        static Point2D Bea4_1 = new Point2D(1150, 945, "Stairs");//
+        static Point2D Bea4_2 = new Point2D(1100, 1000, "Bathroom(M/N)");//
+        static Point2D Bea4_3 = new Point2D(934, 930, "Elevator");//
+        static Point2D Bea4_4 = new Point2D(934, 930, "Boardroom 432");//
+        static Point2D Bea4_5 = new Point2D(934, 930, "Office 430-431");//
+        static Point2D Bea4_6 = new Point2D(1060, 840, "Office 414");//
+        static Point2D Bea4_7 = new Point2D(1060, 780, "Office 413");//
+        static Point2D Bea4_8 = new Point2D(1060, 710, "Office 410");//
+        static Point2D Bea4_9 = new Point2D(1060, 575, "Office 409");//
+        static Point2D Bea4_10 = new Point2D(1060, 485, "Office 408");//
+        static Point2D Bea4_11 = new Point2D(1060, 460, "Office 407");//
+        static Point2D Bea4_12 = new Point2D(1060, 335, "Office 403-406");//
+        static Point2D Bea4_13 = new Point2D(1060, 330, "Elevator/Stairs");//
+        static Point2D Bea4_14 = new Point2D(890, 350, "Study Room 402");//
+        static Point2D Bea4_15 = new Point2D(505, 350, "Classroom 401");//
+        static Point2D Bea4_16 = new Point2D(440, 355, "Stairs");//
+        static Point2D Bea4_17 = new Point2D(440, 455, "Classroom 421");//
+        static Point2D Bea4_18 = new Point2D(440, 655, "Classroom 420");//
+        static Point2D Bea4_19 = new Point2D(440, 840, "Classroom 419");//
+        static Point2D Bea4_20 = new Point2D(480, 840, "Classroom 418");//
+        static Point2D Bea4_21 = new Point2D(480, 715, "Corner boi");//
+        static Point2D Bea4_22 = new Point2D(620, 650, "Lecture Hall 426");//
+        static Point2D Bea4_23 = new Point2D(480, 715, "Corner boi");//
+        static Point2D Bea4_24 = new Point2D(780, 715, "Office 433");//
+        static Point2D Bea4_25 = new Point2D(895, 715, "Office 433A");//
+
+        static Point2D[] Beatty_4_Items = new Point2D[]{Bea4_1, Bea4_2, Bea4_3, Bea4_4, Bea4_5, Bea4_6, Bea4_7, Bea4_8, Bea4_9, Bea4_10, Bea4_11, Bea4_12, Bea4_13, Bea4_14, Bea4_15, Bea4_16, Bea4_17, Bea4_18, Bea4_19, Bea4_20, Bea4_21, Bea4_22, Bea4_23,Bea4_24,Bea4_25};
 
         //***********************************************Willson Hall**************************************************
         //Willson Hall floor 1

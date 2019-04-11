@@ -500,6 +500,7 @@
         <item>Lab 204</item>
     </string-array>
     <string-array name="went_0_Rooms">
+        <item></item>
         <item>Lab 003</item>
         <item>Lab 004</item>
         <item>Server Room 004B</item>
