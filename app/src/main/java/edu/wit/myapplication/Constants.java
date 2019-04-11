@@ -422,9 +422,6 @@ public class Constants {
         static Point2D Wat1_5 = new Point2D(55, 335, "Bathroom(M)");
         static Point2D[] Watson_1_Items = new Point2D[]{Wat1_1, Wat1_2, Wat1_3, Wat1_4, Wat1_5};
 
-        //Watson Hall floor 2 ------------------------ missinggggggggg
-
-
         //***********************************************Beatty Hall**************************************************
         //Beatty Hall floor 0
         static Point2D Bea0_1 = new Point2D(725, 240, "Stairs");
@@ -454,16 +451,65 @@ public class Constants {
         static Point2D[] Beatty_2_Items = new Point2D[]{Bea2_1};
 
         //Beatty Hall floor M
-        static Point2D Beam_1 = new Point2D(0, 0, "");
-        static Point2D[] Beatty_m_Items = new Point2D[]{};
+        static Point2D Beam_1 = new Point2D(83, 165, "Stairs");
+        static Point2D Beam_2 = new Point2D(83, 145, "Study Room M212");
+        static Point2D Beam_3 = new Point2D(253, 145, "Office M212A/AB");
+        static Point2D Beam_4 = new Point2D(265, 145, "Corner boi");
+        static Point2D Beam_5 = new Point2D(427, 170, "Stairs");
+        static Point2D Beam_6 = new Point2D(427, 170, "Elevator");
+        static Point2D Beam_7 = new Point2D(427, 170, "Reading Room M212");
+        static Point2D Beam_8 = new Point2D(427, 452, "Stairs");
+        static Point2D Beam_9 = new Point2D(370, 452, "Elevator");
+        static Point2D Beam_10 = new Point2D(320, 452, "Office M207-M211");
+        static Point2D Beam_11 = new Point2D(179, 452, "Stairs");
+        static Point2D[] Beatty_m_Items = new Point2D[]{Beam_1, Beam_2, Beam_3, Beam_4, Beam_5, Beam_6, Beam_7, Beam_8, Beam_9, Beam_10, Beam_11};
 
         //Beatty Hall floor 3
-        static Point2D Bea3_1 = new Point2D(0, 0, "");
+        static Point2D Bea3_1 = new Point2D(520, 460, "Stairs");
+        static Point2D Bea3_2 = new Point2D(470, 460, "Bathroom(M/W)");
+        static Point2D Bea3_3 = new Point2D(470, 410, "Office 314");
+        static Point2D Bea3_4 = new Point2D(470, 395, "Office 313");
+        static Point2D Bea3_5 = new Point2D(470, 355, "Office 312");
+        static Point2D Bea3_6 = new Point2D(470, 290, "Office 311");
+        static Point2D Bea3_7 = new Point2D(470, 255, "Office 310");
+        static Point2D Bea3_8 = new Point2D(470, 240, "Office 309");
+        static Point2D Bea3_9 = new Point2D(470, 175, "Office 304-308");
+        static Point2D Bea3_10 = new Point2D(440, 175, "Elevator/Stairs");
+        static Point2D Bea3_11 = new Point2D(395, 175, "PC Lab 303");
+        static Point2D Bea3_12 = new Point2D(270, 175, "PC Lab 302");
+        static Point2D Bea3_13 = new Point2D(177, 175, "MAC lab 301");
+        static Point2D Bea3_14 = new Point2D(177, 175, "Stairs");
+        static Point2D Bea3_15 = new Point2D(177, 272, "Office 327-329");
+        static Point2D Bea3_16 = new Point2D(177, 410, "Office 320-322");
+        static Point2D Bea3_17 = new Point2D(203, 435, "Open Lab 318");
+        static Point2D Bea3_18 = new Point2D(380, 435, "Elevator");
         static Point2D[] Beatty_3_Items = new Point2D[]{};
 
         //Beatty Hall floor 4
-        static Point2D Bea4_1 = new Point2D(0, 0, "");
-        static Point2D[] Beatty_4_Items = new Point2D[]{};
+        static Point2D Bea4_1 = new Point2D(525, 460, "Stairs");
+        static Point2D Bea4_2 = new Point2D(470, 460, "Bathroom(M/N)");
+        static Point2D Bea4_3 = new Point2D(470, 440, "Elevator");
+        static Point2D Bea4_4 = new Point2D(470, 440, "Boardroom 432");
+        static Point2D Bea4_5 = new Point2D(470, 440, "Office 430-431");
+        static Point2D Bea4_6 = new Point2D(470, 405, "Office 414");
+        static Point2D Bea4_7 = new Point2D(470, 395, "Office 413");
+        static Point2D Bea4_8 = new Point2D(470, 340, "Office 410");
+        static Point2D Bea4_9 = new Point2D(470, 270, "Office 409");
+        static Point2D Bea4_10 = new Point2D(470, 230, "Office 408");
+        static Point2D Bea4_11 = new Point2D(470, 220, "Office 407");
+        static Point2D Bea4_12 = new Point2D(470, 175, "Office 403-406");
+        static Point2D Bea4_13 = new Point2D(440, 175, "Elevator/Stairs");
+        static Point2D Bea4_14 = new Point2D(392, 175, "Study Room 402");
+        static Point2D Bea4_15 = new Point2D(203, 175, "Classroom 401");
+        static Point2D Bea4_16 = new Point2D(180, 175, "Stairs");
+        static Point2D Bea4_17 = new Point2D(180, 220, "Classroom 421");
+        static Point2D Bea4_18 = new Point2D(180, 310, "Classroom 420");
+        static Point2D Bea4_19 = new Point2D(180, 335, "Classroom 419");
+        static Point2D Bea4_20 = new Point2D(180, 335, "Classroom 418");
+        static Point2D Bea4_21 = new Point2D(245, 335, "Lecture Hall 426");
+        static Point2D Bea4_22 = new Point2D(335, 335, "Office 433");
+        static Point2D Bea4_23 = new Point2D(392, 335, "Office 433A");
+        static Point2D[] Beatty_4_Items = new Point2D[]{Bea4_1, Bea4_2, Bea4_3, Bea4_4, Bea4_5, Bea4_6, Bea4_7, Bea4_8, Bea4_9, Bea4_10, Bea4_11, Bea4_12, Bea4_13, Bea4_14, Bea4_15, Bea4_16, Bea4_17, Bea4_18, Bea4_19, Bea4_20, Bea4_21, Bea4_22, Bea4_23};
 
         //***********************************************Willson Hall**************************************************
         //Willson Hall floor 1
