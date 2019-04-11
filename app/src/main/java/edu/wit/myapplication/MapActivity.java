@@ -233,6 +233,7 @@ public class mapActivity extends AppCompatActivity {
                 switch (sourceFloor) {
                     case "0":
                         floordat = Tudbury_0_Items;
+                        image = R.drawable.tdby_1;
                         break;
                     case "1":
                         floordat = Tudbury_1_Items;
