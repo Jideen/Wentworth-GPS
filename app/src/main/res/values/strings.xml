@@ -175,34 +175,25 @@
         <item>Auditorium 101</item>
     </string-array>
     <string-array name="bty_0_Rooms">
+        <item></item>
+        <item></item>
         <item>Recreation Room 006</item>
-        <item>WIRE Room 012</item>
-        <item>Office 013</item>
-        <item>Meeting Room 014</item>
-        <item>Office 025A</item>
-        <item>Bookstore 025</item>
-        <item>Meeting Room 026A</item>
-        <item>Office 026B</item>
-        <item>Office 026C</item>
-        <item>Office 026D</item>
-        <item>Office 026E</item>
-        <item>Office 026G</item>
-        <item>Intercultural Center 028</item>
-        <item>Meditation Room 029</item>
-        <item>Office 031A</item>
-        <item>Office 031B</item>
-        <item>Meeting Room 031C</item>
-        <item>Meeting Room 033</item>
-        <item>Organizations Office 035</item>
         <item>Info Hub 036</item>
         <item>Fitness Center 037</item>
-        <item>Office 037B</item>
+        <item>Organizations Office 035</item>
+        <item>New Student Program Reception Room</item>
+        <item>Intercultural Center 028</item>
+        <item>Student Leadership Program Reception Room</item>
+        <item>Bookstore 025</item>
     </string-array>
     <string-array name="bty_1_Rooms">
+        <item></item>
         <item>Meeting Room 103</item>
-        <item>Chartwells Office 107</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>Multipurpose Room 119</item>
-        <item>Office 112</item>
     </string-array>
     <string-array name="bty_2_Rooms">
         <item>Library</item>
@@ -221,30 +212,24 @@
         <item>Service Room M212AA</item>
     </string-array>
     <string-array name="bty_3_Rooms">
-        <item>Office 304</item>
-        <item>Office 305</item>
-        <item>Office 306</item>
-        <item>Office 308</item>
-        <item>Office 309</item>
-        <item>Office 310</item>
-        <item>Office 311</item>
-        <item>Office 312</item>
-        <item>Office 313</item>
+        <item></item>
+        <item>Bathroom(M/W)</item>
         <item>Office 314</item>
-        <item>Office 320</item>
-        <item>Office 320B</item>
-        <item>Office 320C</item>
-        <item>Office 320D</item>
-        <item>Office 322</item>
-        <item>Office 327</item>
-        <item>Office 327B</item>
-        <item>Office 328</item>
-        <item>Office 328A</item>
-        <item>Office 329</item>
-        <item>MAC Laboratory 301</item>
-        <item>PC Laboratory 302</item>
+        <item>Office 313</item>
+        <item>Office 312</item>
+        <item>Office 311</item>
+        <item>Office 310</item>
+        <item>Office 309</item>
+        <item>Office 304-308</item>
+        <item></item>
         <item>PC Laboratory 303</item>
+        <item>PC Laboratory 302</item>
+        <item>MAC Laboratory 301</item>
+        <item></item>
+        <item>Office 327-329</item>
+        <item>Office 320-322</item>
         <item>Open Laboratory 318</item>
+        <item></item>
     </string-array>
     <string-array name="bty_4_Rooms">
         <item>Classroom 401</item>
