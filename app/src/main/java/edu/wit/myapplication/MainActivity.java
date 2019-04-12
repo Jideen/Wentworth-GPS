@@ -1,6 +1,7 @@
 package edu.wit.myapplication;
 
 import android.Manifest;
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -26,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //WeightedGraph.main();
-
-
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
@@ -54,24 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
         final Button toClass = findViewById(R.id.button2);
         toClass.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                buttonCode(v);
-            }
-        });
-        final Button toFood = findViewById(R.id.button3);
-        toFood.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                buttonCode(v);
-            }
-        });
-        final Button toOffice = findViewById(R.id.button);
-        toOffice.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                buttonCode(v);
-            }
-        });
-        final Button toServices = findViewById(R.id.button4);
-        toServices.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonCode(v);
             }

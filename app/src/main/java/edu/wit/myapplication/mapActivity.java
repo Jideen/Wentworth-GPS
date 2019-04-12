@@ -19,45 +19,57 @@ import java.util.List;
 import static edu.wit.myapplication.Constants.Graphs.*;
 
 public class mapActivity extends AppCompatActivity {
-    String source, sourceFloor, dest, destFloor,destFloorOriginal;
+    String source, sourceFloor, dest, destFloor, destFloorOriginal;
     String[] builds;
-    int sourceRoom,destRoom,destRoomOriginal;
-    public int curBuilding = 0;
+    int sourceRoom, destRoom, destRoomOriginal;
+    public int curBuilding = 0, mapInt = 1;
     public boolean finalBldg = false, firstBuilding = true;
-    int buildingTracker = 0;
+    ImageView mapImage, img;
+    TextView hallName;
+
+    public void mapButton(View v) {
+        mapInt++;
+        if (mapInt % 2 == 0) {
+            mapImage.setVisibility(View.VISIBLE);
+        } else {
+            mapImage.setVisibility(View.INVISIBLE);
+        }
+    }
+
     public void buttonCode(View v) {
 //        Intent toFin = new Intent(this, mapActivity.class);
 //        startActivity(toFin);
         curBuilding++;
-        if(source!=dest){
+        if (source != dest) {
             sourceFloor = "1";
         }
-        if(sourceFloor == "1" && curBuilding == 0){
+        if (sourceFloor == "1" && curBuilding == 0) {
             source = builds[curBuilding - 1];
-        } else if(curBuilding < builds.length){
+        } else if (curBuilding < builds.length) {
             source = builds[curBuilding];
-        } else{
-            source = builds[curBuilding-1];
+        } else {
+            source = builds[curBuilding - 1];
         }
-        if(source.equals(dest) && !sourceFloor.equals(destFloor)){
+        if (source.equals(dest) && !sourceFloor.equals(destFloor)) {
             destFloor = destFloorOriginal;
             sourceFloor = destFloorOriginal;
         }
-        sourceFloor = (finalBldg)?destFloorOriginal:"1";
-        if(source.equals(dest)){
+        sourceFloor = (finalBldg) ? destFloorOriginal : "1";
+        if (source.equals(dest)) {
             finalBldg = true;
         }
-        if(finalBldg){
+        if (finalBldg) {
             destFloor = destFloorOriginal;
             destRoom = destRoomOriginal;
             curBuilding--;
         }
-        Log.i("Current Rooms",String.format("%d, %d",sourceRoom,destRoom));
+        Log.i("Current Rooms", String.format("%d, %d", sourceRoom, destRoom));
 
-            navLogic(source,dest, sourceFloor, destFloor, sourceRoom, destRoom);
+        navLogic(source, dest, sourceFloor, destFloor, sourceRoom, destRoom);
 
     }
-    public ImageView navLogic(String src, String dst, String srcF, String dstF, int srcR, int dstR){
+
+    public ImageView navLogic(String src, String dst, String srcF, String dstF, int srcR, int dstR) {
         String source = src;
         String dest = dst;
         String sourceFloor = srcF;
@@ -65,18 +77,20 @@ public class mapActivity extends AppCompatActivity {
         int sourceRoom = srcR;
         int destRoom = dstR;
         Point2D[] floordat = {new Point2D()};
-        Log.i("Current Bldg/Floor",String.format("%s,%s",source,sourceFloor));
+        Log.i("Current Bldg/Floor", String.format("%s,%s", source, sourceFloor));
         Pathfinder p = new Pathfinder();
         Context c = this;
         DrawView d = new DrawView(c);
         int image = R.drawable.evw_0;
-        int len = p.run(source,dest).length;
-        String[] strArray = p.run(source,dest);
+        int len = p.run(source, dest).length;
+        String[] strArray = p.run(source, dest);
         List<String> list = new ArrayList<String>(Arrays.asList(strArray));
         list.removeAll(Arrays.asList("", null));
         strArray = list.toArray(new String[0]);
+        hallName = findViewById(R.id.textView2);
         switch (source) {
             case "evw":
+                hallName.setText("Evans Way");
                 switch (sourceFloor) {
                     case "0":
                         floordat = EvansWay_0_Items;
@@ -105,6 +119,8 @@ public class mapActivity extends AppCompatActivity {
                 }
                 break;
             case "wat":
+                hallName.setText("Watson");
+
                 switch (sourceFloor) {
                     case "0":
                         floordat = Watson_0_Items;
@@ -117,6 +133,8 @@ public class mapActivity extends AppCompatActivity {
                 }
                 break;
             case "bty":
+                hallName.setText("Beatty");
+
                 switch (sourceFloor) {
                     case "0":
                         floordat = Beatty_0_Items;
@@ -145,6 +163,8 @@ public class mapActivity extends AppCompatActivity {
                 }
                 break;
             case "rub":
+                hallName.setText("Rubenstein");
+
                 switch (sourceFloor) {
                     case "0":
                         floordat = Rubenstein_0_Items;
@@ -156,11 +176,13 @@ public class mapActivity extends AppCompatActivity {
                         break;
                     case "2":
                         floordat = Rubenstein_2_Items;
-                        image = R.drawable.rub_2 ;
+                        image = R.drawable.rub_2;
                         break;
                 }
                 break;
             case "king":
+                hallName.setText("Kingman");
+
                 switch (sourceFloor) {
                     case "1":
                         floordat = Kingman_1_Items;
@@ -173,6 +195,8 @@ public class mapActivity extends AppCompatActivity {
                 }
                 break;
             case "dobb":
+                hallName.setText("Dobbs");
+
                 switch (sourceFloor) {
                     case "0":
                         floordat = Dobbs_0_Items;
@@ -193,26 +217,30 @@ public class mapActivity extends AppCompatActivity {
                 }
                 break;
             case "will":
+                hallName.setText("Williston");
+
                 switch (sourceFloor) {
                     case "0":
                         floordat = Williston_0_Items;
-                        image = R.drawable.evw_0;
+                        image = R.drawable.will_0;
                         break;
                     case "1":
                         floordat = Williston_1_Items;
-                        image = R.drawable.evw_0;
+                        image = R.drawable.will_1;
                         break;
                     case "2":
                         floordat = Williston_2_Items;
-                        image = R.drawable.evw_0;
+                        image = R.drawable.will_2;
                         break;
                     case "3":
                         floordat = Williston_3_Items;
-                        image = R.drawable.evw_0;
+                        image = R.drawable.will_3;
                         break;
                 }
                 break;
             case "wils":
+                hallName.setText("Willson");
+
                 switch (sourceFloor) {
                     case "1":
                         floordat = Willson_1_Items;
@@ -225,6 +253,8 @@ public class mapActivity extends AppCompatActivity {
                 }
                 break;
             case "went":
+                hallName.setText("Wentworth");
+
                 switch (sourceFloor) {
                     case "0":
                         floordat = Wentworth_0_Items;
@@ -245,6 +275,8 @@ public class mapActivity extends AppCompatActivity {
                 }
                 break;
             case "tdby":
+                hallName.setText("Tudbury");
+
                 switch (sourceFloor) {
                     case "0":
                         floordat = Tudbury_0_Items;
@@ -255,27 +287,40 @@ public class mapActivity extends AppCompatActivity {
                         image = R.drawable.tdby_1;
                         break;
                     case "2":
-                        floordat = (sourceRoom<4)?Tudbury_2A_Items:Tudbury_2B_Items;
-                        image = R.drawable.evw_0;
+                        floordat = (sourceRoom < 4) ? Tudbury_2A_Items : Tudbury_2B_Items;
+                        sourceRoom = (sourceRoom < 4) ? sourceRoom : sourceRoom - 5;
+                        image = R.drawable.tdby_2;
                         break;
                     case "3":
-                        floordat = (sourceRoom<4)?Tudbury_3A_Items:Tudbury_3B_Items;
-                        image = R.drawable.evw_0;
+                        floordat = (sourceRoom < 4) ? Tudbury_3A_Items : Tudbury_3B_Items;
+                        sourceRoom = (sourceRoom < 4) ? sourceRoom : sourceRoom - 5;
+                        image = R.drawable.tdby_2;
                         break;
                     case "4":
-                        floordat = (sourceRoom<4)?Tudbury_4A_Items:Tudbury_4B_Items;
-                        image = R.drawable.tdby_1;
+                        floordat = (sourceRoom < 4) ? Tudbury_4A_Items : Tudbury_4B_Items;
+                        sourceRoom = (sourceRoom < 4) ? sourceRoom : sourceRoom - 5;
+                        image = R.drawable.tdby_2;
                         break;
                 }
                 break;
             case "empty":
                 break;
         }
-        ImageView img = findViewById(R.id.imageView3);
-        if(!firstBuilding){
-            sourceRoom=0;
+        img = findViewById(R.id.imageView3);
+        if (!finalBldg && !firstBuilding) {
+            destRoom = floordat.length - 1;
         }
-        if(firstBuilding){
+        if (!firstBuilding) {
+            sourceRoom = 0;
+        }
+        if (firstBuilding && !finalBldg) {
+            for (int i = 0; i < floordat.length; i++) {
+                if (floordat[i].name.contains("tair")) {
+                    destRoom = i;
+                }
+            }
+        }
+        if (firstBuilding) {
             firstBuilding = false;
         }
         img.setImageBitmap(Bitmap.createBitmap(d.linePath(floordat, sourceRoom, destRoom, image)));
@@ -295,14 +340,16 @@ public class mapActivity extends AppCompatActivity {
         destRoom = getIntent().getExtras().getInt("DestRoom");
         destFloorOriginal = destFloor;
         destRoomOriginal = destRoom;
-        Log.i("Current SourceDest",String.format("%s,%s",source,dest));
+        Log.i("Current SourceDest", String.format("%s,%s", source, dest));
         Pathfinder p = new Pathfinder();
-        builds = p.run(source,dest);
-        final ImageView img = navLogic(source,dest,sourceFloor,destFloor,sourceRoom,destRoom);
+        builds = p.run(source, dest);
+        mapImage = findViewById(R.id.imageView5);
+        final ImageView img = navLogic(source, dest, sourceFloor, destFloor, sourceRoom, destRoom);
         final Button launch = findViewById(R.id.button6);
-        if(source.equals(dest) && sourceFloor != "1"){
+        final Button map = findViewById(R.id.map_button);
+        if (source.equals(dest) && sourceFloor != "1") {
             text.setText("Take stairs (blue) to floor 1 and exit the building.");
-        }else if(source.equals(dest)){
+        } else if (source.equals(dest)) {
             text.setText("Proceed from the red dot to the green dot.");
 
         }
@@ -311,7 +358,11 @@ public class mapActivity extends AppCompatActivity {
                 buttonCode(v);
             }
         });
+        map.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                mapButton(v);
+            }
 
+        });
     }
-
 }

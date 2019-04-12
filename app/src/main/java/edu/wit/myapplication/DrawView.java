@@ -27,7 +27,7 @@ public class DrawView extends View {
         canvas.drawCircle((points[source].getX()), (points[source].getY()), 5, new Paint());
         for (int i = source; i < dest; i++) {
             canvas.drawLine(points[i].getX(), points[i].getY(), points[i + 1].getX(), points[i + 1].getY(), new Paint());
-            canvas.drawCircle(points[i + 1].getX(), points[i + 1].getY(), 5, new Paint());
+           // canvas.drawCircle(points[i + 1].getX(), points[i + 1].getY(), 5, new Paint());
             if(points[i].name.equals("Stairs")){
                 canvas.drawCircle(points[i].getX(), points[i].getY(), 5, blue);
             }
