@@ -247,26 +247,31 @@
         <item>Open Laboratory 318</item>
     </string-array>
     <string-array name="bty_4_Rooms">
-        <item>Classroom 401</item>
-        <item>Classroom 418</item>
-        <item>Classroom 419</item>
-        <item>Classroom 420</item>
-        <item>Classroom 421</item>
-        <item>Office 403</item>
-        <item>Office 404</item>
-        <item>Office 405</item>
-        <item>Office 406</item>
-        <item>Office 407</item>
-        <item>Office 408</item>
-        <item>Office 409</item>
-        <item>Office 410</item>
-        <item>Office 413</item>
+        <item></item>
+        <item>Bathroom(M)</item>
+        <item></item>
+        <item>Board Room 432</item>
+        <item>Offices 430-431</item>
         <item>Office 414</item>
+        <item>Office 413</item>
+        <item>Office 410</item>
+        <item>Office 409</item>
+        <item>Office 408</item>
+        <item>Office 407</item>
+        <item>Office 403-406</item>
+        <item></item>
+        <item>Study Room 402</item>
+        <item>Classroom 401</item>
+        <item></item>
+        <item>Classroom 421</item>
+        <item>Classroom 420</item>
+        <item>Classroom 419</item>
+        <item>Classroom 418</item>
+        <item></item>
+        <item>Lecture Hall 426</item>
+        <item></item>
         <item>Office 433</item>
         <item>Office 433A</item>
-        <item>Study Room 402</item>
-        <item>Lecture Hall 426</item>
-        <item>Board Room 432</item>
     </string-array>
     <string-array name="rub_0_Rooms">
         <item>Classroom 001</item>

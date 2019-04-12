@@ -23,7 +23,7 @@ public class mapActivity extends AppCompatActivity {
     String[] builds;
     int sourceRoom,destRoom,destRoomOriginal;
     public int curBuilding = 0;
-    public boolean finalBldg = false;
+    public boolean finalBldg = false, firstBuilding = true;
     int buildingTracker = 0;
     public void buttonCode(View v) {
 //        Intent toFin = new Intent(this, mapActivity.class);
@@ -46,6 +46,9 @@ public class mapActivity extends AppCompatActivity {
         sourceFloor = (finalBldg)?destFloorOriginal:"1";
         if(source.equals(dest)){
             finalBldg = true;
+        }
+        if(finalBldg){
+            curBuilding--;
         }
         Log.i("Current Rooms",String.format("%d, %d",sourceRoom,destRoom));
 
@@ -103,9 +106,11 @@ public class mapActivity extends AppCompatActivity {
                 switch (sourceFloor) {
                     case "0":
                         floordat = Watson_0_Items;
+                        image = R.drawable.evw_0;
                         break;
                     case "1":
                         floordat = Watson_1_Items;
+                        image = R.drawable.evw_0;
                         break;
                 }
                 break;
@@ -113,22 +118,27 @@ public class mapActivity extends AppCompatActivity {
                 switch (sourceFloor) {
                     case "0":
                         floordat = Beatty_0_Items;
+                        image = R.drawable.bty_0;
                         break;
                     case "1":
                         floordat = Beatty_1_Items;
-
+                        image = R.drawable.bty_1;
                         break;
                     case "2":
                         floordat = Beatty_2_Items;
+                        image = R.drawable.bty_1;
                         break;
                     case "M":
                         floordat = Beatty_m_Items;
+                        image = R.drawable.bty_m;
                         break;
                     case "3":
                         floordat = Beatty_3_Items;
+                        image = R.drawable.bty_3;
                         break;
                     case "4":
                         floordat = Beatty_4_Items;
+                        image = R.drawable.bty_4;
                         break;
                 }
                 break;
@@ -136,12 +146,15 @@ public class mapActivity extends AppCompatActivity {
                 switch (sourceFloor) {
                     case "0":
                         floordat = Rubenstein_0_Items;
+                        image = R.drawable.rub_0;
                         break;
                     case "1":
                         floordat = Rubenstein_1_Items;
+                        image = R.drawable.rub_1;
                         break;
                     case "2":
                         floordat = Rubenstein_2_Items;
+                        image = R.drawable.rub_2 ;
                         break;
                 }
                 break;
@@ -149,9 +162,11 @@ public class mapActivity extends AppCompatActivity {
                 switch (sourceFloor) {
                     case "1":
                         floordat = Kingman_1_Items;
+                        image = R.drawable.evw_0;
                         break;
                     case "2":
                         floordat = Kingman_2_Items;
+                        image = R.drawable.evw_0;
                         break;
                 }
                 break;
@@ -159,15 +174,19 @@ public class mapActivity extends AppCompatActivity {
                 switch (sourceFloor) {
                     case "0":
                         floordat = Dobbs_0_Items;
+                        image = R.drawable.dob_0;
                         break;
                     case "1":
                         floordat = Dobbs_1_Items;
+                        image = R.drawable.dob_1;
                         break;
                     case "2":
                         floordat = Dobbs_2_Items;
+                        image = R.drawable.dob_2;
                         break;
                     case "3":
                         floordat = Dobbs_3_Items;
+                        image = R.drawable.dob_3;
                         break;
                 }
                 break;
@@ -175,15 +194,19 @@ public class mapActivity extends AppCompatActivity {
                 switch (sourceFloor) {
                     case "0":
                         floordat = Williston_0_Items;
+                        image = R.drawable.evw_0;
                         break;
                     case "1":
                         floordat = Williston_1_Items;
+                        image = R.drawable.evw_0;
                         break;
                     case "2":
                         floordat = Williston_2_Items;
+                        image = R.drawable.evw_0;
                         break;
                     case "3":
                         floordat = Williston_3_Items;
+                        image = R.drawable.evw_0;
                         break;
                 }
                 break;
@@ -191,9 +214,11 @@ public class mapActivity extends AppCompatActivity {
                 switch (sourceFloor) {
                     case "1":
                         floordat = Willson_1_Items;
+                        image = R.drawable.evw_0;
                         break;
                     case "2":
                         floordat = Willson_2_Items;
+                        image = R.drawable.evw_0;
                         break;
                 }
                 break;
@@ -205,12 +230,15 @@ public class mapActivity extends AppCompatActivity {
                         break;
                     case "1":
                         floordat = Wentworth_1_Items;
+                        image = R.drawable.went_0;
                         break;
                     case "2":
                         floordat = Wentworth_2_Items;
+                        image = R.drawable.went_0;
                         break;
                     case "3":
                         floordat = Wentworth_3_Items;
+                        image = R.drawable.went_0;
                         break;
                 }
                 break;
@@ -218,140 +246,23 @@ public class mapActivity extends AppCompatActivity {
                 switch (sourceFloor) {
                     case "0":
                         floordat = Tudbury_0_Items;
+                        image = R.drawable.evw_0;
                         break;
                     case "1":
                         floordat = Tudbury_1_Items;
+                        image = R.drawable.tdby_1;
                         break;
                     case "2":
                         floordat = (sourceRoom<4)?Tudbury_2A_Items:Tudbury_2B_Items;
+                        image = R.drawable.evw_0;
                         break;
                     case "3":
                         floordat = (sourceRoom<4)?Tudbury_3A_Items:Tudbury_3B_Items;
+                        image = R.drawable.evw_0;
                         break;
                     case "4":
                         floordat = (sourceRoom<4)?Tudbury_4A_Items:Tudbury_4B_Items;
-                        break;
-                }
-                break;
-            case "empty":
-                break;
-        }
-        switch (dest) {
-            case "evw":
-                switch (destFloor) {
-                    case "0":
-                        break;
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                    case "3":
-                        break;
-                    case "4":
-                        break;
-                    case "5":
-                        break;
-                }
-                break;
-            case "wat":
-                switch (destFloor) {
-                    case "0":
-                        break;
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                }
-                break;
-            case "bty":
-                switch (destFloor) {
-                    case "0":
-                        break;
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                    case "M":
-                        break;
-                    case "3":
-                        break;
-                    case "4":
-                        break;
-                }
-                break;
-            case "rub":
-                switch (destFloor) {
-                    case "0":
-                        break;
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                }
-                break;
-            case "king":
-                switch (destFloor) {
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                }
-                break;
-            case "dobb":
-                switch (destFloor) {
-                    case "0":
-                        break;
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                    case "3":
-                        break;
-                }
-                break;
-            case "will":
-                switch (destFloor) {
-                    case "0":
-                        break;
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                    case "3":
-                        break;
-                }
-                break;
-            case "wils":
-                switch (destFloor) {
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                }
-                break;
-            case "went":
-                switch (destFloor) {
-                    case "0":
-                        break;
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                    case "3":
-                        break;
-                }
-                break;
-            case "tdby":
-                switch (destFloor) {
-                    case "0":
-                        break;
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                    case "3":
-                        break;
-                    case "4":
+                        image = R.drawable.tdby_1;
                         break;
                 }
                 break;
@@ -362,7 +273,9 @@ public class mapActivity extends AppCompatActivity {
             destRoom = (sourceRoom>(floordat.length/2))?0:floordat.length-1;
         }
         final ImageView img = findViewById(R.id.imageView3);
-        img.setImageBitmap(Bitmap.createBitmap(d.linePath(floordat, sourceRoom, destRoom, image)));
+        floordat = Beatty_m_Items;
+        image = R.drawable.bty_m;
+        img.setImageBitmap(Bitmap.createBitmap(d.linePath(floordat, 0, floordat.length-1, image)));
         return img;
     }
 

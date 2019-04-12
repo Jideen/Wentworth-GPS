@@ -273,8 +273,8 @@ public class mapActivity extends AppCompatActivity {
             destRoom = (sourceRoom>(floordat.length/2))?0:floordat.length-1;
         }
         final ImageView img = findViewById(R.id.imageView3);
-        floordat = Beatty_4_Items;
-        image = R.drawable.bty_4;
+        floordat = Beatty_m_Items;
+        image = R.drawable.bty_m;
         img.setImageBitmap(Bitmap.createBitmap(d.linePath(floordat, 0, floordat.length-1, image)));
         return img;
     }

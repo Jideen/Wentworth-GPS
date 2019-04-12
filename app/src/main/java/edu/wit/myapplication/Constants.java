@@ -451,18 +451,19 @@ public class Constants {
         static Point2D[] Beatty_2_Items = new Point2D[]{Bea2_1};
 
         //Beatty Hall floor M
-        static Point2D Beam_1 = new Point2D(83, 165, "Stairs");
-        static Point2D Beam_2 = new Point2D(83, 145, "Study Room M212");
-        static Point2D Beam_3 = new Point2D(253, 145, "Office M212A/AB");
-        static Point2D Beam_4 = new Point2D(265, 145, "Corner boi");
-        static Point2D Beam_5 = new Point2D(427, 170, "Stairs");
-        static Point2D Beam_6 = new Point2D(427, 170, "Elevator");
-        static Point2D Beam_7 = new Point2D(427, 170, "Reading Room M212");
-        static Point2D Beam_8 = new Point2D(427, 452, "Stairs");
-        static Point2D Beam_9 = new Point2D(370, 452, "Elevator");
-        static Point2D Beam_10 = new Point2D(320, 452, "Office M207-M211");
-        static Point2D Beam_11 = new Point2D(179, 452, "Stairs");
-        static Point2D[] Beatty_m_Items = new Point2D[]{Beam_1, Beam_2, Beam_3, Beam_4, Beam_5, Beam_6, Beam_7, Beam_8, Beam_9, Beam_10, Beam_11};
+        static Point2D Beam_1 = new Point2D(166, 330, "Stairs");
+        static Point2D Beam_2 = new Point2D(166, 290, "Study Room M212");
+        static Point2D Beam_3 = new Point2D(506, 290, "Office M212A/AB");
+        static Point2D Beam_4 = new Point2D(530, 290, "Corner boi");
+        static Point2D Beam_5 = new Point2D(854, 340, "Stairs");
+        static Point2D Beam_6 = new Point2D(854, 340, "Elevator");
+        static Point2D Beam_7 = new Point2D(854, 340, "Reading Room M212");
+        static Point2D Beam_8 = new Point2D(854, 914, "Stairs");
+        static Point2D Beam_9 = new Point2D(740, 914, "Elevator");
+        static Point2D Beam_10 = new Point2D(630, 914, "Office M207-M211");
+        static Point2D Beam_11 = new Point2D(630, 914, "Office M207-M211");
+        static Point2D Beam_12 = new Point2D(358, 914, "Stairs");
+        static Point2D[] Beatty_m_Items = new Point2D[]{Beam_1, Beam_2, Beam_3, Beam_4, Beam_5, Beam_6, Beam_7, Beam_8, Beam_9, Beam_10, Beam_11,Beam_12};
 
         //Beatty Hall floor 3
         static Point2D Bea3_1 = new Point2D(520, 460, "Stairs");
@@ -548,48 +549,5 @@ public class Constants {
         public static Building Willson = new Building(-71.095816, 42.336104, "wils", 8, false);
         public static Building Wentworth = new Building(-71.094927, 42.336629, "went", 9, false);
         public static Building Tudbury = new Building(-71.097840, 42.337356, "tdby", 11, false);
-
-        public static final Building[] AnnexN = {Beatty, Willson, Tudbury};
-        public static final int[] AnnexWeights = {136, 171, 525};
-
-        public static final Building[] EvansWayN = {Tudbury};
-        public static final int[] EvansWayWeights = {61};
-
-        public static final Building[] WatsonN = {Dobbs, Beatty,Kingman};
-        public static final int[] WatsonWeights = {47, 99, 107};
-
-        public static final Building[] BeattyN = {Tudbury, Willson, Watson};
-        public static final int[] BeattyWeights = {284, 57, 99};
-
-        public static final Building[] RubensteinN = {Kingman, Williston, Wentworth};
-        public static final int[] RubensteinWeights = {21, 78, 95};
-
-        public static final Building[] KingmanN = {Willson, Wentworth, Rubenstein, Watson};
-        public static final int[] KingmanWeights = {28, 90, 21, 107};
-
-        public static final Building[] DobbsN = {Wentworth, Watson};
-        public static final int[] DobbsWeights = {52, 47};
-
-        public static final Building[] WillistonN = {Wentworth, Rubenstein};
-        public static final int[] WillistonWeights = {41, 78};
-
-        public static final Building[] WillsonN = {Beatty, Kingman, Tudbury};
-        public static final int[] WillsonWeights = {57, 28, 232};
-
-        public static final Building[] WentworthN = {Rubenstein, Williston, Dobbs, Kingman};
-        public static final int[] WentworthWeights = {95, 41, 52, 90};
-
-        public static final Building[] TudburyN = {EvansWay, Beatty, Willson};
-        public static final int[] TudburyWeights = {61, 284, 232};
-
-
-        public static final Building[] BUILDINGS = new Building[]{EvansWay, Watson, Beatty, Rubenstein, Kingman, Dobbs, Williston, Willson, Wentworth, Tudbury};
-        public static final Building[][] neighborArrays = { EvansWayN, WatsonN, BeattyN, RubensteinN, KingmanN, DobbsN,
-                WillistonN, WillsonN, WentworthN, TudburyN};
-        public static final int[][] weightArrays = {EvansWayWeights, WatsonWeights, BeattyWeights,
-                RubensteinWeights, KingmanWeights, DobbsWeights, WillistonWeights, WillistonWeights, WentworthWeights,
-                TudburyWeights};
-
-
     }
 }
