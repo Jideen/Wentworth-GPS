@@ -48,6 +48,8 @@ public class mapActivity extends AppCompatActivity {
             finalBldg = true;
         }
         if(finalBldg){
+            destFloor = destFloorOriginal;
+            destRoom = destRoomOriginal;
             curBuilding--;
         }
         Log.i("Current Rooms",String.format("%d, %d",sourceRoom,destRoom));
@@ -214,11 +216,11 @@ public class mapActivity extends AppCompatActivity {
                 switch (sourceFloor) {
                     case "1":
                         floordat = Willson_1_Items;
-                        image = R.drawable.evw_0;
+                        image = R.drawable.wils_1;
                         break;
                     case "2":
                         floordat = Willson_2_Items;
-                        image = R.drawable.evw_0;
+                        image = R.drawable.wils_2;
                         break;
                 }
                 break;
@@ -269,13 +271,14 @@ public class mapActivity extends AppCompatActivity {
             case "empty":
                 break;
         }
-        if(source != dest || sourceFloor != destFloor){
-            destRoom = (sourceRoom>(floordat.length/2))?0:floordat.length-1;
+        ImageView img = findViewById(R.id.imageView3);
+        if(!firstBuilding){
+            sourceRoom=0;
         }
-        final ImageView img = findViewById(R.id.imageView3);
-        floordat = Beatty_m_Items;
-        image = R.drawable.bty_m;
-        img.setImageBitmap(Bitmap.createBitmap(d.linePath(floordat, 0, floordat.length-1, image)));
+        if(firstBuilding){
+            firstBuilding = false;
+        }
+        img.setImageBitmap(Bitmap.createBitmap(d.linePath(floordat, sourceRoom, destRoom, image)));
         return img;
     }
 
