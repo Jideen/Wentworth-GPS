@@ -516,7 +516,7 @@ public class Constants {
         //Willson Hall floor 1
         static Point2D Will1_1 = new Point2D(337 * doubleConstant, 0 * doubleConstant, "Exit");
         static Point2D Will1_2 = new Point2D(337 * doubleConstant, 130 * doubleConstant, "Kingman Entrance");
-        static Point2D Will1_3 = new Point2D(240 * doubleConstant, 130 * doubleConstant, "Office 108");
+        static Point2D Will1_3 = new Point2D(230 * doubleConstant, 130 * doubleConstant, "Office 108");
         static Point2D Will1_4 = new Point2D(240 * doubleConstant, 130 * doubleConstant, "Classroom 105");
         static Point2D Will1_5 = new Point2D(208 * doubleConstant, 130 * doubleConstant, "Bathroom(M)");
         static Point2D Will1_6 = new Point2D(141 * doubleConstant, 130 * doubleConstant, "Classroom 103");
