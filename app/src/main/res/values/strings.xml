@@ -109,57 +109,94 @@
     <!--Add arrays for each floor of each building-->
     <!--  Format: {Building_id}_{FloorNum}_Rooms  -->
     <string-array name="evw_0_Rooms">
+        <item></item>
         <item>Suite 002</item>
         <item>Suite 007</item>
-        <item>Suite 011</item>
-        <item>Suite 017</item>
+        <item></item>
         <item>Housing Office</item>
+        <item>Suite 011</item>
+        <item></item>
+        <item>Suite 017</item>
         <item>Laundry</item>
+        <item></item>
+        <item></item>
+        <item>Tudsbury Entrance</item>
     </string-array>
     <string-array name="evw_1_Rooms">
+        <item></item>
         <item>Suite 102</item>
-        <item>Suite 104</item>
         <item>Suite 107</item>
-        <item>Suite 108</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Suite 104</item>
         <item>Suite 111</item>
+        <item></item>
         <item>Suite 117</item>
+        <item>Suite 108</item>
     </string-array>
     <string-array name="evw_2_Rooms">
+        <item></item>
         <item>Suite 202</item>
-        <item>Suite 204</item>
         <item>Suite 207</item>
-        <item>Suite 208</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Suite 204</item>
         <item>Suite 211</item>
+        <item></item>
         <item>Suite 217</item>
+        <item>Suite 208</item>
     </string-array>
     <string-array name="evw_3_Rooms">
+        <item></item>
         <item>Suite 302</item>
+        <item>Suite 307</item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>Suite 304</item>
-        <item>Suite 37</item>
-        <item>Suite 308</item>
         <item>Suite 311</item>
+        <item></item>
         <item>Suite 317</item>
+        <item>Suite 308</item>
     </string-array>
     <string-array name="evw_4_Rooms">
+        <item></item>
         <item>Suite 402</item>
-        <item>Suite 404</item>
         <item>Suite 407</item>
-        <item>Suite 408</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Suite 404</item>
         <item>Suite 411</item>
+        <item></item>
         <item>Suite 417</item>
+        <item>Suite 408</item>
     </string-array>
     <string-array name="evw_5_Rooms">
+        <item></item>
         <item>Suite 502</item>
-        <item>Suite 504</item>
         <item>Suite 507</item>
-        <item>Suite 508</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Suite 504</item>
         <item>Suite 511</item>
+        <item></item>
         <item>Suite 517</item>
+        <item>Suite 508</item>
     </string-array>
     <string-array name="wat_0_Rooms">
-        <item>Classroom 001</item>
+        <item>Dobbs Entrance</item>
+        <item>Bathroom (M)</item>
+        <item>Bathroom (W)</item>
+        <item></item>
+        <item>Bathroom</item>
         <item>Classroom 002</item>
+        <item>Classroom 001</item>
         <item>Classroom 004</item>
+        <item></item>
         <item>Classroom 006</item>
         <item>Office 003A</item>
         <item>Office 003B</item>
@@ -172,7 +209,11 @@
         <item>Office 006KB</item>
     </string-array>
     <string-array name="wat_1_Rooms">
+        <item>Dobbs Entrance</item>
+        <item>Bathroom (W)</item>
+        <item></item>
         <item>Auditorium 101</item>
+        <item>Bathroom (M)</item>
     </string-array>
     <string-array name="bty_0_Rooms">
         <item></item>
@@ -199,17 +240,17 @@
         <item>Library</item>
     </string-array>
     <string-array name="bty_M_Rooms">
-        <item>Office M207</item>
-        <item>Office M208</item>
-        <item>Office M0209</item>
-        <item>Office M210</item>
-        <item>Office M211A</item>
-        <item>Office M211</item>
-        <item>Office M212A</item>
-        <item>Office M212AB</item>
+        <item></item>
         <item>Study Room M212</item>
+        <item>Office M212A/AB</item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>Reading Room M212B</item>
-        <item>Service Room M212AA</item>
+        <item></item>
+        <item></item>
+        <item>Office M207-M211</item>
+        <item></item>
     </string-array>
     <string-array name="bty_3_Rooms">
         <item></item>
@@ -233,10 +274,10 @@
     </string-array>
     <string-array name="bty_4_Rooms">
         <item></item>
-        <item>Bathroom(M)</item>
+        <item>Bathroom(M/N)</item>
         <item></item>
         <item>Board Room 432</item>
-        <item>Offices 430-431</item>
+        <item>Office 430-431</item>
         <item>Office 414</item>
         <item>Office 413</item>
         <item>Office 410</item>
@@ -259,235 +300,149 @@
         <item>Office 433A</item>
     </string-array>
     <string-array name="rub_0_Rooms">
-        <item>Classroom 001</item>
-        <item>Classroom 002</item>
-        <item>Classroom 004</item>
-        <item>Classroom 006</item>
-        <item>Office 003A</item>
-        <item>Office 003B</item>
-        <item>Office 003C</item>
-        <item>Office 003D</item>
-        <item>Office 005</item>
-        <item>Office 006P</item>
-        <item>Office 006R</item>
-        <item>Office 006KA</item>
-        <item>Office 006KB</item>
+        <item>Kingman Entrance</item>
+        <item></item>
+        <item>Bathroom(W)</item>
+        <item></item>
+        <item></item>
+        <item>Lab 005</item>
+        <item>Student Affairs Office 003</item>
+        <item>Williston Entrance</item>
     </string-array>
     <string-array name="rub_1_Rooms">
-        <item>Classroom 001</item>
-        <item>Classroom 002</item>
-        <item>Classroom 004</item>
-        <item>Classroom 006</item>
-        <item>Office 003A</item>
-        <item>Office 003B</item>
-        <item>Office 003C</item>
-        <item>Office 003D</item>
-        <item>Office 005</item>
-        <item>Office 006P</item>
-        <item>Office 006R</item>
-        <item>Office 006KA</item>
-        <item>Office 006KB</item>
+        <item></item>
+        <item>Classroom 103</item>
+        <item>Lab 101</item>
+        <item></item>
+        <item>Classroom 104</item>
+        <item>Classroom 105</item>
+        <item>Williston Entrance</item>
     </string-array>
     <string-array name="rub_2_Rooms">
-        <item>Classroom 001</item>
-        <item>Classroom 002</item>
-        <item>Classroom 004</item>
-        <item>Classroom 006</item>
-        <item>Office 003A</item>
-        <item>Office 003B</item>
-        <item>Office 003C</item>
-        <item>Office 003D</item>
-        <item>Office 005</item>
-        <item>Office 006P</item>
-        <item>Office 006R</item>
-        <item>Office 006KA</item>
-        <item>Office 006KB</item>
+        <item></item>
+        <item>Classroom 201</item>
+        <item>Office 202A</item>
+        <item></item>
+        <item>Office 202</item>
+        <item>Office 203</item>
+        <item>Office 207</item>
+        <item>Office 208</item>
+        <item>Office 209</item>
     </string-array>
     <string-array name="king_1_Rooms">
-        <item>Classroom 001</item>
-        <item>Classroom 002</item>
-        <item>Classroom 004</item>
-        <item>Classroom 006</item>
-        <item>Office 003A</item>
-        <item>Office 003B</item>
-        <item>Office 003C</item>
-        <item>Office 003D</item>
-        <item>Office 005</item>
-        <item>Office 006P</item>
-        <item>Office 006R</item>
-        <item>Office 006KA</item>
-        <item>Office 006KB</item>
+        <item>Rubenstein Entrance</item>
+        <item></item>
+        <item>Lab 101</item>
+        <item>Lab 102</item>
+        <item>Lab 103</item>
+        <item>Willson Entrance</item>
     </string-array>
     <string-array name="king_2_Rooms">
-        <item>Classroom 001</item>
-        <item>Classroom 002</item>
-        <item>Classroom 004</item>
-        <item>Classroom 006</item>
-        <item>Office 003A</item>
-        <item>Office 003B</item>
-        <item>Office 003C</item>
-        <item>Office 003D</item>
-        <item>Office 005</item>
-        <item>Office 006P</item>
-        <item>Office 006R</item>
-        <item>Office 006KA</item>
-        <item>Office 006KB</item>
-    </string-array>
-    <string-array name="dobb_0_Rooms">
-        <item>Classroom 002</item>
-        <item>Classroom 003</item>
-        <item>Classroom 005</item>
-        <item>Nanotechnology 006</item>
-        <item>Materials Science 007</item>
-        <item>Strength and Materials 008</item>
-    </string-array>
-    <string-array name="dobb_1_Rooms">
-        <item>Office 102A</item>
-        <item>Office 102B</item>
-        <item>Office 103A</item>
-        <item>Office 103B</item>
-        <item>Office 103C</item>
-        <item>Office 103D</item>
-        <item>Reception Room 107</item>
-        <item>Office 108</item>
-        <item>Office 110</item>
-        <item>Office 112</item>
-        <item>Office 113</item>
-        <item>Office 114</item>
-        <item>Office 116</item>
-        <item>Office 118</item>
-        <item>Office 120</item>
-        <item>Office 122</item>
-        <item>Office 124</item>
-        <item>Office 126</item>
-        <item>Office 127</item>
-        <item>Office 128</item>
-        <item>Conference Room 131</item>
-        <item>Office 133</item>
-        <item>Meeting Room 134</item>
-        <item>Office 135</item>
-        <item>Office 136</item>
-        <item>Office 137</item>
-        <item>Office 138</item>
-        <item>Office 139</item>
-        <item>Office 140</item>
-        <item>Office 141</item>
-        <item>Office 142</item>
-        <item>Office 143</item>
-        <item>Office 144</item>
-        <item>Office 145</item>
-        <item>Office 146</item>
-        <item>Office 147</item>
-    </string-array>
-    <string-array name="dobb_2_Rooms">
-        <item>Office 201</item>
-        <item>Lab 202</item>
-        <item>Classroom 203</item>
+        <item></item>
         <item>Office 204</item>
         <item>Office 205</item>
+        <item>Classroom 201</item>
         <item>Office 206</item>
         <item>Office 207</item>
         <item>Office 208</item>
         <item>Office 209</item>
-        <item>Office 210</item>
-        <item>Lab 215</item>
-        <item>Office 217</item>
-        <item>Office 218</item>
-        <item>Office 219</item>
-        <item>Office 220</item>
-    </string-array>
-    <string-array name="dobb_3_Rooms">
-        <item>Office 301</item>
-        <item>Classroom 302</item>
-        <item>Lab 303</item>
-        <item>Classroom 304</item>
-        <item>Classroom 305</item>
-        <item>Classroom 306</item>
-        <item>Classroom 307</item>
-        <item>Classroom 307A</item>
-        <item>Classroom 308</item>
-        <item>Office 309</item>
-    </string-array>
-    <string-array name="will_0_Rooms">
-        <item>Suite 002</item>
-        <item>Suite 007</item>
-        <item>Suite 011</item>
-        <item>Suite 017</item>
-        <item>Housing Office</item>
-        <item>Laundry</item>
-    </string-array>
-    <string-array name="will_1_Rooms">
-        <item>Service Office 101B</item>
-        <item>Conference Room 101C</item>
-        <item>Office 101D</item>
-        <item>Office 101E</item>
-        <item>Office 101F</item>
-        <item>Office 101G</item>
-        <item>Office 101H</item>
-        <item>Office 101I</item>
-        <item>Office 101J</item>
-        <item>Office 102</item>
-        <item>Office 103</item>
-        <item>Conference Room 105</item>
-        <item>Office 107</item>
-        <item>Conference Room 110</item>
-        <item>Conference Room 113</item>
-    </string-array>
-    <string-array name="will_2_Rooms">
-        <item>Office 201A</item>
-        <item>Office 201B</item>
-        <item>Office 203</item>
-        <item>Office 204</item>
-        <item>Office 205</item>
-        <item>Office 206</item>
-        <item>Office 207</item>
-        <item>Office 208</item>
-        <item>Office 209</item>
+        <item></item>
+        <item>Classroom 202</item>
         <item>Office 210</item>
         <item>Office 211</item>
-        <item>Office 214</item>
-        <item>Office 216</item>
-        <item>Conference Room 218</item>
-        <item>Conference Room 220</item>
+        <item>Office 212</item>
+        <item>Willson Entrance</item>
+    </string-array>
+    <string-array name="dobb_0_Rooms">
+        <item>Wentworth Hall Entrance</item>
+        <item>Watson Hall Entrance</item>
+        <item></item>
+        <item>Strength and Materials 008</item>
+        <item>Classroom 002</item>
+        <item>Classroom 003</item>
+        <item>Materials Science 007</item>
+        <item>Nanotechnology 006</item>
+        <item>Classroom 005</item>
+        <item></item>
+    </string-array>
+    <string-array name="dobb_1_Rooms">
+        <item>Wentworth Hall Entrance</item>
+        <item></item>
+        <item>College of Professional and Continuing Education(office 108-128)</item>
+        <item>Department of Computer Science and Networking(office 133-146)</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="dobb_2_Rooms">
+        <item>Wentworth Hall Entrance</item>
+        <item></item>
+        <item>Classroom 203</item>
+        <item>Department of Electrical and Computer Engineering</item>
+        <item>Lab 202</item>
+        <item></item>
+    </string-array>
+    <string-array name="dobb_3_Rooms">
+        <item>Wentworth Hall Entrance</item>
+        <item>Office 301</item>
+        <item></item>
+        <item>Classroom 302</item>
+        <item>Lab 303</item>
+        <item>Classroom 306</item>
+        <item>Classroom 307</item>
+        <item>Classroom 308</item>
+        <item>Classroom 307A</item>
+        <item>Office 309</item>
+        <item></item>
+    </string-array>
+    <string-array name="will_0_Rooms">
+        <item>Rubenstein Entrance</item>
+        <item></item>
+        <item>Lab 001</item>
+        <item></item>
+        <item>Bathroom (W)</item>
+        <item>Office 001A</item>
+        <item>Wentworth Hall Entrance</item>
+    </string-array>
+    <string-array name="will_1_Rooms">
+        <item>Rubenstein Entrance</item>
+        <item>Student Service Center</item>
+        <item></item>
+        <item>Wentworth Hall Entrance</item>
+    </string-array>
+    <string-array name="will_2_Rooms">
+        <item></item>
+        <item>Human Resources</item>
+        <item>Executive Offices</item>
+        <item>Wentworth Hall Entrance</item>
     </string-array>
     <string-array name="will_3_Rooms">
-        <item>Office 301</item>
-        <item>Office 303</item>
-        <item>Office 304</item>
-        <item>Office 305</item>
-        <item>Office 306</item>
-        <item>Office 307</item>
-        <item>Office 308</item>
-        <item>Office 309</item>
-        <item>Office 310</item>
-        <item>Office 311</item>
-        <item>Office 313</item>
-        <item>Office 316</item>
-        <item>Office 317</item>
-        <item>Office 318</item>
-        <item>Office 319</item>
-        <item>Office 321</item>
-        <item>Office 323</item>
-        <item>Office 324</item>
-        <item>Office 325</item>
-        <item>Office 326</item>
-        <item>Office 327</item>
-        <item>Office 329</item>
-        <item>Conference Room 330</item>
+        <item></item>
+        <item>Business Service</item>
+        <item>Controller's Office</item>
+        <item>Institutional Advancement</item>
+        <item>Purchasing</item>
+        <item>Wentworth Hall Entrance</item>
     </string-array>
     <string-array name="wils_1_Rooms">
-        <item>Office 101</item>
-        <item>Office 101A</item>
-        <item>Classroom 102</item>
-        <item>Classroom 103</item>
-        <item>Classroom 105</item>
+        <item></item>
+        <item>Kingman Entrance</item>
         <item>Office 108</item>
+        <item>Classroom 105</item>
+        <item>Bathroom (M)</item>
+        <item>Classroom 103</item>
+        <item>Classroom 102</item>
+        <item>Office 101</item>
+        <item></item>
+        <item></item>
     </string-array>
     <string-array name="wils_2_Rooms">
+        <item></item>
         <item>Office 201</item>
-        <item>Lab 202</item>
-        <item>Lab 203</item>
         <item>Lab 204</item>
+        <item>Lab 203</item>
+        <item>Lab 202</item>
     </string-array>
     <string-array name="went_0_Rooms">
         <item></item>
