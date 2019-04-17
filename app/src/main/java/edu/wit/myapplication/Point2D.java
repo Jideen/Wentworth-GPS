@@ -4,30 +4,47 @@ package edu.wit.myapplication;
  * @author buttsj
  */
 public class Point2D {
-    double xval, yval;
-
-    public Point2D(double x, double y) {
+    int xval, yval;
+    double xvald, yvald;
+    String name;
+    public Point2D(int x, int y, String s) {
         xval = x;
         yval = y;
+        name = s;
     }
-
+    public Point2D(double x, double y) {
+        xvald = x;
+        yvald = y;
+    }
     public Point2D() {
-        this(0., 0.);
+        this(0, 0, "");
     }
 
-    public double getX() {
+    public int getX() {
         return xval;
     }
 
-    public void setY(double y) {
+    public int getY() {
+        return yval;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setX(int x) {
+        this.xval = x;
+    }
+    public void setY(int y) {
         this.yval = y;
     }
     public void setX(double x) {
-        this.xval = x;
+        this.xvald = x;
     }
-
-    public double getY() {
-        return yval;
+    public void setY(double y) {
+        this.yvald = y;
+    }
+    public void setName(String nam) {
+        this.name = nam;
     }
 
     public static double distance(Point2D p1, Point2D p2) {

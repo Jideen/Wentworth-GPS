@@ -29,7 +29,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="288dp"
         android:fontFamily="sans-serif"
-        android:text="yeet on em bois"
+        android:text="Enter room data"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="#F6F6F6"
