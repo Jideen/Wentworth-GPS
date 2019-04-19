@@ -18,6 +18,9 @@ import java.util.List;
 
 import static edu.wit.myapplication.Constants.Graphs.*;
 
+/**
+ * mapActivity class extending AppCompatActivity class
+ */
 public class mapActivity extends AppCompatActivity {
     String source, sourceFloor, dest, destFloor, destFloorOriginal;
     String[] builds;
@@ -36,6 +39,11 @@ public class mapActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * What happens when button is pressed
+     *
+     * @param v
+     */
     public void buttonCode(View v) {
 //        Intent toFin = new Intent(this, mapActivity.class);
 //        startActivity(toFin);
@@ -69,6 +77,16 @@ public class mapActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Floor to floor navigation
+     *
+     * @param dst
+     * @param dstF
+     * @param dstR
+     * @param src
+     * @param srcF
+     * @param srcR
+     */
     public ImageView navLogic(String src, String dst, String srcF, String dstF, int srcR, int dstR) {
         String source = src;
         String dest = dst;
@@ -327,6 +345,9 @@ public class mapActivity extends AppCompatActivity {
         return img;
     }
 
+    /**
+     * Override the onCreate function
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
