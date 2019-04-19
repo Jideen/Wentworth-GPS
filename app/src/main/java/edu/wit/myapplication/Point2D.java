@@ -67,42 +67,6 @@ public class Point2D {
     }
 
     /**
-     * sets int x
-     *
-     * @param x x coords
-     */
-    public void setX(int x) {
-        this.xval = x;
-    }
-
-    /**
-     * sets int y
-     *
-     * @param y y coords
-     */
-    public void setY(int y) {
-        this.yval = y;
-    }
-
-    /**
-     * sets x
-     *
-     * @param x x coords
-     */
-    public void setX(double x) {
-        this.xvald = x;
-    }
-
-    /**
-     * sets y
-     *
-     * @param y y coords
-     */
-    public void setY(double y) {
-        this.yvald = y;
-    }
-
-    /**
      * sets name
      *
      * @param nam name
@@ -120,16 +84,6 @@ public class Point2D {
      */
     public static double distance(Point2D p1, Point2D p2) {
         return Math.sqrt(Math.pow(p1.getX() - p2.getX(), 2) + Math.pow(p1.getY() - p2.getY(), 2));
-    }
-
-    /**
-     * gets distance between two points
-     *
-     * @param p object Point2D p
-     * @return distance to current point
-     */
-    public double distanceTo(Point2D p) {
-        return distance(p, this);
     }
 
 }

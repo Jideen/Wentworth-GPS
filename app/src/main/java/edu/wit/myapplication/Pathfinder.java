@@ -20,7 +20,7 @@ public class Pathfinder {
         String name;
         Building alias;
 
-        
+
         public void addDestination(Vertex destination, int distance) {
             adjacentVerts.put(destination, distance);
         }
@@ -47,6 +47,13 @@ public class Pathfinder {
         }
     }
 
+    /**
+     * Calculates minimum distance
+     *
+     * @param edgeWeigh
+     * @param evaluationNode
+     * @param sourceNode
+     */
     public static void CalculateMinimumDistance(Vertex evaluationNode,
                                                 Integer edgeWeigh, Vertex sourceNode) {
         Integer sourceDistance = sourceNode.distTo;
@@ -58,6 +65,11 @@ public class Pathfinder {
         }
     }
 
+    /**
+     * Calculates shortest path to next building vertex
+     *
+     * @param unsettledNodes
+     */
     public static Vertex getLowestDistanceNode(Set<Vertex> unsettledNodes) {
         Vertex lowestDistanceNode = null;
         int lowestDistance = Integer.MAX_VALUE;
@@ -71,6 +83,11 @@ public class Pathfinder {
         return lowestDistanceNode;
     }
 
+    /**
+     * Calculates shortest path between two places
+     *
+     * @param source
+     */
     public static void calculateShortestPathFromSource(Vertex source) {
         source.setDistance(0);
 
@@ -91,7 +108,12 @@ public class Pathfinder {
             isIndexed.add(currentVert);
         }
     }
-
+    /**
+     * Runs the pathfinder algorithm
+     *
+     * @param dest
+     * @param source
+     */
     public String[] run(String source, String dest) {
         Vertex Start = new Vertex(Constants.Buildings.EvansWay);
         Vertex Dest = new Vertex(Constants.Buildings.Beatty);
@@ -178,6 +200,22 @@ public class Pathfinder {
         return run( EvansWay, Watson, Beatty, Rubenstein, Kingman, Dobbs, Williston, Willson, Wentworth, Tudbury,Start,Dest);
     }
 
+    /**
+     * Keeps a list of building vertices
+     *
+     * @param dest
+     * @param source
+     * @param bea
+     * @param dob
+     * @param evw
+     * @param kin
+     * @param rub
+     * @param tud
+     * @param wat
+     * @param wen
+     * @param wil
+     * @param wili
+     */
     public static String[] run(Vertex evw, Vertex wat, Vertex bea, Vertex rub, Vertex kin, Vertex dob, Vertex wili, Vertex wil, Vertex wen, Vertex tud, Vertex source, Vertex dest) {
         evw.addDestination(tud, 61);
         wat.addDestination(dob, 47);
