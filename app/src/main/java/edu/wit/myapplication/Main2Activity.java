@@ -26,6 +26,7 @@ public class Main2Activity extends AppCompatActivity {
 
     public void buttonCode(View v) {
         Button b = (Button) v;
+        //send selected location data to map activity
         Intent toFin = new Intent(this, mapActivity.class);
         toFin.putExtra("Source",b1str);
         toFin.putExtra("Dest",b2str);
@@ -37,20 +38,18 @@ public class Main2Activity extends AppCompatActivity {
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-// TODO: move
-//        Pathfinder p = new Pathfinder();
-//        p.run();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         c = this;
         buildingArray = getResources().getStringArray(R.array.building_ids);
         buildingArray2 = getResources().getStringArray(R.array.building_ids);
-        building = (Spinner) findViewById(R.id.buildings_spinner);
-        floor = (Spinner) findViewById(R.id.floor_spinner);
-        room = (Spinner) findViewById(R.id.room_spinner);
-        building2 = (Spinner) findViewById(R.id.buildings_spinner2);
-        floor2 = (Spinner) findViewById(R.id.floor_spinner2);
-        room2 = (Spinner) findViewById(R.id.room_spinner2);
+        building = findViewById(R.id.buildings_spinner);
+        floor = findViewById(R.id.floor_spinner);
+        room = findViewById(R.id.room_spinner);
+        building2 = findViewById(R.id.buildings_spinner2);
+        floor2 = findViewById(R.id.floor_spinner2);
+        room2 = findViewById(R.id.room_spinner2);
+        //switch case series to determine what to populate spinners with
         building.setAdapter(SpinnerPopulate.Populate(this, R.array.building_names));
         building.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
@@ -630,12 +629,7 @@ public class Main2Activity extends AppCompatActivity {
 
             }
         });
-        int startPos = 0;
-        if (!getIntent().getExtras().isEmpty()) {
-            startPos = getIntent().getExtras().getInt("Location");
-            building.setSelection(startPos);
-
-        }
+        //initialize button and assign it a task
         final Button launch = findViewById(R.id.button5);
         launch.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

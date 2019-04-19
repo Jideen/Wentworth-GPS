@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void buttonCode(View v) {
+        //make button to transition to selection screen
         Button b = (Button) v;
         String buttonText = b.getText().toString();
         Intent toMap = new Intent(this, Main2Activity.class);
@@ -23,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    //request and verify location permissions (Need to rework implementation, but keeping here so it works when needed)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //WeightedGraph.main();
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,

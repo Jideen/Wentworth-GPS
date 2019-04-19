@@ -7,10 +7,6 @@ public class Building {
     int id;
     boolean isIndexed;
 
-    Building() {
-        this(0., 0., "default", 0, true);
-    }
-
     Building(double c1, double c2, String building, int i, boolean b) {
         Long = c1;
         Lat = c2;

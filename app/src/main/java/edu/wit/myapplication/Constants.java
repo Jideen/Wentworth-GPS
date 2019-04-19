@@ -1,10 +1,6 @@
 package edu.wit.myapplication;
 
 public class Constants {
-    public class Mapper {
-        public static final double X_THRESH = 1;
-        public static final double Y_THRESH = 1;
-    }
 
     public static class Graphs {
         static final int doubleConstant = 2;
@@ -312,16 +308,16 @@ public class Constants {
 
         //***********************************************Dobbs Hall**************************************************
         //Dobbs Hall floor 0
-        static Point2D Dob0_1 = new Point2D(385 * doubleConstant + 100, 0 * doubleConstant, "Wentworth Hall Entrance");//
-        static Point2D Dob0_2 = new Point2D(385 * doubleConstant + 100, 93 * doubleConstant + 80, "Watson Hall Entrance");//
-        static Point2D Dob0_3 = new Point2D(385 * doubleConstant + 100, 93 * doubleConstant + 80, "Stairs");//
-        static Point2D Dob0_4 = new Point2D(385 * doubleConstant + 70, 189 * doubleConstant + 80, "Strength & Materials Lab 008");//
-        static Point2D Dob0_5 = new Point2D(338 * doubleConstant + 100, 340 * doubleConstant + 80, "Classroom 002");//
-        static Point2D Dob0_6 = new Point2D(290 * doubleConstant + 100, 404 * doubleConstant + 80, "Classroom 003");//
-        static Point2D Dob0_7 = new Point2D(265 * doubleConstant - 140, 450 * doubleConstant + 40, "Materials Science Classroom 007");//
-        static Point2D Dob0_8 = new Point2D(265 * doubleConstant + 40, 507 * doubleConstant + 80, "Nanotechnology Lab 006");//
-        static Point2D Dob0_9 = new Point2D(265 * doubleConstant + 100, 507 * doubleConstant + 80, "Classroom 005");//
-        static Point2D Dob0_10 = new Point2D(265 * doubleConstant + 100, 540 * doubleConstant + 80, "Stairs");//
+        static Point2D Dob0_1 = new Point2D(385 * doubleConstant + 100, 0 * doubleConstant, "Wentworth Hall Entrance");
+        static Point2D Dob0_2 = new Point2D(385 * doubleConstant + 100, 93 * doubleConstant + 80, "Watson Hall Entrance");
+        static Point2D Dob0_3 = new Point2D(385 * doubleConstant + 100, 93 * doubleConstant + 80, "Stairs");
+        static Point2D Dob0_4 = new Point2D(385 * doubleConstant + 70, 189 * doubleConstant + 80, "Strength & Materials Lab 008");
+        static Point2D Dob0_5 = new Point2D(338 * doubleConstant + 100, 340 * doubleConstant + 80, "Classroom 002");
+        static Point2D Dob0_6 = new Point2D(290 * doubleConstant + 100, 404 * doubleConstant + 80, "Classroom 003");
+        static Point2D Dob0_7 = new Point2D(265 * doubleConstant - 140, 450 * doubleConstant + 40, "Materials Science Classroom 007");
+        static Point2D Dob0_8 = new Point2D(265 * doubleConstant + 40, 507 * doubleConstant + 80, "Nanotechnology Lab 006");
+        static Point2D Dob0_9 = new Point2D(265 * doubleConstant + 100, 507 * doubleConstant + 80, "Classroom 005");
+        static Point2D Dob0_10 = new Point2D(265 * doubleConstant + 100, 540 * doubleConstant + 80, "Stairs");
         static Point2D[] Dobbs_0_Items = new Point2D[]{Dob0_1, Dob0_2, Dob0_3, Dob0_4, Dob0_5, Dob0_6, Dob0_7, Dob0_8, Dob0_9, Dob0_10};
 
         //Dobbs Hall floor 1
@@ -551,4 +547,5 @@ public class Constants {
         public static Building Wentworth = new Building(-71.094927, 42.336629, "went", 9, false);
         public static Building Tudbury = new Building(-71.097840, 42.337356, "tdby", 11, false);
     }
+
 }
