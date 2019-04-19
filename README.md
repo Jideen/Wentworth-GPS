@@ -16,11 +16,36 @@ The app is written in Java with an assistant application being Android Studio. U
 ## Plan
 **Week 1**
 - Print out and manually map floor plans for data
-- Skeleton GUI /Data Points for Application
+- practiced development in Android Studio
 
 **Week 2**
-- Actual GUI
-- Data points mapped into an XML file that is accessible from the Application
+- Developed a basic UI
+- Navigation skeleton finished (includes spinners with data population as well as buttons with functions upon clicking)
+
+**Week 3**
+- Pathfinder algorithm finished (Dijkstra's algorithm)
+- All data points mapped
+
+**Week 4**
+- Finished/Smoothed UI integration
+
+## Getting Started
+**Install**
+1. Open android appstore
+2. Look up Wentworth GPS
+3. Click the download button
+
+**Run**
+1. Tap the app icon
+
+## Features
+1. Fully functional building to building path optimization
+2. Illustrated room to room navigation
+3. Campus map with toggle
+
+## Demo Video
+<insert link here>
+
 ## Team Members
 **Jayden Butts** - Backend Development, General Functionality Planning
 

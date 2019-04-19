@@ -4,9 +4,15 @@ import android.util.Log;
 
 import java.util.*;
 
+/**
+ * Pathfinder class calculates shortest path between two places
+ */
 public class Pathfinder {
     public static Set<Vertex> isIndexed = new HashSet<>(), notIndexed = new HashSet<>();
 
+    /**
+     * Vertex class creates building object
+     */
     public class Vertex {
         List<Vertex> shortestPath = new LinkedList<>();
         Map<Vertex, Integer> adjacentVerts = new HashMap<>();
@@ -14,6 +20,7 @@ public class Pathfinder {
         String name;
         Building alias;
 
+        
         public void addDestination(Vertex destination, int distance) {
             adjacentVerts.put(destination, distance);
         }
