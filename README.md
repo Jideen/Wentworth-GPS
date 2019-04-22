@@ -44,7 +44,7 @@ The app is written in Java with an assistant application being Android Studio. U
 3. Campus map with toggle
 
 ## Demo Video
-<insert link here>
+https://youtu.be/KAVe8zOhnoE
 
 ## Team Members
 **Jayden Butts** - Backend Development, General Functionality Planning
@@ -53,6 +53,3 @@ The app is written in Java with an assistant application being Android Studio. U
 
 **Yuan Gao** - Data and Statistics, Backend Calculations
 
-
-## Demo Video
-https://youtu.be/KAVe8zOhnoE
