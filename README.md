@@ -52,3 +52,7 @@ The app is written in Java with an assistant application being Android Studio. U
 **Parker Dowdy** - Front End/GUI Building and Backend Integration
 
 **Yuan Gao** - Data and Statistics, Backend Calculations
+
+
+## Demo Video
+https://youtu.be/KAVe8zOhnoE
