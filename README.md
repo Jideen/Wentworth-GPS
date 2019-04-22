@@ -31,9 +31,9 @@ The app is written in Java with an assistant application being Android Studio. U
 
 ## Getting Started
 **Install**
-1. Open android appstore
-2. Look up Wentworth GPS
-3. Click the download button
+1. Download the apk file included in the repo
+2. Install it to target android device
+3. Launch application
 
 **Run**
 1. Tap the app icon
