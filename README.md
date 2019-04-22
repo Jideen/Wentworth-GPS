@@ -44,8 +44,7 @@ The app is written in Java with an assistant application being Android Studio. U
 3. Campus map with toggle
 
 ## Demo Video
-https://youtu.be/KAVe8zOhnoE
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/KAVe8zOhnoE/0.jpg)](https://www.youtube.com/watch?v=KAVe8zOhnoE)
 ## Team Members
 **Jayden Butts** - Backend Development, General Functionality Planning
 
